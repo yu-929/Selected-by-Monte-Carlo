@@ -1,13 +1,15 @@
 name: Merge AS TXT to ip.txt
 on:
   push:
-    # 仓库任意文件修改时触发
     branches: [ main ]
     paths:
       - 'as*.txt'
       - 'ip.txt'
-  # 手动运行
   workflow_dispatch:
+
+# 关键修复：赋予读写仓库权限
+permissions:
+  contents: write
 
 jobs:
   merge:
@@ -18,21 +20,18 @@ jobs:
 
       - name: 合并as开头文件并去重写入ip.txt
         run: |
-          # 1. 合并所有as*.txt，sort -u 全局去重，覆盖ip.txt
-          cat as*.txt | sort -u > ip.txt
-          # 可选：删除空行（IP列表常用）
-          sed -i '/^$/d' ip.txt
+          # 合并所有as*.txt、全局去重、清理空行覆盖ip.txt
+          cat as*.txt | sort -u | sed '/^$/d' > ip.txt
           echo "合并完成，已去重并清理空行"
-          cat ip.txt
 
       - name: 提交更新后的ip.txt
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add ip.txt
-          # 有变更才提交推送
+          # 仅当存在变更时提交推送
           if git diff --cached --quiet; then
-            echo "ip.txt无变化，无需提交"
+            echo "ip.txt无变化，跳过提交"
           else
             git commit -m "auto merge all as*.txt and deduplicate to ip.txt"
             git push
