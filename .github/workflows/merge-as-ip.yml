@@ -7,7 +7,7 @@ on:
       - 'ip.txt'
   workflow_dispatch:
 
-# 关键修复：赋予读写仓库权限
+# 解决403推送权限
 permissions:
   contents: write
 
@@ -18,21 +18,29 @@ jobs:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: 合并as开头文件并去重写入ip.txt
+      - name: 转换格式、合并、去重写入ip.txt
         run: |
-          # 合并所有as*.txt、全局去重、清理空行覆盖ip.txt
-          cat as*.txt | sort -u | sed '/^$/d' > ip.txt
-          echo "合并完成，已去重并清理空行"
+          # 核心逻辑：
+          # 1.读取所有as开头文件
+          # 2.每行去除开头行号数字 1  xxx → xxx
+          # 3.截取#前IP端口，#后取第二段国家码拼接成 IP:端口#JP
+          # 4.全局去重、删除空行输出ip.txt
+          cat as*.txt \
+          | sed -E 's/^[0-9]+\s+//' \
+          | awk -F '#' '{split($2,tag,"-");print $1"#"tag[2]}' \
+          | sort -u \
+          | sed '/^$/d' > ip.txt
+          echo "格式转换+合并去重完成，输出至ip.txt"
 
       - name: 提交更新后的ip.txt
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add ip.txt
-          # 仅当存在变更时提交推送
+          # 无变更跳过提交
           if git diff --cached --quiet; then
-            echo "ip.txt无变化，跳过提交"
+            echo "ip.txt无变化，跳过提交推送"
           else
-            git commit -m "auto merge all as*.txt and deduplicate to ip.txt"
+            git commit -m "auto convert format + merge all as*.txt deduplicate to ip.txt"
             git push
           fi
