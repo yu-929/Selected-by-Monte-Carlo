@@ -3,10 +3,12 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '*[aA][sS]*.txt'
+      - '*as*.txt'
+      - '*AS*.txt'
       - 'ip.txt'
   workflow_dispatch:
 
+# 授予仓库写入权限
 permissions:
   contents: write
 
@@ -19,53 +21,55 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 合并、格式化、去重AS/as文件（修复exit code 2）
+      - name: 合并旧ip.txt+所有AS/as文件，格式化去重
         run: |
-          # 开启关键shell选项：
-          # nullglob: 无匹配文件时数组为空，不保留通配符字符串
-          # nocaseglob: 全局通配符不区分大小写，简化匹配
+          # 开启不区分大小写匹配、无匹配文件时数组置空
           shopt -s nullglob nocaseglob
-          # 匹配所有as/AS/As/aS开头txt
           FILES=(as*.txt)
+          echo "=== 当前目录txt文件 ==="
+          ls -la *.txt || echo "目录下无txt文件"
+          echo "匹配到as/AS文件总数：${#FILES[@]}"
+          echo "文件列表：${FILES[*]}"
 
-          # 判断是否存在匹配文件，空数组直接退出，不会触发cat报错
+          # 无匹配源文件直接正常退出，不执行cat避免报错
           if [[ ${#FILES[@]} -eq 0 ]]; then
-            echo "✅ 目录下未找到任何as/AS开头txt文件，任务正常结束"
+            echo "✅ 未找到任何as/AS开头txt文件，任务结束"
             exit 0
           fi
 
-          echo "📂 待处理文件列表：${FILES[*]}"
-          echo "📊 原始总行数：$(wc -l "${FILES[@]}" | tail -n1)"
-
-          # 完整数据处理流水线，兼容原图----无国家码脏行
-          cat "${FILES[@]}" \
-          # 移除行首数字序号+空格
+          # 合并逻辑：旧ip.txt内容 + 所有as文件内容，统一处理、去重
+          (cat ip.txt 2>/dev/null; cat "${FILES[@]}" 2>/dev/null) \
+          # 去除行首数字序号+空格
           | sed -E 's/^[0-9]+\s+//' \
           # 过滤不含#的无效行
           | awk '/#/' \
-          # 按#分割，-拆分第二段国家码，过滤空/----无效国家码
+          # 拆分#后字段，过滤空国家码和----无效标记
           | awk -F '#' '{
               split($2,tag,"-");
-              if(tag[2] != "" && tag[2] != "----"){
-                print $1"#"tag[2]
+              country=tag[2];
+              if(country != "" && country != "----"){
+                print $1"#"country
               }
             }' \
           # 全局排序去重
           | sort -u \
           # 删除空行
-          | sed '/^$/d' > ip.txt
+          | sed '/^$/d' > ip.txt.tmp
 
-          echo "✅ 处理完成，ip.txt有效行数：$(wc -l ip.txt | awk '{print $1}')"
+          # 临时文件覆盖原ip.txt，防止原文件损坏
+          mv ip.txt.tmp ip.txt
+          echo "✅ 处理完成，ip.txt当前有效行数：$(wc -l < ip.txt)"
 
-      - name: 提交推送更新ip.txt
+      - name: 提交并推送更新后的ip.txt
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add ip.txt
+          # 无内容变更则跳过提交推送
           if git diff --cached --quiet; then
-            echo "ℹ️ ip.txt内容无变更，跳过提交推送"
+            echo "ℹ️ ip.txt内容无任何变更，跳过提交推送"
           else
-            git commit -m "auto merge & format all AS/as*.txt deduplicate to ip.txt"
+            git commit -m "auto merge old ip.txt + all AS/as files, format & deduplicate"
             git push
-            echo "🚀 已推送更新至main分支"
+            echo "🚀 已将最新ip.txt推送至main分支"
           fi
