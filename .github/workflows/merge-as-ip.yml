@@ -1,44 +1,75 @@
-- name: 合并数据格式化 IP:PORT#地区码（兼容--/----脏后缀）
-  run: |
-    shopt -s nullglob nocaseglob
-    FILES=(as*.txt)
-    echo "=== 当前目录txt文件 ==="
-    ls -la *.txt || echo "无txt文件"
-    echo "匹配到AS/as文件总数：${#FILES[@]}"
-    echo "文件列表：${FILES[*]}"
+name: Merge AS TXT to ip.txt
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '*as*.txt'
+      - '*AS*.txt'
+      - 'ip.txt'
+  workflow_dispatch:
 
-    if [[ ${#FILES[@]} -eq 0 ]]; then
-      echo "✅ 未找到任何as/AS开头txt文件，任务正常结束"
-      exit 0
-    fi
+permissions:
+  contents: write
 
-    # 构建临时合并文件
-    tmp_merged=$(mktemp)
-    if [[ -f ip.txt ]]; then
-      cat ip.txt >> "$tmp_merged"
-    fi
-    for f in "${FILES[@]}"; do
-      if [[ -f "$f" ]]; then
-        cat "$f" >> "$tmp_merged"
-      fi
-    done
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取完整仓库代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    # 处理合并文件，提取国家代码（如 TPE-TW → TW，LAX-US → US）
-    < "$tmp_merged" \
-    sed -E 's/^[0-9]+\s+//' \
-    | awk '/#/' \
-    | awk -F '#' '{
-        split($2, parts, "-");
-        # 取最后一个字段作为国家代码（兼容 LAX-US、TPE-TW、HKG-HK-- 等情况）
-        country = parts[length(parts)];
-        # 过滤掉空值
-        if (country != "") {
-          print $1"#"country
-        }
-      }' \
-    | sort -u \
-    | sed '/^$/d' > ip.txt.tmp
+      - name: 合并数据格式化 IP:PORT#地区码（兼容--/----脏后缀）
+        run: |
+          shopt -s nullglob nocaseglob
+          FILES=(as*.txt)
+          echo "=== 当前目录txt文件 ==="
+          ls -la *.txt || echo "无txt文件"
+          echo "匹配到AS/as文件总数：${#FILES[@]}"
+          echo "文件列表：${FILES[*]}"
 
-    rm -f "$tmp_merged"
-    mv ip.txt.tmp ip.txt
-    echo "✅ 处理完成，ip.txt有效总行数：$(wc -l < ip.txt)"
+          if [[ ${#FILES[@]} -eq 0 ]]; then
+            echo "✅ 未找到任何as/AS开头txt文件，任务正常结束"
+            exit 0
+          fi
+
+          tmp_merged=$(mktemp)
+          if [[ -f ip.txt ]]; then
+            cat ip.txt >> "$tmp_merged"
+          fi
+          for f in "${FILES[@]}"; do
+            if [[ -f "$f" ]]; then
+              cat "$f" >> "$tmp_merged"
+            fi
+          done
+
+          < "$tmp_merged" \
+          sed -E 's/^[0-9]+\s+//' \
+          | awk '/#/' \
+          | awk -F '#' '{
+              split($2, parts, "-");
+              country = parts[length(parts)];
+              if (country != "") {
+                print $1"#"country
+              }
+            }' \
+          | sort -u \
+          | sed '/^$/d' > ip.txt.tmp
+
+          rm -f "$tmp_merged"
+          mv ip.txt.tmp ip.txt
+          echo "✅ 处理完成，ip.txt有效总行数：$(wc -l < ip.txt)"
+
+      - name: 提交推送更新ip.txt
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add ip.txt
+          if git diff --cached --quiet; then
+            echo "ℹ️ ip.txt无变更，跳过提交推送"
+          else
+            git commit -m "auto merge AS/as files, format IP:PORT#country-code"
+            git push
+            echo "🚀 已推送最新ip.txt至main分支"
+          fi
