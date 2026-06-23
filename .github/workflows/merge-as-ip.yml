@@ -8,7 +8,6 @@ on:
       - 'ip.txt'
   workflow_dispatch:
 
-# 授予仓库写入权限
 permissions:
   contents: write
 
@@ -21,33 +20,32 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 合并旧ip.txt+所有AS/as文件，格式化去重
+      - name: 合并数据格式化 IP:PORT#国家码（#后第二段）
         run: |
-          # 开启不区分大小写匹配、无匹配文件时数组置空
           shopt -s nullglob nocaseglob
           FILES=(as*.txt)
           echo "=== 当前目录txt文件 ==="
-          ls -la *.txt || echo "目录下无txt文件"
-          echo "匹配到as/AS文件总数：${#FILES[@]}"
+          ls -la *.txt || echo "无txt文件"
+          echo "匹配到AS/as文件总数：${#FILES[@]}"
           echo "文件列表：${FILES[*]}"
 
-          # 无匹配源文件直接正常退出，不执行cat避免报错
+          # 无源文件直接退出，杜绝cat空参数exit code 2报错
           if [[ ${#FILES[@]} -eq 0 ]]; then
-            echo "✅ 未找到任何as/AS开头txt文件，任务结束"
+            echo "✅ 未找到任何as/AS开头txt文件，任务正常结束"
             exit 0
           fi
 
-          # 合并逻辑：旧ip.txt内容 + 所有as文件内容，统一处理、去重
+          # 合并旧ip.txt历史数据 + 所有AS/as文件
           (cat ip.txt 2>/dev/null; cat "${FILES[@]}" 2>/dev/null) \
-          # 去除行首数字序号+空格
+          # 删除行首数字序号
           | sed -E 's/^[0-9]+\s+//' \
-          # 过滤不含#的无效行
+          # 仅保留带#的有效行
           | awk '/#/' \
-          # 拆分#后字段，过滤空国家码和----无效标记
+          # #前=IP:PORT，#后按-分割取第二段国家码
           | awk -F '#' '{
-              split($2,tag,"-");
-              country=tag[2];
-              if(country != "" && country != "----"){
+              split($2,seg,"-");
+              country=seg[2];
+              if(country != ""){
                 print $1"#"country
               }
             }' \
@@ -56,20 +54,19 @@ jobs:
           # 删除空行
           | sed '/^$/d' > ip.txt.tmp
 
-          # 临时文件覆盖原ip.txt，防止原文件损坏
+          # 临时文件覆盖原文件，防止数据丢失
           mv ip.txt.tmp ip.txt
-          echo "✅ 处理完成，ip.txt当前有效行数：$(wc -l < ip.txt)"
+          echo "✅ 处理完成，ip.txt有效行数：$(wc -l < ip.txt)"
 
-      - name: 提交并推送更新后的ip.txt
+      - name: 提交推送更新ip.txt
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add ip.txt
-          # 无内容变更则跳过提交推送
           if git diff --cached --quiet; then
-            echo "ℹ️ ip.txt内容无任何变更，跳过提交推送"
+            echo "ℹ️ ip.txt内容无变更，跳过提交推送"
           else
-            git commit -m "auto merge old ip.txt + all AS/as files, format & deduplicate"
+            git commit -m "auto merge format IP:PORT#country-code deduplicate"
             git push
-            echo "🚀 已将最新ip.txt推送至main分支"
+            echo "🚀 已推送最新ip.txt至main分支"
           fi
