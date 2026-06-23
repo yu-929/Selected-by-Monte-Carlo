@@ -3,11 +3,11 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'as*.txt'
+      - '[aA][sS]*.txt'
       - 'ip.txt'
   workflow_dispatch:
 
-# 解决403推送权限
+# 写入仓库权限
 permissions:
   contents: write
 
@@ -15,32 +15,50 @@ jobs:
   merge:
     runs-on: ubuntu-latest
     steps:
-      - name: 拉取仓库代码
+      - name: 拉取仓库完整代码
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: 转换格式、合并、去重写入ip.txt
+      - name: 批量合并AS/ as开头文件、格式化、去重
         run: |
-          # 核心逻辑：
-          # 1.读取所有as开头文件
-          # 2.每行去除开头行号数字 1  xxx → xxx
-          # 3.截取#前IP端口，#后取第二段国家码拼接成 IP:端口#JP
-          # 4.全局去重、删除空行输出ip.txt
-          cat as*.txt \
-          | sed -E 's/^[0-9]+\s+//' \
-          | awk -F '#' '{split($2,tag,"-");print $1"#"tag[2]}' \
-          | sort -u \
-          | sed '/^$/d' > ip.txt
-          echo "格式转换+合并去重完成，输出至ip.txt"
+          # 匹配大小写 as/AS As aS 所有txt文件
+          FILES=([aA][sS]*.txt)
+          
+          # 判断是否存在匹配文件，无文件直接退出不报错
+          if [ ! -f "${FILES[0]}" ]; then
+            echo "未找到任何 as/AS 开头txt文件，终止合并"
+            exit 0
+          fi
 
-      - name: 提交更新后的ip.txt
+          # 核心处理流程
+          cat "${FILES[@]}" \
+          # 去除行首数字+空格  123 1.1.1.1#xxx-JP → 1.1.1.1#xxx-JP
+          | sed -E 's/^[0-9]+\s+//' \
+          # 过滤不含#的脏数据行
+          | awk '/#/' \
+          # 按#分割，取第一段IP端口，拆分第二段取国家码拼接 IP#国家码
+          | awk -F '#' '{split($2,tag,"-"); if(tag[2]!="") print $1"#"tag[2]}' \
+          # 全局排序去重
+          | sort -u \
+          # 删除空行
+          | sed '/^$/d' > ip.txt
+
+          echo "=== 处理完成 ==="
+          echo "原始文件列表: ${FILES[*]}"
+          echo "ip.txt 总行数: $(wc -l ip.txt)"
+
+      - name: 提交并推送更新
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add ip.txt
-          # 无变更跳过提交
+          
+          # 无变更直接跳过提交
           if git diff --cached --quiet; then
-            echo "ip.txt无变化，跳过提交推送"
+            echo "ip.txt 内容无变更，跳过提交推送"
           else
-            git commit -m "auto convert format + merge all as*.txt deduplicate to ip.txt"
+            git commit -m "auto merge & format all AS/as*.txt deduplicate to ip.txt"
             git push
+            echo "已推送最新 ip.txt 至 main 分支"
           fi
