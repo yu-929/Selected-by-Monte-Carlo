@@ -20,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 合并数据格式化 IP:PORT#国家码（#后第二段）
+      - name: 合并数据并格式化 IP:PORT#地区码（#后第二段）
         run: |
           shopt -s nullglob nocaseglob
           FILES=(as*.txt)
@@ -29,24 +29,25 @@ jobs:
           echo "匹配到AS/as文件总数：${#FILES[@]}"
           echo "文件列表：${FILES[*]}"
 
-          # 无源文件直接退出，杜绝cat空参数exit code 2报错
+          # 无匹配源文件直接退出，杜绝cat空参数报错exit code 2
           if [[ ${#FILES[@]} -eq 0 ]]; then
             echo "✅ 未找到任何as/AS开头txt文件，任务正常结束"
             exit 0
           fi
 
-          # 合并旧ip.txt历史数据 + 所有AS/as文件
+          # 合并原有ip.txt + 所有AS/as文件数据
           (cat ip.txt 2>/dev/null; cat "${FILES[@]}" 2>/dev/null) \
-          # 删除行首数字序号
+          # 删除行首序号数字+空格
           | sed -E 's/^[0-9]+\s+//' \
-          # 仅保留带#的有效行
+          # 过滤不含#的无效脏行
           | awk '/#/' \
-          # #前=IP:PORT，#后按-分割取第二段国家码
+          # 拆分#前后内容，#后按"-"分割取第二段作为地区码
           | awk -F '#' '{
-              split($2,seg,"-");
-              country=seg[2];
-              if(country != ""){
-                print $1"#"country
+              split($2, parts, "-");
+              area = parts[2];
+              # 过滤地区码为空的畸形行
+              if (area != "") {
+                print $1"#"area
               }
             }' \
           # 全局排序去重
@@ -54,19 +55,20 @@ jobs:
           # 删除空行
           | sed '/^$/d' > ip.txt.tmp
 
-          # 临时文件覆盖原文件，防止数据丢失
+          # 临时文件中转覆盖，防止脚本中断导致ip.txt丢失
           mv ip.txt.tmp ip.txt
-          echo "✅ 处理完成，ip.txt有效行数：$(wc -l < ip.txt)"
+          echo "✅ 处理完成，ip.txt有效总行数：$(wc -l < ip.txt)"
 
-      - name: 提交推送更新ip.txt
+      - name: 提交并推送更新后的ip.txt
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add ip.txt
+          # 无内容变更时跳过提交推送
           if git diff --cached --quiet; then
             echo "ℹ️ ip.txt内容无变更，跳过提交推送"
           else
-            git commit -m "auto merge format IP:PORT#country-code deduplicate"
+            git commit -m "auto merge all AS/as files, format to IP:PORT#area-code & deduplicate"
             git push
             echo "🚀 已推送最新ip.txt至main分支"
           fi
