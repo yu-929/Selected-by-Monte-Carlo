@@ -1,0 +1,15 @@
+166.88.97.239:443#KIX-JP-Evoxt Sdn. Bhd.
+166.88.2.83:443#KIX-JP-Evoxt Sdn. Bhd.
+166.88.99.123:8443#KIX-JP-Evoxt Sdn. Bhd.
+166.88.100.228:443#KIX-JP-Evoxt Sdn. Bhd.
+166.88.98.246:443#KIX-JP-Evoxt Sdn. Bhd.
+166.88.95.157:443#KIX-JP-Evoxt Sdn. Bhd.
+166.88.99.206:443#KIX-JP-Evoxt Sdn. Bhd.
+166.88.225.88:443#FRA-DE-DePowered Limited
+166.88.90.71:443#LAX-US-Evoxt Sdn. Bhd.
+166.88.164.233:443#SJC-US-Baxet Group Inc.
+166.88.96.133:443#LAX-US-Evoxt Sdn. Bhd.
+166.88.225.3:443#FRA-DE-DePowered Limited
+166.88.159.213:443#ORD-US-Baxet Group Inc.
+166.88.159.253:8443#ORD-US-Baxet Group Inc.
+166.88.97.209:443#KIX-JP-Evoxt Sdn. Bhd.
