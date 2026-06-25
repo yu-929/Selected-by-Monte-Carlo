@@ -1,15 +1,10 @@
-154.12.188.114:443#HK-DMIT Cloud Services
-154.12.189.157:2053#HK-DMIT Cloud Services
-154.12.188.210:2083#HK-DMIT Cloud Services
-119.28.162.39:8443#KR-Cloudflare, Inc.
-156.224.79.105:443#HK-AKILE LTD
-103.224.82.129:443#HK-Cloudie Limited
-103.135.250.41:2083#HK-DMIT Cloud Services
 47.93.235.180:443#US-Alibaba US Technology Co., Ltd.
+154.12.188.216:443#HK-DMIT Cloud Services
+103.135.250.41:2053#HK-DMIT Cloud Services
 47.93.236.249:443#US-Alibaba US Technology Co., Ltd.
-8.133.177.183:443#US-Alibaba US Technology Co., Ltd.
-8.133.176.42:443#US-Alibaba US Technology Co., Ltd.
 103.117.100.213:443#HK-DMIT Cloud Services
-103.135.250.21:443#US-Verizon Business
-103.142.103.71:443#HK-Cloudie Limited
-45.153.129.253:443#HK-Cloudie Limited
+43.155.221.27:8443#KR-Cloudflare, Inc.
+119.28.162.39:8443#KR-Cloudflare, Inc.
+103.135.250.41:2083#HK-DMIT Cloud Services
+154.64.249.67:443#HK-NetLab Global
+154.21.203.206:443#HK-NetLab Global
