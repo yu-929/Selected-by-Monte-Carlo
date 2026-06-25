@@ -1,11 +1,20 @@
-47.245.62.4:8443#NRT-JP-Alibaba US Technology Co., Ltd.
-47.245.62.50:443#NRT-JP-Cloudflare, Inc.
-47.245.131.215:2053#FRA-DE-Alibaba US Technology Co., Ltd.
-47.245.139.99:443#FRA-DE-Alibaba US Technology Co., Ltd.
-47.245.135.191:443#FRA-DE-Alibaba US Technology Co., Ltd.
-47.245.179.214:443#FRA-DE-Alibaba US Technology Co., Ltd.
-47.245.131.215:8443#FRA-DE-Alibaba US Technology Co., Ltd.
-47.245.131.215:443#FRA-DE-Alibaba US Technology Co., Ltd.
-47.245.134.84:443#FRA-DE-Alibaba US Technology Co., Ltd.
-47.245.98.104:443#SIN-SG-Alibaba US Technology Co., Ltd.
-47.245.14.127:443#NRT-JP-Alibaba US Technology Co., Ltd.
+154.12.189.17:2083#HK-DMIT Cloud Services
+103.135.251.138:443#HK-DMIT Cloud Services
+154.12.188.114:443#HK-DMIT Cloud Services
+103.135.250.41:2083#HK-DMIT Cloud Services
+103.224.80.116:443#HK-XNNET LLC
+154.12.188.210:2083#HK-DMIT Cloud Services
+154.12.188.216:443#HK-DMIT Cloud Services
+154.12.188.210:2096#HK-DMIT Cloud Services
+119.28.162.39:8443#KR-Cloudflare, Inc.
+154.12.188.210:2053#HK-DMIT Cloud Services
+103.135.250.21:443#US-Verizon Business
+154.12.189.157:2053#HK-DMIT Cloud Services
+103.142.103.71:443#HK-Cloudie Limited
+47.93.235.180:443#US-Alibaba US Technology Co., Ltd.
+47.93.236.249:443#US-Alibaba US Technology Co., Ltd.
+156.224.79.105:443#HK-AKILE LTD
+156.224.76.205:443#HK-AKILE LTD
+45.153.129.253:443#HK-Cloudie Limited
+154.12.191.222:443#JP-DMIT Cloud Services
+103.117.102.145:443#JP-DMIT Cloud Services
