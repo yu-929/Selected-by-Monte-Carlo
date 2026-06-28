@@ -6,31 +6,47 @@ jobs:
   pick-ip-task:
     runs-on: ubuntu-latest
     steps:
-      - name: 拉取仓库代码
+      - name: 检出仓库代码
         uses: actions/checkout@v4
 
-      - name: 配置Python环境
+      - name: 初始化Python3环境
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: 随机抽取1000条IP并保存至best.txt
+      - name: 调试：打印当前目录&文件列表
+        run: ls -la
+
+      - name: 随机抽取IP生成best.txt
         run: |
           python3 << EOF
-          import random
-          # 读取原始ip.txt
+          import random, os
+          print("当前工作目录:", os.getcwd())
+          # 校验源文件是否存在
+          if not os.path.exists("ip.txt"):
+              print("错误：ip.txt 不存在！")
+              exit(1)
           with open("ip.txt", "r", encoding="utf-8") as f:
               ip_list = [line.strip() for line in f if line.strip()]
+          print(f"有效IP总行数: {len(ip_list)}")
+          if len(ip_list) == 0:
+              print("ip.txt内无有效数据")
+              exit(1)
           sample_count = min(1000, len(ip_list))
           selected_ips = random.sample(ip_list, sample_count)
-          # 输出修改为 best.txt
-          with open("best.txt", "w", encoding="utf-8") as out:
+          # 写入目标文件
+          out_path = "best.txt"
+          with open(out_path, "w", encoding="utf-8") as out:
               out.write("\n".join(selected_ips))
-          print(f"已抽取 {sample_count} 条IP，保存至 best.txt")
+          print(f"成功生成文件: {out_path}，写入{sample_count}条IP")
           EOF
 
-      - name: 上传best.txt结果文件
+      - name: 调试：确认文件是否生成
+        run: ls -la best.txt
+
+      - name: 上传best.txt产物
         uses: actions/upload-artifact@v4
         with:
-          name: best-ip-file
+          name: best-ip-result
           path: best.txt
+          retention-days: 7
