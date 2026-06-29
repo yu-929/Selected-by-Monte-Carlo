@@ -1,126 +1,128 @@
-43.164.191.51:443#KR-Tencent Building, Kejizhongyi Avenue
 43.164.191.65:8443#KR-Tencent Building, Kejizhongyi Avenue
-119.28.162.39:8443#KR-Cloudflare, Inc.
 43.133.237.158:8443#KR-Tencent Building, Kejizhongyi Avenue
-103.39.79.229:443#HK-VH Global Limited
-47.239.4.246:2053#HK-Alibaba US Technology Co., Ltd.
-219.76.13.177:443#HK-HKT Limited
-103.118.42.136:443#HK-HKT Limited
-103.39.78.14:8443#HK-Hytron Network Services Limited
-103.39.79.229:2083#HK-VH Global Limited
-47.242.28.106:443#JP-The Constant Company, LLC
-103.39.78.118:8443#HK-Hytron Network Services Limited
-219.76.13.167:443#HK-HKT Limited
-103.39.78.112:8443#HK-Hytron Network Services Limited
-219.76.13.180:443#HK-HKT Limited
-103.118.42.136:8443#TW-ByteVirt LLC
-45.192.242.12:443#JP-Cyberverse LLC
+43.164.191.51:443#KR-Tencent Building, Kejizhongyi Avenue
+219.76.13.169:443#HK-HKT Limited
+119.28.162.39:8443#KR-Cloudflare, Inc.
 151.242.125.94:8443#HK-AKILE LTD
-154.36.187.205:8443#JP-NetLab Global
-154.36.186.248:443#JP-NetLab Global
+103.39.78.112:8443#HK-Hytron Network Services Limited
+219.76.13.167:443#HK-HKT Limited
+47.242.28.106:443#JP-The Constant Company, LLC
+103.39.79.229:2083#HK-VH Global Limited
+103.118.42.136:8443#TW-ByteVirt LLC
+47.239.4.246:2053#HK-Alibaba US Technology Co., Ltd.
+8.210.29.68:443#HK-Alibaba US Technology Co., Ltd.
 151.242.125.213:443#HK-AKILE LTD
+103.39.78.14:8443#HK-Hytron Network Services Limited
+103.39.79.229:443#HK-VH Global Limited
+103.118.42.136:443#HK-HKT Limited
+219.76.13.177:443#HK-HKT Limited
 45.89.235.242:443#JP-xTom Japan Corporation
+103.39.78.118:8443#HK-Hytron Network Services Limited
+154.36.186.185:443#JP-NetLab Global
+45.192.241.12:2053#JP-ACCK LLC
+219.76.13.180:443#HK-HKT Limited
+202.144.195.7:443#JP-IPTELECOM Global
+154.36.186.248:443#JP-NetLab Global
+202.144.195.119:443#JP-IPTELECOM Global
+45.192.242.10:443#JP-Cyberverse LLC
+202.144.195.186:443#JP-IPTELECOM Global
 45.192.241.12:443#JP-ACCK LLC
 202.144.194.76:443#JP-IPTELECOM Global
 202.144.195.86:443#JP-IPTELECOM Global
-219.76.13.183:443#HK-HKT Limited
-202.144.195.186:443#JP-IPTELECOM Global
-202.144.195.119:443#JP-IPTELECOM Global
-45.192.242.10:443#JP-Cyberverse LLC
-47.76.218.163:443#HK-Alibaba US Technology Co., Ltd.
-202.144.195.7:443#JP-IPTELECOM Global
-45.192.241.12:2053#JP-ACCK LLC
+45.89.232.128:443#JP-xTom Japan Corporation
+154.36.187.205:8443#JP-NetLab Global
+45.192.242.12:443#JP-Cyberverse LLC
 38.207.130.242:8443#JP-AKILE LTD
-154.36.186.185:443#JP-NetLab Global
-220.135.92.105:2087#TW-Data Communication Business Group
-45.89.232.242:443#JP-xTom Japan Corporation
-103.201.131.57:443#JP-xTom Japan Corporation
-45.89.232.185:443#JP-xTom Japan Corporation
 103.201.131.248:443#JP-xTom Japan Corporation
 45.89.232.111:8443#JP-xTom Japan Corporation
-45.89.232.128:443#JP-xTom Japan Corporation
-45.89.232.141:443#JP-xTom Japan Corporation
 45.89.232.249:443#JP-xTom Japan Corporation
+45.89.232.242:443#JP-xTom Japan Corporation
 8.219.195.31:443#JP-Alibaba US Technology Co., Ltd.
-211.49.57.178:443#KR-SK Broadband Co Ltd
-103.201.131.96:8443#JP-xTom Japan Corporation
-103.118.41.121:443#HK-CoreNET Inc.
-123.111.169.70:8443#KR-SK Broadband Co Ltd
-123.111.169.70:2083#KR-SK Broadband Co Ltd
-123.111.169.70:2053#KR-SK Broadband Co Ltd
+45.89.232.185:443#JP-xTom Japan Corporation
 129.154.50.159:443#KR-Oracle Corporation
-123.111.169.70:2096#KR-SK Broadband Co Ltd
 160.16.116.222:8443#JP-SAKURA Internet Inc.
-115.163.106.137:443#JP-Sony Network Communications Inc.
-123.111.169.70:2087#KR-SK Broadband Co Ltd
-211.49.57.161:443#KR-SK Broadband Co Ltd
+211.49.57.178:443#KR-SK Broadband Co Ltd
+123.111.169.70:2053#KR-SK Broadband Co Ltd
+103.201.131.57:443#JP-xTom Japan Corporation
+45.89.232.141:443#JP-xTom Japan Corporation
 47.239.4.246:8443#HK-Alibaba US Technology Co., Ltd.
-43.133.110.81:443#TH-Tencent Building, Kejizhongyi Avenue
-157.254.192.36:443#TH-Bangmod Enterprise Co., Ltd.
-118.218.10.159:443#KR-SK Broadband Co Ltd
-47.239.4.246:443#HK-Alibaba US Technology Co., Ltd.
 45.150.128.216:443#TH-Siamdata Communication Co.,Ltd.
+157.254.192.36:443#TH-Bangmod Enterprise Co., Ltd.
 157.254.192.20:443#TH-Bangmod Enterprise Co., Ltd.
-151.242.189.118:8443#TW-ByteVirt LLC
-157.85.96.43:443#TH-Siamdata Communication Co.,Ltd.
-132.145.91.181:8443#KR-Oracle Corporation
-143.42.66.91:443#SG-MobileOne Ltd. MobileInternet Service Provider Singapore
-45.150.128.159:443#TH-Siamdata Communication Co.,Ltd.
-157.85.96.247:443#TH-Siamdata Communication Co.,Ltd.
-211.49.57.179:443#KR-SK Broadband Co Ltd
-157.85.96.9:443#TH-Siamdata Communication Co.,Ltd.
-103.106.228.4:443#JP-BrainStorm Network, Inc
-45.89.232.34:443#JP-xTom Japan Corporation
+202.144.195.123:443#JP-IPTELECOM Global
+219.76.13.183:443#HK-HKT Limited
+103.118.41.121:443#HK-CoreNET Inc.
+47.239.4.246:443#HK-Alibaba US Technology Co., Ltd.
 123.111.169.70:443#KR-SK Broadband Co Ltd
+43.133.110.81:443#TH-Tencent Building, Kejizhongyi Avenue
+123.111.169.70:2096#KR-SK Broadband Co Ltd
 157.85.96.149:443#TH-Siamdata Communication Co.,Ltd.
-151.242.189.35:443#TW-ByteVirt LLC
-103.106.231.253:443#AU-BrainStorm Network, Inc
-156.246.90.115:443#JP-AKILE LTD
+47.76.218.163:443#HK-Alibaba US Technology Co., Ltd.
+157.85.96.9:443#TH-Siamdata Communication Co.,Ltd.
 45.150.131.246:443#TH-National Telecom Public Company Limited
-103.106.228.126:2053#JP-BrainStorm Network, Inc
-85.155.176.11:8443#KR-HostHatch, LLC
-85.155.176.130:8443#KR-HostHatch, LLC
-141.11.138.175:8443#JP-ByteVirt LLC
-156.246.88.237:443#JP-AKILE LTD
-151.242.189.137:443#TW-ByteVirt LLC
-152.42.231.213:443#SG-DigitalOcean, LLC
-141.11.138.218:443#JP-ByteVirt LLC
-152.42.247.235:443#SG-DigitalOcean, LLC
-152.42.228.178:443#SG-DigitalOcean, LLC
-140.245.53.25:443#SG-Oracle Corporation
-152.42.175.157:443#SG-DigitalOcean, LLC
-206.189.147.193:443#SG-DigitalOcean, LLC
-152.42.246.148:443#SG-DigitalOcean, LLC
-206.189.146.48:443#SG-DigitalOcean, LLC
-152.42.246.230:443#SG-DigitalOcean, LLC
+103.201.131.96:8443#JP-xTom Japan Corporation
+103.106.228.4:443#JP-BrainStorm Network, Inc
+211.49.57.161:443#KR-SK Broadband Co Ltd
+123.111.169.70:8443#KR-SK Broadband Co Ltd
 132.145.89.240:443#KR-Oracle Corporation
-45.136.254.175:443#TH-Siamdata Communication Co.,Ltd.
+157.85.96.43:443#TH-Siamdata Communication Co.,Ltd.
+123.111.169.70:2087#KR-SK Broadband Co Ltd
+151.242.189.33:443#TW-ByteVirt LLC
+123.111.169.70:2083#KR-SK Broadband Co Ltd
+211.49.57.179:443#KR-SK Broadband Co Ltd
+118.218.10.159:443#KR-SK Broadband Co Ltd
+132.145.91.181:8443#KR-Oracle Corporation
+115.163.106.137:443#JP-Sony Network Communications Inc.
+45.150.128.159:443#TH-Siamdata Communication Co.,Ltd.
+151.242.189.35:443#TW-ByteVirt LLC
+157.85.96.247:443#TH-Siamdata Communication Co.,Ltd.
+156.246.90.194:443#JP-AKILE LTD
+45.89.232.34:443#JP-xTom Japan Corporation
+143.42.66.91:443#SG-MobileOne Ltd. MobileInternet Service Provider Singapore
+151.242.189.118:8443#TW-ByteVirt LLC
+103.106.228.126:2053#JP-BrainStorm Network, Inc
+152.42.174.66:443#SG-DigitalOcean, LLC
+150.230.107.25:8443#JP-Oracle Corporation
+141.11.138.236:443#JP-ByteVirt LLC
+151.242.189.130:443#TW-ByteVirt LLC
+152.42.231.213:443#SG-DigitalOcean, LLC
+156.246.88.237:443#JP-AKILE LTD
+152.42.228.112:443#SG-DigitalOcean, LLC
+152.42.173.234:443#SG-DigitalOcean, LLC
+85.155.176.11:8443#KR-HostHatch, LLC
 85.155.176.154:8443#KR-HostHatch, LLC
 152.42.246.237:443#SG-DigitalOcean, LLC
-159.223.79.119:443#SG-DigitalOcean, LLC
-140.245.53.52:443#SG-Oracle Corporation
-156.246.90.194:443#JP-AKILE LTD
-43.229.148.43:443#TH-Siamdata Communication Co.,Ltd.
-141.11.138.236:443#JP-ByteVirt LLC
-151.242.189.33:443#TW-ByteVirt LLC
+45.154.24.232:443#TH-Siamdata Communication Co.,Ltd.
+151.242.189.137:443#TW-ByteVirt LLC
+159.223.78.76:443#SG-DigitalOcean, LLC
 85.155.176.13:8443#KR-HostHatch, LLC
+140.245.53.52:443#SG-Oracle Corporation
+206.189.147.60:443#SG-DigitalOcean, LLC
+152.42.228.178:443#SG-DigitalOcean, LLC
+152.42.175.157:443#SG-DigitalOcean, LLC
+152.42.246.148:443#SG-DigitalOcean, LLC
+140.245.54.99:2053#SG-Cloudflare, Inc.
+159.223.79.119:443#SG-DigitalOcean, LLC
+85.155.176.130:8443#KR-HostHatch, LLC
+152.42.247.231:443#SG-DigitalOcean, LLC
+206.189.146.48:443#SG-DigitalOcean, LLC
+45.154.24.163:443#TH-Siamdata Communication Co.,Ltd.
+43.229.148.43:443#TH-Siamdata Communication Co.,Ltd.
+140.83.48.48:443#JP-Oracle Corporation
+141.11.138.175:8443#JP-ByteVirt LLC
+43.229.148.110:443#TH-Siamdata Communication Co.,Ltd.
+103.106.231.253:443#AU-BrainStorm Network, Inc
+152.42.246.230:443#SG-DigitalOcean, LLC
+152.42.247.235:443#SG-DigitalOcean, LLC
+45.154.24.170:443#TH-Siamdata Communication Co.,Ltd.
+45.154.24.235:443#TH-Siamdata Communication Co.,Ltd.
+140.245.53.25:443#SG-Oracle Corporation
+141.11.138.218:443#JP-ByteVirt LLC
 141.11.139.221:443#JP-ByteVirt LLC
 43.229.150.17:443#TH-Siamdata Communication Co.,Ltd.
-219.76.13.169:443#HK-HKT Limited
-150.230.107.25:8443#JP-Oracle Corporation
-206.189.147.60:443#SG-DigitalOcean, LLC
-152.42.173.234:443#SG-DigitalOcean, LLC
-152.42.247.231:443#SG-DigitalOcean, LLC
 152.42.174.94:443#SG-DigitalOcean, LLC
-159.223.78.76:443#SG-DigitalOcean, LLC
-140.245.54.99:2053#SG-Cloudflare, Inc.
-152.42.228.112:443#SG-DigitalOcean, LLC
-138.2.5.136:443#JP-Cloudflare, Inc.
+45.136.254.175:443#TH-Siamdata Communication Co.,Ltd.
 45.154.24.89:443#TH-Siamdata Communication Co.,Ltd.
-45.154.24.235:443#TH-Siamdata Communication Co.,Ltd.
-140.83.48.48:443#JP-Oracle Corporation
-45.154.24.163:443#TH-Siamdata Communication Co.,Ltd.
-43.229.148.110:443#TH-Siamdata Communication Co.,Ltd.
-151.242.189.130:443#TW-ByteVirt LLC
-45.154.24.232:443#TH-Siamdata Communication Co.,Ltd.
-152.42.174.66:443#SG-DigitalOcean, LLC
+206.189.147.193:443#SG-DigitalOcean, LLC
+138.2.5.136:443#JP-Cloudflare, Inc.
+156.246.90.115:443#JP-AKILE LTD
