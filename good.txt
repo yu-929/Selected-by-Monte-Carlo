@@ -1,15 +1,50 @@
-151.242.189.137:443#TW-ByteVirt LLC
-47.239.4.246:2053#HK-Alibaba US Technology Co., Ltd.
+149.104.6.130:443#HK-VH Global Limited
+149.104.5.234:443#HK-VH Global Limited
+149.104.5.247:443#HK-VH Global Limited
+23.141.52.166:8443#HK-DMIT Cloud Services
+149.104.6.215:2083#HK-VH Global Limited
+149.104.6.99:443#HK-VH Global Limited
+119.28.162.39:8443#KR-Cloudflare, Inc.
+149.104.6.15:443#HK-VH Global Limited
+23.141.52.125:8443#HK-LANDUPS LIMITED
+23.141.52.169:443#HK-Liberally Network LLC
 47.239.4.246:443#HK-Alibaba US Technology Co., Ltd.
-151.242.189.130:443#TW-ByteVirt LLC
-202.144.194.76:443#JP-IPTELECOM Global
-45.89.232.141:443#JP-xTom Japan Corporation
-157.85.96.149:443#TH-Siamdata Communication Co.,Ltd.
-103.118.42.136:443#HK-HKT Limited
-45.89.232.111:8443#JP-xTom Japan Corporation
-45.192.242.12:443#JP-Cyberverse LLC
-151.242.189.35:443#TW-ByteVirt LLC
-103.106.228.126:2053#JP-BrainStorm Network, Inc
-45.150.128.159:443#TH-Siamdata Communication Co.,Ltd.
-103.39.79.229:2083#HK-VH Global Limited
-140.245.53.52:443#SG-Oracle Corporation
+23.141.52.105:8443#HK-Liberally Network LLC
+103.115.108.133:443#TW-GLOBAL COMMUNICATION NETWORK LIMITED
+47.76.218.163:443#HK-Alibaba US Technology Co., Ltd.
+103.137.22.71:8443#TW-Sky Digital Co., Ltd.
+220.135.92.105:2087#TW-Data Communication Business Group
+103.115.108.123:443#TW-GLOBAL COMMUNICATION NETWORK LIMITED
+54.180.151.15:443#KR-Amazon.com, Inc.
+103.137.63.227:8443#TW-Pittqiao Network Information Co.,Ltd.
+18.143.76.130:443#SG-Amazon.com, Inc.
+118.218.10.159:443#KR-SK Broadband Co Ltd
+129.154.50.159:443#KR-Oracle Corporation
+47.239.4.246:8443#HK-Alibaba US Technology Co., Ltd.
+123.111.169.70:2087#KR-SK Broadband Co Ltd
+211.49.57.178:443#KR-SK Broadband Co Ltd
+64.186.224.242:443#US-DMIT Cloud Services
+64.186.226.144:2053#US-DMIT Cloud Services
+194.87.10.77:443#SG-Baxet Group Inc.
+64.186.232.79:2087#US-DMIT Cloud Services
+64.186.232.219:443#US-DMIT Cloud Services
+64.186.239.246:443#US-DMIT Cloud Services
+64.186.231.232:443#US-DMIT Cloud Services
+64.186.227.27:443#US-DMIT Cloud Services
+64.186.225.106:8443#US-DMIT Cloud Services
+64.186.230.88:443#US-DMIT Cloud Services
+64.186.230.249:443#US-DMIT Cloud Services
+64.186.228.24:8443#US-DMIT Cloud Services
+64.186.239.138:443#US-DMIT Cloud Services
+64.186.229.166:443#US-DMIT Cloud Services
+154.17.13.182:443#US-DMIT Cloud Services
+64.186.227.223:443#US-DMIT Cloud Services
+67.230.167.156:8443#US-IT7 Networks Inc
+64.186.229.181:443#US-DMIT Cloud Services
+64.186.228.51:443#US-DMIT Cloud Services
+64.186.227.87:443#US-DMIT Cloud Services
+64.186.237.246:443#US-DMIT Cloud Services
+67.230.167.156:443#US-IT7 Networks Inc
+64.186.236.237:8443#US-DMIT Cloud Services
+64.186.228.106:443#US-DMIT Cloud Services
+64.186.236.81:443#US-DMIT Cloud Services
