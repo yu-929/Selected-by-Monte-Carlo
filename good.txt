@@ -1,15 +1,15 @@
-52.78.42.159:443#KR-Amazon.com, Inc.
-104.21.91.133:443#CN-Henan Mobile Communications Co.,Ltd
-87.83.110.203:443#HK-Sakura Link Limited
-124.244.50.35:443#HK-Hong Kong Broadband Network Ltd.
-43.155.109.139:443#HK-Tencent Building, Kejizhongyi Avenue
-151.242.125.213:443#HK-AKILE LTD
-64.90.5.14:443#HK-NetLab Global
-43.155.187.201:443#KR-Tencent Building, Kejizhongyi Avenue
-102.134.55.222:443#HK-XNNET LLC
-64.90.14.47:443#HK-NetLab Global
-104.18.90.198:443#CN-Henan Mobile Communications Co.,Ltd
-64.90.5.168:443#HK-NetLab Global
-104.17.24.119:443#CN-Henan Mobile Communications Co.,Ltd
-104.17.24.112:443#CN-Henan Mobile Communications Co.,Ltd
-43.164.191.51:443#KR-Tencent Building, Kejizhongyi Avenue
+38.207.133.48:443#HK
+64.90.5.168:443#HK
+43.154.4.49:443#HK
+102.134.55.222:443#HK
+43.155.187.201:443#KR
+102.134.53.209:443#HK
+52.78.42.159:443#KR
+104.17.30.2:443#CN
+104.18.90.198:443#CN
+23.141.52.30:443#HK
+123.202.201.128:443#HK
+103.118.41.121:443#HK
+64.90.14.47:443#HK
+104.17.24.119:443#CN
+104.17.24.112:443#CN
