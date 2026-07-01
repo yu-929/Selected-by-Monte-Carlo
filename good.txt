@@ -21,3 +21,6 @@
 142.91.108.144:443#JP-Leaseweb Japan K.K.
 142.91.109.150:443#JP-Leaseweb Japan K.K.
 172.238.20.40:443#JP-Akamai Connected Cloud
+172.93.187.184:443#US-WebNX, Inc.
+45.147.51.142:443#DE-Owl Limited
+188.95.70.53:443#DE-xTom GmbH
