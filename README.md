@@ -5,4 +5,4 @@ This warehouse brings together the "seed-level" IP carefully selected by us thro
 
 ## 订阅链接
 
-高速优选：`https://raw.githubusercontent.com/yu-929/Preferred-IP/refs/heads/main/best_ips.txt`
+高速优选：`https://raw.githubusercontent.com/yu-929/Selected-by-Monte-Carlo/refs/heads/main/good.txt`
