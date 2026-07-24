@@ -1,2 +1,2 @@
-138.128.195.193:443#US-IT7 Networks Inc 394.04 Mbps
-109.172.93.236:443#NL-SkyCore Technologies L.L.C-FZ 179.99 Mbps
+138.128.195.193:443#US-IT7 Networks 394.04 Mbps
+109.172.93.236:443#NL-SkyCore Technologies 179.99 Mbps
