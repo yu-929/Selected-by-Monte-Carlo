@@ -57,15 +57,7 @@ jobs:
             resp=$(curl -s --max-time 15 "https://api.090227.xyz/check?proxyip=${ip}:443")
             ok=$(echo "$resp" | python3 -c "import sys,json; print(json.load(sys.stdin).get('success',False))" 2>/dev/null)
             if [ "$ok" = "True" ]; then
-              exit_data=$(echo "$resp" | python3 -c "
-import sys, json
-d = json.load(sys.stdin)['exit']
-country = d.get('country','')
-city = d.get('city','')
-asn = d.get('asn','')
-org = d.get('asOrganization','')
-print(f'{d[\"country\"]} {d.get(\"city\",\"\")} AS{asn} {org}')
-" 2>/dev/null)
+              exit_data=$(echo "$resp" | python3 -c "import sys,json;d=json.load(sys.stdin)['exit'];print(f'{d[\"country\"]} {d.get(\"city\",\"\")} AS{d.get(\"asn\",\"\")} {d.get(\"asOrganization\",\"\")}')" 2>/dev/null)
               echo "${ip}:443#${exit_data}" >> "$out"
             fi
           done < "$src"
