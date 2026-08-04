@@ -15,7 +15,7 @@ CUSTOM_CF_DOMAIN = os.getenv("CUSTOM_CF_DOMAIN", "327954.ccwu.cc")
 
 # 阶段 1：TLS 粗筛 (www.cloudflare.com)
 CF_SNI_1 = "www.cloudflare.com"
-STAGE1_CONCURRENCY = 500   # 500 线程/并发
+STAGE1_CONCURRENCY = 1000   # 1000 线程/并发
 STAGE1_TIMEOUT = 1.0       # 1秒握手超时
 
 # 阶段 2：HTTP 并发限制
