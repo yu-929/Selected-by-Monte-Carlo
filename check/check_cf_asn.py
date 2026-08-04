@@ -12,7 +12,7 @@ from concurrent.futures import ThreadPoolExecutor
 DEFAULT_ASNS = os.getenv("ASN_LIST", "AS13335")
 CUSTOM_CF_DOMAIN = os.getenv("CUSTOM_CF_DOMAIN", "example.com")
 
-TARGET_PORTS = [443, 8443, 2053, 2083, 2096]
+TARGET_PORTS = [443]
 
 CF_SNI_1 = "www.cloudflare.com"
 STAGE1_CONCURRENCY = 2000
