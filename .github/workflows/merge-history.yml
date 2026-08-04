@@ -6,6 +6,7 @@ on:
       - 'ip.txt'
       - 'ip-2.txt'
       - 'ip-3.txt'
+      - 'ip-4.txt'
   workflow_dispatch:
 
 permissions:
@@ -19,7 +20,7 @@ jobs:
 
       - name: Merge and deduplicate all IP sources
         run: |
-          sort -u -t: -k1,2 ip.txt ip-2.txt ip-3.txt history.txt 2>/dev/null | grep -v '^$' > history_merged.txt
+          sort -u -t: -k1,2 ip.txt ip-2.txt ip-3.txt ip-4.txt history.txt 2>/dev/null | grep -v '^$' > history_merged.txt
           mv history_merged.txt history.txt
 
       - name: Commit and push if changed

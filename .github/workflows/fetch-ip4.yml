@@ -1,0 +1,32 @@
+name: Fetch ip-4 sources
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch from both sources
+        run: |
+          curl -sL --max-time 30 "https://zip.cm.edu.kg/all.txt" > zip.txt
+          curl -sL --max-time 30 "https://countrymerge.pages.dev/all.txt" > cm.txt
+          sort -u -t: -k1,2 zip.txt cm.txt 2>/dev/null | grep -v '^$' > ip-4.txt
+          rm -f zip.txt cm.txt
+
+      - name: Commit and push if changed
+        run: |
+          if [ -f ip-4.txt ] && [ -s ip-4.txt ]; then
+            git config user.name "github-actions"
+            git config user.email "github-actions@github.com"
+            git add ip-4.txt
+            git diff --cached --quiet || git commit -m "chore: 同步 ip-4 源数据 (6h)"
+            git push
+          fi
