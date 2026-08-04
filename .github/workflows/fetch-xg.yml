@@ -1,0 +1,32 @@
+name: Fetch xg source
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch and convert result.csv
+        run: |
+          curl -sL --max-time 30 "https://raw.githubusercontent.com/xgonce/Cloudflare_IP/main/result.csv" \
+            | tail -n +2 \
+            | awk -F',' '{print $1":"$3"#"$5}' \
+            > xg.txt
+
+      - name: Commit and push if changed
+        run: |
+          if [ -f xg.txt ] && [ -s xg.txt ]; then
+            git config user.name "github-actions"
+            git config user.email "github-actions@github.com"
+            git add xg.txt
+            git diff --cached --quiet || git commit -m "chore: 同步 xg 源数据 (6h)"
+            git push
+          fi
