@@ -29,29 +29,16 @@ except Exception as e:
 
 custom_executor = ThreadPoolExecutor(max_workers=STAGE1_CONCURRENCY)
 
-MAX_IPS = 10000
-
 def expand_cidrs(cidr_list):
     ip_list = []
     for cidr in cidr_list:
-        if len(ip_list) >= MAX_IPS:
-            print(f"[!] 达到最大 IP 数限制 ({MAX_IPS})，截断", flush=True)
-            break
         cidr = cidr.strip()
         if not cidr:
             continue
         try:
             net = ipaddress.ip_network(cidr, strict=False)
-            if net.prefixlen >= 31:
-                for ip in net:
-                    ip_list.append(str(ip))
-                    if len(ip_list) >= MAX_IPS:
-                        break
-            else:
-                for ip in net.hosts():
-                    ip_list.append(str(ip))
-                    if len(ip_list) >= MAX_IPS:
-                        break
+            for ip in net.hosts():
+                ip_list.append(str(ip))
         except Exception:
             print(f"[!] 无效 CIDR: {cidr}", flush=True)
     return ip_list
