@@ -13,11 +13,16 @@ def get_exit(data):
             return v['exit']
     return {}
 
-def check_one(ip):
-    ip = ip.strip()
-    if not ip:
+def check_one(line):
+    line = line.strip()
+    if not line:
         return None
-    url = 'https://api.090227.xyz/check?proxyip=' + ip + ':443'
+    if ':' in line:
+        ip, port = line.split(':', 1)
+        port = port.split('#')[0]
+    else:
+        ip, port = line, '443'
+    url = f'https://api.090227.xyz/check?proxyip={ip}:{port}'
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'curl/8.0'})
         with urllib.request.urlopen(req, timeout=15) as r:
@@ -25,21 +30,21 @@ def check_one(ip):
         if data.get('success'):
             e = get_exit(data)
             parts = [str(e.get('country', '')), str(e.get('city', '')), 'AS' + str(e.get('asn', '')), str(e.get('asOrganization', ''))]
-            return ip + ':443#' + ' '.join(parts)
+            return f'{ip}:{port}#{" ".join(parts)}'
         else:
-            return ip + ':443#timeout'
+            return f'{ip}:{port}#timeout'
     except Exception:
-        return ip + ':443#timeout'
+        return f'{ip}:{port}#timeout'
 
 with open(src) as f:
-    ips = [line.strip() for line in f if line.strip()]
+    lines = [line.strip() for line in f if line.strip()]
 
-total = len(ips)
+total = len(lines)
 done = 0
 results = []
 
 with ThreadPoolExecutor(max_workers=CONCURRENCY) as ex:
-    fut_map = {ex.submit(check_one, ip): ip for ip in ips}
+    fut_map = {ex.submit(check_one, line): line for line in lines}
     for fut in as_completed(fut_map):
         r = fut.result()
         if r:
