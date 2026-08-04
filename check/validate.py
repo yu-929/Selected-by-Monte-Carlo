@@ -1,7 +1,9 @@
 import sys, json, urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 src = sys.argv[1]
 dst = sys.argv[2]
+CONCURRENCY = 20
 
 def get_exit(data):
     pr = data.get('probe_results', {})
@@ -11,24 +13,41 @@ def get_exit(data):
             return v['exit']
     return {}
 
+def check_one(ip):
+    ip = ip.strip()
+    if not ip:
+        return None
+    url = 'https://api.090227.xyz/check?proxyip=' + ip + ':443'
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'curl/8.0'})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            data = json.loads(r.read().decode())
+        if data.get('success'):
+            e = get_exit(data)
+            parts = [str(e.get('country', '')), str(e.get('city', '')), 'AS' + str(e.get('asn', '')), str(e.get('asOrganization', ''))]
+            return ip + ':443#' + ' '.join(parts)
+        else:
+            return ip + ':443#timeout'
+    except Exception:
+        return ip + ':443#timeout'
+
 with open(src) as f:
-    for line in f:
-        ip = line.strip()
-        if not ip:
-            continue
-        url = 'https://api.090227.xyz/check?proxyip=' + ip + ':443'
-        try:
-            req = urllib.request.Request(url, headers={'User-Agent': 'curl/8.0'})
-            with urllib.request.urlopen(req, timeout=15) as r:
-                data = json.loads(r.read().decode())
-            if data.get('success'):
-                e = get_exit(data)
-                parts = [str(e.get('country', '')), str(e.get('city', '')), 'AS' + str(e.get('asn', '')), str(e.get('asOrganization', ''))]
-                result = ip + ':443#' + ' '.join(parts)
-            else:
-                result = ip + ':443#timeout'
-        except Exception:
-            result = ip + ':443#timeout'
-        print(result)
-        with open(dst, 'a') as out:
-            out.write(result + '\n')
+    ips = [line.strip() for line in f if line.strip()]
+
+total = len(ips)
+done = 0
+results = []
+
+with ThreadPoolExecutor(max_workers=CONCURRENCY) as ex:
+    fut_map = {ex.submit(check_one, ip): ip for ip in ips}
+    for fut in as_completed(fut_map):
+        r = fut.result()
+        if r:
+            results.append(r)
+        done += 1
+        print(f'[{done}/{total}] {r}', flush=True)
+
+results.sort()
+with open(dst, 'w') as out:
+    for r in results:
+        out.write(r + '\n')
