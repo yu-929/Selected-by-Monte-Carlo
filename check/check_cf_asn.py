@@ -18,6 +18,9 @@ CF_SNI_1 = "www.cloudflare.com"
 STAGE1_CONCURRENCY = 500   # 500 线程/并发
 STAGE1_TIMEOUT = 1.0       # 1秒握手超时
 
+# 阶段 2：HTTP 并发限制
+STAGE2_CONCURRENCY = 20    # 同时最多 20 个 curl 请求
+
 # 阶段 2：HTTP 验证 Host (crypto.cloudflare.com)
 CF_HOST_TEST = "crypto.cloudflare.com"
 
@@ -150,10 +153,13 @@ def check_http_via_curl(ip, host, timeout_val):
         return False
 
 
+stage2_sem = asyncio.Semaphore(STAGE2_CONCURRENCY)
+
 async def stage2_task(ip):
-    loop = asyncio.get_running_loop()
-    ok = await loop.run_in_executor(custom_executor, check_http_via_curl, ip, CF_HOST_TEST, 2.0)
-    return ip if ok else None
+    async with stage2_sem:
+        loop = asyncio.get_running_loop()
+        ok = await loop.run_in_executor(custom_executor, check_http_via_curl, ip, CF_HOST_TEST, 2.0)
+        return ip if ok else None
 
 
 async def stage3_task(ip, custom_domain):
