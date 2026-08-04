@@ -1,10 +1,10 @@
-name: Scan ASN for CF proxy IPs
+name: Scan ASN / CIDR for CF proxy IPs
 
 on:
   workflow_dispatch:
     inputs:
-      asn_input:
-        description: 'ASN 号 (如 AS206300, AS906, 或 13335)'
+      scan_input:
+        description: 'ASN 号 (如 AS206300) 或 CIDR 网段 (如 154.17.0.0/24,103.0.0.0/24) 或 CIDR 文件路径 (如 check/targets.txt)'
         required: true
         default: 'AS206300'
 
@@ -31,28 +31,29 @@ jobs:
       - name: Install dependencies
         run: pip install -r check/requirements.txt
 
-      - name: Run ASN scan
+      - name: Run scan
         env:
           CUSTOM_CF_DOMAIN: ${{ secrets.CUSTOM_CF_DOMAIN }}
-        run: python check/check_cf_asn.py "${{ github.event.inputs.asn_input }}"
-
-      - name: Move result to check/
         run: |
-          asn=$(echo "${{ github.event.inputs.asn_input }}" | sed 's/^AS//i' | tr 'a-z' 'A-Z')
-          echo "ASN=${asn}" >> $GITHUB_ENV
-          src="AS${asn}.txt"
-          [ -f "$src" ] && mv "$src" "check/$src" || true
+          python check/check_cf_asn.py "${{ github.event.inputs.scan_input }}" 2>&1 | tee /tmp/scan.log
+          output_file=$(tail -1 /tmp/scan.log | grep -oP '保存至：\K(.+\.txt)' || echo "")
+          echo "SCAN_OUTPUT=$output_file" >> $GITHUB_ENV
 
       - name: Validate IPs via API
         run: |
-          rm -f check/AS${ASN}_valid.txt
-          python3 check/validate.py check/AS${ASN}.txt check/AS${ASN}_valid.txt
-          echo "Valid: $(wc -l < check/AS${ASN}_valid.txt 2>/dev/null || echo 0)"
+          src="check/${SCAN_OUTPUT}"
+          [ ! -f "$src" ] && src="${SCAN_OUTPUT}"
+          [ ! -f "$src" ] && echo "No output file found" && exit 0
+          base=$(basename "$src" .txt)
+          out="check/${base}_valid.txt"
+          rm -f "$out"
+          python3 check/validate.py "$src" "$out"
+          echo "Valid: $(wc -l < "$out" 2>/dev/null || echo 0)"
 
       - name: Commit results
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add check/
-          git diff --cached --quiet || git commit -m "chore: 扫描 AS${ASN} 结果"
+          git diff --cached --quiet || git commit -m "chore: 扫描结果"
           git push

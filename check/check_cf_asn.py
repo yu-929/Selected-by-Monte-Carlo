@@ -32,6 +32,26 @@ except Exception as e:
 custom_executor = ThreadPoolExecutor(max_workers=STAGE1_CONCURRENCY)
 # =========================================================
 
+def expand_cidrs(cidr_list):
+    """将 CIDR 列表展开为 IPv4 地址列表"""
+    ip_list = []
+    for cidr in cidr_list:
+        cidr = cidr.strip()
+        if not cidr:
+            continue
+        try:
+            net = ipaddress.ip_network(cidr, strict=False)
+            if net.prefixlen >= 31:
+                for ip in net:
+                    ip_list.append(str(ip))
+            else:
+                for ip in net.hosts():
+                    ip_list.append(str(ip))
+        except Exception:
+            print(f"[!] 无效 CIDR: {cidr}", flush=True)
+    return ip_list
+
+
 def get_ips_from_asn(asn_input):
     """获取 ASN 对应的 IPv4 列表"""
     asn_clean = asn_input.strip().upper().replace("AS", "")
@@ -69,21 +89,25 @@ def get_ips_from_asn(asn_input):
         except Exception as e:
             print(f"[!] BGPView API 获取失败: {e}", flush=True)
 
-    ip_list = []
-    for cidr in cidrs:
-        try:
-            net = ipaddress.ip_network(cidr, strict=False)
-            if net.prefixlen >= 31:
-                for ip in net:
-                    ip_list.append(str(ip))
-            else:
-                for ip in net.hosts():
-                    ip_list.append(str(ip))
-        except Exception:
-            continue
-
+    ip_list = expand_cidrs(cidrs)
     print(f"[+] AS{asn_clean} 共解析出 {len(ip_list)} 个待测 IPv4 地址。", flush=True)
     return ip_list
+
+
+def get_ips_from_cidr_str(cidr_str):
+    """解析逗号/空格/换行分隔的 CIDR 字符串"""
+    import re
+    parts = re.split(r'[,\s\n]+', cidr_str.strip())
+    parts = [p for p in parts if p and '/' in p]
+    if not parts:
+        print(f"[-] 未找到有效的 CIDR 网段", flush=True)
+        return [], ''
+    label = '_'.join([p.split('/')[0] for p in parts[:3]])
+    if len(parts) > 3:
+        label += f'_etc'
+    ip_list = expand_cidrs(parts)
+    print(f"[+] 共解析出 {len(ip_list)} 个待测 IPv4 地址 (来自 {len(parts)} 个 CIDR)", flush=True)
+    return ip_list, label
 
 
 def check_tls_sni(ip, sni, timeout_val):
@@ -186,17 +210,43 @@ async def run_stage1_worker_queue(ip_list):
 
 
 async def main():
-    asn_raw = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_ASNS
-    asn_clean = asn_raw.strip().upper()
-    if not asn_clean.startswith("AS"):
-        asn_clean = f"AS{asn_clean}"
+    raw = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_ASNS
+    raw = raw.strip()
 
-    all_ips = get_ips_from_asn(asn_clean)
+    # 检测输入类型：CIDR 网段 / 文件路径 / ASN 号
+    if '/' in raw:
+        # 直接传入 CIDR 网段
+        all_ips, label = get_ips_from_cidr_str(raw)
+        output_label = label
+        print(f"[*] 输入类型: CIDR 网段", flush=True)
+    elif raw.endswith('.txt'):
+        # 从文件读取 CIDR 网段列表
+        try:
+            with open(raw) as f:
+                cidr_content = f.read()
+            all_ips, label = get_ips_from_cidr_str(cidr_content)
+            output_label = label
+            print(f"[*] 输入类型: CIDR 文件 ({raw})", flush=True)
+        except Exception as e:
+            print(f"[-] 读取文件失败: {e}", flush=True)
+            return
+    else:
+        # ASN 号
+        asn_clean = raw.upper()
+        if not asn_clean.startswith("AS"):
+            asn_clean = f"AS{asn_clean}"
+        output_label = asn_clean
+        all_ips = get_ips_from_asn(asn_clean)
+        print(f"[*] 输入类型: ASN ({asn_clean})", flush=True)
+
     all_ips = list(dict.fromkeys(all_ips))
 
     if not all_ips:
         print("[-] 未能获取到任何待测 IP，程序退出。", flush=True)
         return
+
+    if len(all_ips) > 50000:
+        print(f"[!] 待测 IP 超过 50000 个 ({len(all_ips)})，继续可能超时。建议使用更小的网段。", flush=True)
 
     # ==================== 1. 极限 TLS 粗筛 ====================
     pass_1 = await run_stage1_worker_queue(all_ips)
@@ -229,15 +279,14 @@ async def main():
     else:
         print("[3/3] 未检测到 CUSTOM_CF_DOMAIN，自动跳过第三阶段。", flush=True)
 
-    # 修改点 2：将最终结果按真实 IP 地址数值从小到大进行正序排列
     final_ips = sorted(final_ips, key=lambda ip: ipaddress.ip_address(ip))
 
     # ==================== 导出结果 ====================
     print("\n==================== 扫描结束 ====================", flush=True)
-    print(f"目标 ASN: {asn_clean}", flush=True)
+    print(f"目标: {output_label}", flush=True)
     print(f"最终有效 IP 总数: {len(final_ips)}", flush=True)
 
-    output_filename = f"{asn_clean}.txt"
+    output_filename = f"{output_label}.txt"
     with open(output_filename, "w", encoding="utf-8") as f:
         for ip in final_ips:
             f.write(f"{ip}\n")
