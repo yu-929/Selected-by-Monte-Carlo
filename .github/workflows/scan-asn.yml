@@ -1,0 +1,40 @@
+name: Scan ASN for CF proxy IPs
+
+on:
+  workflow_dispatch:
+    inputs:
+      asn_input:
+        description: 'ASN 号 (如 AS13335, AS209242, 或 13335)'
+        required: true
+        default: 'AS13335'
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r check/requirements.txt
+
+      - name: Run ASN scan
+        env:
+          CUSTOM_CF_DOMAIN: ${{ secrets.CUSTOM_CF_DOMAIN }}
+        run: python check/check_cf_asn.py "${{ github.event.inputs.asn_input }}"
+
+      - name: Move result to check/ and commit
+        run: |
+          asn=$(echo "${{ github.event.inputs.asn_input }}" | sed 's/^AS//i' | tr 'a-z' 'A-Z')
+          src="AS${asn}.txt"
+          [ -f "$src" ] && mv "$src" "check/$src" || true
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add check/
+          git diff --cached --quiet || git commit -m "chore: 扫描 AS${asn} 结果"
+          git push
