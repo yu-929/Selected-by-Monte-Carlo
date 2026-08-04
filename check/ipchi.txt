@@ -1,3 +1,4 @@
+103.112.1.96:443#JP Tokyo AS36002 SRMAK TECHNOLOGICAL SYSTEM PRIVATE LIMITED
 103.117.101.28:443#HK Kwai Chung AS32519 DMIT Cloud Service
 103.117.102.145:443#JP Tokyo AS32519 DMIT Cloud Service
 103.117.103.199:443#JP Tokyo AS32519 DMIT Cloud Service
@@ -15,6 +16,8 @@
 103.198.203.182:443#HK Hong Kong AS63139 Bedge Co Limited
 103.198.203.246:443#HK Hong Kong AS63139 Bedge Co Limited
 103.198.203.247:443#HK Hong Kong AS63139 Bedge Co Limited
+103.238.130.98:443#HK Hong Kong AS51847 NEAROUTE LIMITED
+103.73.220.49:8443#HK Kwai Chung AS36002 Hong Kong Broadband Network Limited
 136.175.177.126:443#US Los Angeles AS906 DMIT Cloud Services
 136.175.178.15:443#US Los Angeles AS906 DMIT Cloud Services
 136.175.178.40:443#US Los Angeles AS906 DMIT Cloud Services
@@ -822,6 +825,7 @@
 64.186.255.128:443#US Los Angeles AS906 DMIT Cloud Services
 64.186.255.132:443#US Los Angeles AS906 DMIT Cloud Services
 64.186.255.72:443#US Los Angeles AS906 DMIT Cloud Services
+64.204.66.49:443#JP Tokyo AS36002 GoMami Networks. LLC
 69.63.192.91:443#US Los Angeles AS906 Private Customer
 69.63.193.90:443#US Los Angeles AS906 Private Customer
 69.63.195.135:443#US Los Angeles AS906 DMIT Cloud Services
