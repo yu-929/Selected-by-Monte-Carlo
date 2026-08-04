@@ -55,9 +55,9 @@ jobs:
             count=$((count + 1))
             echo "[$count/$total] Checking $ip ..."
             resp=$(curl -s --max-time 15 "https://api.090227.xyz/check?proxyip=${ip}:443")
-            ok=$(echo "$resp" | python3 -c "import sys,json; print(json.load(sys.stdin).get('success',False))" 2>/dev/null)
+            ok=$(echo "$resp" | python3 -c "import sys,json; print(json.load(sys.stdin).get('success',False))" 2>/dev/null || echo "False")
             if [ "$ok" = "True" ]; then
-              exit_data=$(echo "$resp" | python3 -c "import sys,json;d=json.load(sys.stdin)['exit'];print(f'{d[\"country\"]} {d.get(\"city\",\"\")} AS{d.get(\"asn\",\"\")} {d.get(\"asOrganization\",\"\")}')" 2>/dev/null)
+              exit_data=$(echo "$resp" | python3 -c "import sys,json;d=json.load(sys.stdin)['exit'];print(f'{d[\"country\"]} {d.get(\"city\",\"\")} AS{d.get(\"asn\",\"\")} {d.get(\"asOrganization\",\"\")}')" 2>/dev/null || echo "unknown")
               echo "${ip}:443#${exit_data}" >> "$out"
             fi
           done < "$src"
