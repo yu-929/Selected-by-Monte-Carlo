@@ -11,7 +11,8 @@ from concurrent.futures import ThreadPoolExecutor
 
 # ==================== 极限性能配置区域 ====================
 DEFAULT_ASNS = os.getenv("ASN_LIST", "AS13335")
-CUSTOM_CF_DOMAIN = os.getenv("CUSTOM_CF_DOMAIN", "327954.ccwu.cc")
+CUSTOM_CF_DOMAIN = os.getenv("CUSTOM_CF_DOMAIN", "example.com")
+MAX_IPS = 10000
 
 # 阶段 1：TLS 粗筛 (www.cloudflare.com)
 CF_SNI_1 = "www.cloudflare.com"
@@ -36,9 +37,12 @@ custom_executor = ThreadPoolExecutor(max_workers=STAGE1_CONCURRENCY)
 # =========================================================
 
 def expand_cidrs(cidr_list):
-    """将 CIDR 列表展开为 IPv4 地址列表"""
+    """将 CIDR 列表展开为 IPv4 地址列表，限制 MAX_IPS 个"""
     ip_list = []
     for cidr in cidr_list:
+        if len(ip_list) >= MAX_IPS:
+            print(f"[!] 达到最大 IP 数限制 ({MAX_IPS})，截断", flush=True)
+            break
         cidr = cidr.strip()
         if not cidr:
             continue
@@ -47,9 +51,13 @@ def expand_cidrs(cidr_list):
             if net.prefixlen >= 31:
                 for ip in net:
                     ip_list.append(str(ip))
+                    if len(ip_list) >= MAX_IPS:
+                        break
             else:
                 for ip in net.hosts():
                     ip_list.append(str(ip))
+                    if len(ip_list) >= MAX_IPS:
+                        break
         except Exception:
             print(f"[!] 无效 CIDR: {cidr}", flush=True)
     return ip_list
@@ -162,10 +170,13 @@ async def stage2_task(ip):
         return ip if ok else None
 
 
+stage3_sem = asyncio.Semaphore(20)
+
 async def stage3_task(ip, custom_domain):
-    loop = asyncio.get_running_loop()
-    ok = await loop.run_in_executor(custom_executor, check_tls_sni, ip, custom_domain, 2.0)
-    return ip if ok else None
+    async with stage3_sem:
+        loop = asyncio.get_running_loop()
+        ok = await loop.run_in_executor(custom_executor, check_tls_sni, ip, custom_domain, 2.0)
+        return ip if ok else None
 
 
 async def run_stage1_worker_queue(ip_list):
