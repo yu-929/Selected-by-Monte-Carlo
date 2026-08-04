@@ -19,14 +19,14 @@ jobs:
           curl -sL --max-time 30 "https://raw.githubusercontent.com/xgonce/Cloudflare_IP/main/result.csv" \
             | tail -n +2 \
             | awk -F',' '{print $1":"$3"#"$5}' \
-            > xg.txt
+            > ip-3.txt
 
       - name: Commit and push if changed
         run: |
-          if [ -f xg.txt ] && [ -s xg.txt ]; then
+          if [ -f ip-3.txt ] && [ -s ip-3.txt ]; then
             git config user.name "github-actions"
             git config user.email "github-actions@github.com"
-            git add xg.txt
+            git add ip-3.txt
             git diff --cached --quiet || git commit -m "chore: 同步 xg 源数据 (6h)"
             git push
           fi
