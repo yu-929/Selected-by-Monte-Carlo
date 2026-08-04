@@ -50,6 +50,10 @@ jobs:
           python3 check/validate.py "$src" "$out"
           echo "Valid: $(wc -l < "$out" 2>/dev/null || echo 0)"
 
+      - name: Merge valid into ipchi.txt
+        run: |
+          grep -vh '#timeout' check/*_valid.txt 2>/dev/null | sort -u -t: -k1,2 > check/ipchi.txt
+
       - name: Commit results
         run: |
           git config user.name "github-actions"
