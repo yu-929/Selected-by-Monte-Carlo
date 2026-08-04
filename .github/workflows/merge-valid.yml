@@ -1,0 +1,28 @@
+name: Merge valid results to ipchi.txt
+
+on:
+  push:
+    paths:
+      - 'check/*_valid.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Merge valid files, exclude timeout
+        run: |
+          grep -vh '#timeout' check/*_valid.txt 2>/dev/null | sort -u -t: -k1,2 > check/ipchi.txt
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add check/ipchi.txt
+          git diff --cached --quiet || git commit -m "chore: 合并 valid 结果到 ipchi.txt"
+          git push
