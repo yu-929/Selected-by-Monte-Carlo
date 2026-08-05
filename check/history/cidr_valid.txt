@@ -1,41 +1,37 @@
-103.198.203.182:443#HK Hong Kong AS63139 Bedge Co Limited
-103.198.203.246:443#HK Hong Kong AS63139 Bedge Co Limited
-103.198.203.247:443#HK Hong Kong AS63139 Bedge Co Limited
-149.104.25.108:443#timeout
-149.104.25.194:443#HK Harmony Garden AS139659 MR 1605 HO KING COMM CTR 2-16 FA YUEN ST MONGKOK KL
-149.104.30.166:443#timeout
-149.104.30.51:443#HK Harmony Garden AS139659 MR 1605 HO KING COMM CTR 2-16 FA YUEN ST MONGKOK KL
-179.253.252.101:443#JP Tokyo AS906 DMIT Cloud Service - Tokyo
-179.253.252.105:443#JP Tokyo AS906 DMIT Cloud Service - Tokyo
-179.253.252.80:443#JP Tokyo AS906 DMIT Cloud Service - Tokyo
-216.236.31.135:443#DE Frankfurt am Main AS138997 Eons Data Communications Limited
-216.236.31.184:443#DE Frankfurt am Main AS138997 Eons Data Communications Limited
-23.141.52.44:443#HK Tung Chung AS150452 LANDUPS LIMITED
-3.33.157.34:443#US Ashburn AS14618 Amazon Data Services Northern Virginia
-31.25.88.11:443#DE Frankfurt am Main AS41378 Kirino LLC
-38.207.132.249:443#SG Singapore AS209699 Private Customer
-38.55.198.210:443#HK Tung Chung AS139659 MR 1605 HO KING COMM CTR 2-16 FA YUEN ST MONGKOK KL
-38.55.198.250:443#HK Tung Chung AS139659 MR 1605 HO KING COMM CTR 2-16 FA YUEN ST MONGKOK KL
-40.115.161.98:443#JP Tokyo AS216211 Private Customer
+103.20.223.150:443#HK Tung Chung AS40065 hongkong netbroadband
+103.20.223.214:443#HK Tung Chung AS40065 hongkong netbroadband
+103.57.248.163:443#HK Kwai Chung AS9009 EDIS IPv6 Infrastructure in Hong Kong
+103.57.248.168:443#HK Kwai Chung AS9009 EDIS IPv6 Infrastructure in Hong Kong
+185.194.54.137:443#SG Singapore AS8888 xTom Pty Ltd
+185.194.54.15:443#SG Singapore AS8888 xTom Pty Ltd
+189.24.106.159:443#DE Frankfurt am Main AS979 NetLab Global
+189.24.106.172:443#DE Frankfurt am Main AS979 NetLab Global
+189.24.106.196:443#DE Frankfurt am Main AS979 NetLab Global
+45.147.48.147:443#DE Frankfurt am Main AS3214 xTom
+45.147.48.93:443#DE Frankfurt am Main AS3214 xTom
+45.147.49.183:443#IS Reykjavík AS200651 FlokiNET ehf
+45.147.49.242:443#DE Frankfurt am Main AS3214 xTom
+45.147.49.247:443#DE Frankfurt am Main AS3214 xTom GmbH
+45.153.247.119:443#JP Tokyo AS3258 xTom Japan Corporation
+45.192.204.141:443#HK Hong Kong AS61112 AKILE LTD
+45.192.204.3:443#HK Hong Kong AS61112 AKILE LTD
 45.89.219.65:443#SG Singapore AS8888 365 Group LLC
 45.89.219.72:443#SG Singapore AS8888 365 Group LLC
+45.89.235.139:443#JP Tokyo AS3258 xTom Japan Corporation
+45.89.235.144:443#JP Tokyo AS3258 xTom Japan Corporation
+45.89.235.145:443#JP Tokyo AS3258 xTom Japan Corporation
+45.89.235.243:443#JP Tokyo AS3258 xTom Japan Corporation
+45.89.235.39:443#JP Tokyo AS3258 xTom Japan Corporation
 45.94.41.19:443#SG Singapore AS8888 xTom Pty Ltd
+47.57.5.30:443#US Los Angeles AS45102 Alibaba Cloud - US
 47.75.104.211:443#US Los Angeles AS45102 Alibaba Cloud (Singapore) Private Limited
 47.75.104.254:443#US Los Angeles AS45102 Alibaba Cloud (Singapore) Private Limited
 47.75.104.36:443#US Los Angeles AS45102 Alibaba Cloud - US
+47.75.111.178:443#US Los Angeles AS45102 Alibaba Cloud - US
 47.75.112.231:443#US Los Angeles AS45102 Alibaba Cloud - US
-52.196.216.198:443#JP Tokyo AS16509 Amazon.com, Inc.
-54.64.243.213:443#JP Tokyo AS16509 Amazon.com, Inc.
-64.118.159.219:443#DE Frankfurt am Main AS138997 Eons Data Communications Limited
-64.118.159.55:443#DE Frankfurt am Main AS138997 Eons Data Communications Limited
-64.118.159.70:443#DE Frankfurt am Main AS138997 Eons Data Communications Limited
-8.222.70.238:443#SG Singapore AS7473 SingTel Internet Exchange
+47.75.113.193:443#timeout
+47.75.113.97:443#HK Hong Kong AS45102 ALIBABA CLOUD - HK
+47.75.114.194:443#US Los Angeles AS45102 Alibaba Cloud - US
+8.133.163.194:443#US Los Angeles AS45102 Alibaba Cloud - US
 8.222.84.103:443#SG Singapore AS7473 SingTel Internet Exchange
-82.110.234.12:443#JP Tokyo AS142433 Private Customer
-82.110.234.20:443#JP Tokyo AS142433 DATAWAVE GLOBAL LLC
-82.110.234.58:443#JP Tokyo AS142433 DATAWAVE GLOBAL LLC
-82.110.234.59:443#JP Tokyo AS142433 DATAWAVE GLOBAL LLC
-85.149.220.128:443#JP Tokyo AS205548 ZOUTER TOKYO
-85.149.220.251:443#JP Tokyo AS205548 ZOUTER TOKYO
-88.218.193.1:443#DE Frankfurt am Main AS3214 xTom
-99.83.207.43:443#US Boardman AS16509 Amazon Technologies Inc.
+82.115.30.30:443#DE Frankfurt am Main AS41378 Parsun Network Solutions PTY LTD
