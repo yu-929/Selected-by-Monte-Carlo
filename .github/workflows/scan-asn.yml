@@ -41,18 +41,19 @@ jobs:
 
       - name: Validate IPs via API
         run: |
-          src="check/${SCAN_OUTPUT}"
-          [ ! -f "$src" ] && src="${SCAN_OUTPUT}"
+          src="${SCAN_OUTPUT}"
+          [ -f "$src" ] || src="check/history/${SCAN_OUTPUT}"
+          [ -f "$src" ] || src="check/${SCAN_OUTPUT}"
           [ ! -f "$src" ] && echo "No output file found" && exit 0
           base=$(basename "$src" .txt)
-          out="check/${base}_valid.txt"
+          out="check/history/${base}_valid.txt"
           rm -f "$out"
           python3 check/validate.py "$src" "$out"
           echo "Valid: $(wc -l < "$out" 2>/dev/null || echo 0)"
 
       - name: Merge valid into ipchi.txt
         run: |
-          grep -vh '#timeout' check/*_valid.txt 2>/dev/null | sort -u -t: -k1,2 > check/ipchi.txt
+          grep -vh '#timeout' check/history/*_valid.txt 2>/dev/null | sort -u -t: -k1,2 > check/ipchi.txt
 
       - name: Commit results
         run: |

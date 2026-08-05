@@ -3,7 +3,7 @@ name: Merge valid results to ipchi.txt
 on:
   push:
     paths:
-      - 'check/*_valid.txt'
+      - 'check/history/*_valid.txt'
   workflow_dispatch:
 
 permissions:
@@ -17,7 +17,7 @@ jobs:
 
       - name: Merge valid files, exclude timeout
         run: |
-          grep -vh '#timeout' check/*_valid.txt 2>/dev/null | sort -u -t: -k1,2 > check/ipchi.txt
+          grep -vh '#timeout' check/history/*_valid.txt 2>/dev/null | sort -u -t: -k1,2 > check/ipchi.txt
 
       - name: Commit and push if changed
         run: |

@@ -10,6 +10,7 @@ import socket
 
 DEFAULT_ASNS = os.getenv("ASN_LIST", "AS13335")
 CUSTOM_CF_DOMAIN = os.getenv("CUSTOM_CF_DOMAIN", "example.com")
+OUTPUT_DIR = os.getenv("OUTPUT_DIR", "check/history")
 
 TARGET_PORTS = [443]
 
@@ -293,11 +294,13 @@ async def main():
     print(f"最终有效目标总数: {len(final_items)}", flush=True)
 
     output_filename = f"{output_label}.txt"
-    with open(output_filename, "w", encoding="utf-8") as f:
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    output_path = os.path.join(OUTPUT_DIR, output_filename)
+    with open(output_path, "w", encoding="utf-8") as f:
         for ip, port in final_items:
             f.write(f"{ip}:{port}\n")
 
-    print(f"\n[+] 最终结果已排序保存至：{output_filename} (格式为 IP:PORT)", flush=True)
+    print(f"\n[+] 最终结果已排序保存至：{output_path} (格式为 IP:PORT)", flush=True)
 
     await asyncio.sleep(0.5)
 
