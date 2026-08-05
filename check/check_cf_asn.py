@@ -100,6 +100,9 @@ def expand_cidrs(cidr_list):
             continue
         try:
             net = ipaddress.ip_network(cidr, strict=False)
+            if ':' in str(net.network_address):
+                print(f"[-] 跳过 IPv6 网段: {cidr}", flush=True)
+                continue
             if net.prefixlen >= 31:
                 for ip in net:
                     ip_list.append(str(ip))
@@ -165,6 +168,9 @@ def parse_targets(input_str):
 
         try:
             net = ipaddress.ip_network(item, strict=False)
+            if ':' in str(net.network_address):
+                print(f"[-] 跳过 IPv6 网段: {item}", flush=True)
+                continue
             if net.prefixlen >= 31:
                 for ip in net:
                     all_ips.append(str(ip))
