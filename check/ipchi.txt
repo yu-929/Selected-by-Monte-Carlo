@@ -2003,6 +2003,7 @@
 47.239.4.246:443#HK Hong Kong AS45102 ALIBABA CLOUD - HK
 47.250.124.22:443#MY Kuala Lumpur AS45102 Alibaba Cloud - MY
 47.251.95.178:443#US Los Angeles AS45102 Alibaba Cloud - US
+47.75.104.211:443#US Los Angeles AS45102 Alibaba Cloud (Singapore) Private Limited
 47.75.104.211:443#US Los Angeles AS45102 Alibaba Cloud - US
 47.75.104.254:443#US Los Angeles AS45102 Alibaba Cloud (Singapore) Private Limited
 47.75.104.36:443#US Los Angeles AS45102 Alibaba Cloud - US
@@ -2754,3 +2755,4 @@
 98.98.207.83:443#GB London AS21859 Zenlayer Inc
 98.98.207.93:443#GB London AS21859 Zenlayer Inc
 99.83.207.43:443#US Ashburn AS14618 Amazon Technologies Inc.
+99.83.207.43:443#US Boardman AS16509 Amazon Technologies Inc.
