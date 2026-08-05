@@ -4,9 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       scan_input:
-        description: 'ASN 号 (如 AS206300) 或 CIDR 网段 (如 154.17.0.0/24,103.0.0.0/24) 或 CIDR 文件路径 (如 check/targets.txt)'
+        description: '目标列表：ASN (如 AS206300) / CIDR (如 154.17.0.0/24) / IP 混合，逗号分隔，或文件路径 (如 check/targets.txt)'
         required: true
         default: 'AS206300'
+      scan_ports:
+        description: '端口列表，逗号分隔 (默认 443)'
+        required: false
+        default: '443'
 
 permissions:
   contents: write
@@ -35,7 +39,7 @@ jobs:
         env:
           CUSTOM_CF_DOMAIN: ${{ secrets.CUSTOM_CF_DOMAIN }}
         run: |
-          python check/check_cf_asn.py "${{ github.event.inputs.scan_input }}" 2>&1 | tee /tmp/scan.log
+          python check/check_cf_asn.py "${{ github.event.inputs.scan_input }}" "${{ github.event.inputs.scan_ports }}" 2>&1 | tee /tmp/scan.log
           output_file=$(grep '保存至' /tmp/scan.log | tail -1 | grep -oP '保存至：\K[^ )]+\.txt' || echo "")
           echo "SCAN_OUTPUT=$output_file" >> $GITHUB_ENV
 

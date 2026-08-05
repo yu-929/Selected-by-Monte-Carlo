@@ -2,17 +2,17 @@ import asyncio
 import ssl
 import sys
 import os
+import re
 import resource
 import json
 import ipaddress
 import urllib.request
 import socket
 
-DEFAULT_ASNS = os.getenv("ASN_LIST", "AS13335")
+DEFAULT_TARGETS = os.getenv("TARGET_LIST", os.getenv("ASN_LIST", "AS206300"))
+DEFAULT_PORTS = "443"
 CUSTOM_CF_DOMAIN = os.getenv("CUSTOM_CF_DOMAIN", "example.com")
 OUTPUT_DIR = os.getenv("OUTPUT_DIR", "check/history")
-
-TARGET_PORTS = [443]
 
 CF_SNI_1 = "www.cloudflare.com"
 STAGE1_CONCURRENCY = 2000
@@ -64,12 +64,40 @@ async def open_tls_connection(ip, port, sni, timeout_val):
         transport.close()
         raise
 
-def get_ips_from_asn(asn_input):
-    asn_clean = asn_input.strip().upper().replace("AS", "")
-    if not asn_clean.isdigit():
-        print(f"[-] 无效的 ASN 输入: {asn_input}", flush=True)
-        return []
 
+def parse_ports(port_str):
+    """动态解析输入的端口列表"""
+    if not port_str:
+        return [443]
+    raw_ports = re.split(r'[\s,]+', str(port_str).strip())
+    ports = []
+    for p in raw_ports:
+        if p.isdigit() and 1 <= int(p) <= 65535:
+            ports.append(int(p))
+    return list(dict.fromkeys(ports)) if ports else [443]
+
+
+def expand_cidrs(cidr_list):
+    ip_list = []
+    for cidr in cidr_list:
+        cidr = cidr.strip()
+        if not cidr:
+            continue
+        try:
+            net = ipaddress.ip_network(cidr, strict=False)
+            if net.prefixlen >= 31:
+                for ip in net:
+                    ip_list.append(str(ip))
+            else:
+                for ip in net.hosts():
+                    ip_list.append(str(ip))
+        except Exception:
+            print(f"[!] 无效 CIDR: {cidr}", flush=True)
+    return ip_list
+
+
+def get_ips_from_asn(asn_clean):
+    """从网络 API 查询 ASN 对应的 IPv4 列表"""
     print(f"[*] 正在自动查询并拉取 AS{asn_clean} 的网段信息...", flush=True)
     cidrs = []
 
@@ -101,65 +129,102 @@ def get_ips_from_asn(asn_input):
             print(f"[!] BGPView API 获取失败: {e}", flush=True)
 
     ip_list = expand_cidrs(cidrs)
-    print(f"[+] AS{asn_clean} 共解析出 {len(ip_list)} 个待测 IPv4 地址。", flush=True)
     return ip_list
 
 
-def expand_cidrs(cidr_list):
-    ip_list = []
-    for cidr in cidr_list:
-        cidr = cidr.strip()
-        if not cidr:
+def parse_targets(input_str):
+    """智能解析目标输入：ASN、CIDR 网段、单个 IP 或目标文件，支持混合"""
+    raw_targets = [t.strip() for t in re.split(r'[\s,]+', input_str) if t.strip()]
+    all_ips = []
+
+    for item in raw_targets:
+        if item.endswith('.txt') and os.path.isfile(item):
+            try:
+                with open(item) as f:
+                    content = f.read()
+                all_ips.extend(parse_targets(content))
+                print(f"[+] 从文件 [{item}] 加载目标", flush=True)
+            except Exception as e:
+                print(f"[-] 读取文件失败: {item}: {e}", flush=True)
             continue
+
         try:
-            net = ipaddress.ip_network(cidr, strict=False)
-            for ip in net.hosts():
-                ip_list.append(str(ip))
-        except Exception:
-            print(f"[!] 无效 CIDR: {cidr}", flush=True)
-    return ip_list
+            net = ipaddress.ip_network(item, strict=False)
+            if net.prefixlen >= 31:
+                for ip in net:
+                    all_ips.append(str(ip))
+            else:
+                for ip in net.hosts():
+                    all_ips.append(str(ip))
+            print(f"[+] 识别为 IP/网段 [{item}]，展开出 {net.num_addresses} 个地址", flush=True)
+            continue
+        except ValueError:
+            pass
+
+        asn_clean = item.upper().replace("AS", "")
+        if asn_clean.isdigit():
+            ips = get_ips_from_asn(asn_clean)
+            print(f"[+] AS{asn_clean} 解析完成，提取出 {len(ips)} 个待测 IPv4 地址。", flush=True)
+            all_ips.extend(ips)
+        else:
+            print(f"[-] 无法识别的目标格式: {item}", flush=True)
+
+    unique_ips = list(dict.fromkeys(all_ips))
+    print(f"[+] 所有目标汇总去重后，共有 {len(unique_ips)} 个待测 IP 地址。", flush=True)
+    return unique_ips
 
 
-def get_ips_from_cidr_str(cidr_str):
-    import re
-    parts = re.split(r'[,\s\n]+', cidr_str.strip())
-    parts = [p for p in parts if p and '/' in p]
-    if not parts:
-        print(f"[-] 未找到有效的 CIDR 网段", flush=True)
-        return [], ''
-    label = '_'.join([p.split('/')[0] for p in parts[:3]])
-    if len(parts) > 3:
-        label += f'_etc'
-    ip_list = expand_cidrs(parts)
-    print(f"[+] 共解析出 {len(ip_list)} 个待测 IPv4 地址 (来自 {len(parts)} 个 CIDR)", flush=True)
-    return ip_list, label
+def match_domain_in_cert(sni_domain, cert_str):
+    """支持通配符 (*.domain.com) 与主域名的智能证书匹配"""
+    sni_domain = sni_domain.lower()
+    cert_str = cert_str.lower()
+
+    if sni_domain in cert_str:
+        return True
+
+    parts = sni_domain.split(".")
+    if len(parts) >= 2:
+        main_domain = ".".join(parts[-2:])
+        wildcard_domain = f"*.{main_domain}"
+        if main_domain in cert_str or wildcard_domain in cert_str:
+            return True
+
+    if "cloudflare" in sni_domain and "cloudflare" in cert_str:
+        return True
+
+    return False
 
 
 async def check_tls_sni_async(ip, port, sni, timeout_val, sem):
+    """阶段一/阶段三：原生异步 TLS 握手"""
     async with sem:
+        writer = None
         try:
             reader, writer = await open_tls_connection(ip, port, sni, timeout_val)
 
             ssl_obj = writer.get_extra_info('ssl_object')
             der_cert = ssl_obj.getpeercert(binary_form=True) if ssl_obj else None
 
-            writer.close()
-            try:
-                await asyncio.wait_for(writer.wait_closed(), timeout=1)
-            except Exception:
-                pass
-
             if not der_cert:
                 return False
 
             cert_str = der_cert.decode('latin1', errors='ignore').lower()
-            return sni.lower() in cert_str
+            return match_domain_in_cert(sni, cert_str)
         except Exception:
             return False
+        finally:
+            if writer:
+                writer.close()
+                try:
+                    await asyncio.wait_for(writer.wait_closed(), timeout=0.5)
+                except Exception:
+                    pass
 
 
 async def check_http_async(ip, port, host, timeout_val, sem):
+    """阶段二：严格校验 301/302 重定向 + Location 头"""
     async with sem:
+        writer = None
         try:
             reader, writer = await open_tls_connection(ip, port, host, timeout_val)
 
@@ -168,23 +233,25 @@ async def check_http_async(ip, port, host, timeout_val, sem):
             await writer.drain()
 
             data = await asyncio.wait_for(reader.read(1024), timeout=timeout_val)
-            writer.close()
-            try:
-                await asyncio.wait_for(writer.wait_closed(), timeout=1)
-            except Exception:
-                pass
 
             if not data:
                 return False
 
             resp_str = data.decode('latin1', errors='ignore').lower()
 
-            is_redirect = any(code in resp_str for code in ["http/1.1 301", "http/1.1 302", "http/1.1 307", "http/1.1 308"])
-            is_cf = "server: cloudflare" in resp_str or "http/1.1 403" in resp_str
+            has_redirect_code = "http/1.1 301" in resp_str or "http/1.1 302" in resp_str
+            has_location_header = "location:" in resp_str
 
-            return is_redirect or is_cf
+            return has_redirect_code and has_location_header
         except Exception:
             return False
+        finally:
+            if writer:
+                writer.close()
+                try:
+                    await asyncio.wait_for(writer.wait_closed(), timeout=0.5)
+                except Exception:
+                    pass
 
 
 async def run_stage1(targets, sem):
@@ -220,32 +287,12 @@ async def run_stage1(targets, sem):
 
 
 async def main():
-    raw = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_ASNS
-    raw = raw.strip()
+    target_input = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_TARGETS
+    ports_input = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_PORTS
 
-    if '/' in raw:
-        all_ips, label = get_ips_from_cidr_str(raw)
-        output_label = label
-        print(f"[*] 输入类型: CIDR 网段", flush=True)
-    elif raw.endswith('.txt'):
-        try:
-            with open(raw) as f:
-                cidr_content = f.read()
-            all_ips, label = get_ips_from_cidr_str(cidr_content)
-            output_label = label
-            print(f"[*] 输入类型: CIDR 文件 ({raw})", flush=True)
-        except Exception as e:
-            print(f"[-] 读取文件失败: {e}", flush=True)
-            return
-    else:
-        asn_clean = raw.upper()
-        if not asn_clean.startswith("AS"):
-            asn_clean = f"AS{asn_clean}"
-        output_label = asn_clean
-        all_ips = get_ips_from_asn(asn_clean)
-        print(f"[*] 输入类型: ASN ({asn_clean})", flush=True)
-
-    all_ips = list(dict.fromkeys(all_ips))
+    target_ports = parse_ports(ports_input)
+    print(f"[*] 目标输入: {target_input} | 端口列表: {target_ports}", flush=True)
+    all_ips = parse_targets(target_input)
 
     if not all_ips:
         print("[-] 未能获取到任何待测 IP，程序退出。", flush=True)
@@ -254,8 +301,8 @@ async def main():
     if len(all_ips) > 50000:
         print(f"[!] 待测 IP 超过 50000 个 ({len(all_ips)})，继续可能超时。建议使用更小的网段。", flush=True)
 
-    targets = [(ip, port) for ip in all_ips for port in TARGET_PORTS]
-    print(f"[*] 解析完成：{len(all_ips)} 个 IP × {len(TARGET_PORTS)} 个端口 = 共有 {len(targets)} 个连接目标。", flush=True)
+    targets = [(ip, port) for ip in all_ips for port in target_ports]
+    print(f"[*] 解析完成：{len(all_ips)} 个 IP × {len(target_ports)} 个端口 {target_ports} = 共有 {len(targets)} 个连接目标。", flush=True)
 
     sem = asyncio.Semaphore(STAGE1_CONCURRENCY)
 
@@ -270,7 +317,7 @@ async def main():
     tasks2 = [check_http_async(ip, port, CF_HOST_TEST, STAGE2_TIMEOUT, sem) for ip, port in pass_1]
     res2 = await asyncio.gather(*tasks2)
     pass_2 = [pass_1[i] for i, ok in enumerate(res2) if ok]
-    print(f"[+] 第二阶段完成！可用目标: {len(pass_2)} 个\n", flush=True)
+    print(f"[+] 第二阶段完成！可用 301 重定向目标: {len(pass_2)} 个\n", flush=True)
 
     if not pass_2:
         print("[-] 无有效 IP:端口 通过第二阶段。", flush=True)
@@ -290,10 +337,12 @@ async def main():
     final_items = sorted(final_items, key=lambda x: (ipaddress.ip_address(x[0]), x[1]))
 
     print("\n==================== 扫描结束 ====================", flush=True)
-    print(f"目标: {output_label} | 测试端口: {TARGET_PORTS}", flush=True)
     print(f"最终有效目标总数: {len(final_items)}", flush=True)
 
-    output_filename = f"{output_label}.txt"
+    clean_name = re.sub(r'[^\w\.-]', '_', target_input.split(',')[0].strip())
+    if clean_name.lower().endswith(".txt"):
+        clean_name = os.path.basename(clean_name)[:-4]
+    output_filename = f"{clean_name}.txt"
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     output_path = os.path.join(OUTPUT_DIR, output_filename)
     with open(output_path, "w", encoding="utf-8") as f:
