@@ -6,6 +6,7 @@ import resource
 import json
 import ipaddress
 import urllib.request
+import socket
 
 DEFAULT_ASNS = os.getenv("ASN_LIST", "AS13335")
 CUSTOM_CF_DOMAIN = os.getenv("CUSTOM_CF_DOMAIN", "example.com")
@@ -34,6 +35,33 @@ except Exception as e:
 SSL_CTX = ssl.create_default_context()
 SSL_CTX.check_hostname = False
 SSL_CTX.verify_mode = ssl.CERT_NONE
+
+
+async def open_tls_connection(ip, port, sni, timeout_val):
+    """自定义 TLS 连接：开启 TCP_NODELAY 降低短连接延迟"""
+    loop = asyncio.get_running_loop()
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.setblocking(False)
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+    try:
+        await asyncio.wait_for(loop.sock_connect(sock, (ip, port)), timeout=timeout_val)
+    except Exception:
+        sock.close()
+        raise
+
+    reader = asyncio.StreamReader(limit=2 ** 16, loop=loop)
+    protocol = asyncio.StreamReaderProtocol(reader, loop=loop)
+    transport, _ = await loop.create_connection(lambda: protocol, sock=sock)
+    try:
+        transport = await asyncio.wait_for(
+            loop.start_tls(transport, protocol, SSL_CTX, server_hostname=sni),
+            timeout=timeout_val
+        )
+        writer = asyncio.StreamWriter(transport, protocol, reader, loop)
+        return reader, writer
+    except Exception:
+        transport.close()
+        raise
 
 def get_ips_from_asn(asn_input):
     asn_clean = asn_input.strip().upper().replace("AS", "")
@@ -109,10 +137,7 @@ def get_ips_from_cidr_str(cidr_str):
 async def check_tls_sni_async(ip, port, sni, timeout_val, sem):
     async with sem:
         try:
-            reader, writer = await asyncio.wait_for(
-                asyncio.open_connection(ip, port, ssl=SSL_CTX, server_hostname=sni),
-                timeout=timeout_val
-            )
+            reader, writer = await open_tls_connection(ip, port, sni, timeout_val)
 
             ssl_obj = writer.get_extra_info('ssl_object')
             der_cert = ssl_obj.getpeercert(binary_form=True) if ssl_obj else None
@@ -135,10 +160,7 @@ async def check_tls_sni_async(ip, port, sni, timeout_val, sem):
 async def check_http_async(ip, port, host, timeout_val, sem):
     async with sem:
         try:
-            reader, writer = await asyncio.wait_for(
-                asyncio.open_connection(ip, port, ssl=SSL_CTX, server_hostname=host),
-                timeout=timeout_val
-            )
+            reader, writer = await open_tls_connection(ip, port, host, timeout_val)
 
             req = f"GET / HTTP/1.1\r\nHost: {host}\r\nUser-Agent: Mozilla/5.0\r\nConnection: close\r\n\r\n"
             writer.write(req.encode('latin1'))
@@ -168,11 +190,12 @@ async def run_stage1(targets, sem):
     total = len(targets)
     completed = 0
     passed_items = []
+    BATCH_SIZE = 10000
 
     step = max(1, total // 10)
     last_printed_step = 0
 
-    print(f"\n[1/3 第一阶段 TLS 探测] 开始测试，共 {total} 个目标 (IP:端口组合)...", flush=True)
+    print(f"\n[1/3 第一阶段 TLS 探测] 开始测试，共 {total} 个目标 (IP:端口组合)，分批调度每批 {BATCH_SIZE}...", flush=True)
 
     async def worker(item):
         nonlocal completed, last_printed_step
@@ -189,8 +212,9 @@ async def run_stage1(targets, sem):
             percent = (completed / total) * 100
             print(f"[1/3 进度] {completed}/{total} ({percent:.1f}%) | 当前通过: {len(passed_items)} 个", flush=True)
 
-    tasks = [worker(item) for item in targets]
-    await asyncio.gather(*tasks)
+    for i in range(0, total, BATCH_SIZE):
+        batch = targets[i:i + BATCH_SIZE]
+        await asyncio.gather(*(worker(item) for item in batch))
     return passed_items
 
 
