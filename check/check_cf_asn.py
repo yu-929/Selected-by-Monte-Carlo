@@ -115,7 +115,10 @@ async def check_tls_sni_async(ip, port, sni, timeout_val, sem):
             der_cert = ssl_obj.getpeercert(binary_form=True) if ssl_obj else None
 
             writer.close()
-            await writer.wait_closed()
+            try:
+                await asyncio.wait_for(writer.wait_closed(), timeout=1)
+            except Exception:
+                pass
 
             if not der_cert:
                 return False
@@ -140,7 +143,10 @@ async def check_http_async(ip, port, host, timeout_val, sem):
 
             data = await asyncio.wait_for(reader.read(1024), timeout=timeout_val)
             writer.close()
-            await writer.wait_closed()
+            try:
+                await asyncio.wait_for(writer.wait_closed(), timeout=1)
+            except Exception:
+                pass
 
             if not data:
                 return False
