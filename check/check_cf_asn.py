@@ -39,9 +39,22 @@ SSL_CTX.verify_mode = ssl.CERT_NONE
 
 
 class QuietStreamReaderProtocol(asyncio.StreamReaderProtocol):
-    """自定义协议：抑制 SSL 下的 eof_received 无效果警告"""
+    """自定义协议：抑制 eof_received 警告，并正确处理 start_tls 二次 connection_made"""
     def eof_received(self):
         return False
+
+    def connection_made(self, transport):
+        if self._transport is None:
+            super().connection_made(transport)
+            return
+        # 手动 create_connection + start_tls 会让 SSLProtocol 在握手完成后
+        # 再次回调 connection_made(app_transport)。此时需把 reader 重新
+        # 绑定到新的 TLS transport，避免 set_transport 的 assert 崩溃。
+        self._transport = transport
+        reader = self._stream_reader
+        if reader is not None and reader._transport is not None:
+            reader._transport = transport
+        self._over_ssl = transport.get_extra_info('sslcontext') is not None
 
 
 async def open_tls_connection(ip, port, sni, timeout_val):
@@ -62,21 +75,25 @@ async def open_tls_connection(ip, port, sni, timeout_val):
         except OSError:
             sock.close()
             raise
-    else:
-        raise OSError("connect failed")
 
     reader = asyncio.StreamReader(limit=2 ** 16, loop=loop)
     protocol = QuietStreamReaderProtocol(reader, loop=loop)
-    transport, _ = await loop.create_connection(lambda: protocol, sock=sock)
+    raw_transport = None
     try:
-        transport = await asyncio.wait_for(
-            loop.start_tls(transport, protocol, SSL_CTX, server_hostname=sni),
+        raw_transport, _ = await loop.create_connection(lambda: protocol, sock=sock)
+        tls_transport = await asyncio.wait_for(
+            loop.start_tls(raw_transport, protocol, SSL_CTX, server_hostname=sni),
             timeout=timeout_val
         )
-        writer = asyncio.StreamWriter(transport, protocol, reader, loop)
+        if tls_transport is None:
+            # Python 3.10 竞态：握手完成瞬间底层连接断开会导致
+            # start_tls 返回 None，此时连接已不可用，按失败处理
+            raise OSError(f"start_tls 返回 None，连接已关闭: {ip}:{port}")
+        writer = asyncio.StreamWriter(tls_transport, protocol, reader, loop)
         return reader, writer
     except Exception:
-        transport.close()
+        if raw_transport is not None:
+            raw_transport.close()
         raise
 
 
