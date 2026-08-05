@@ -24,7 +24,10 @@ STAGE3_TIMEOUT = 2.0
 try:
     soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
     resource.setrlimit(resource.RLIMIT_NOFILE, (hard, hard))
-    print(f"[*] 系统 Socket 文件描述符上限已提升至: {hard}", flush=True)
+    soft = resource.getrlimit(resource.RLIMIT_NOFILE)[0]
+    print(f"[*] 系统 Socket 文件描述符上限已提升至: {soft}", flush=True)
+    STAGE1_CONCURRENCY = min(STAGE1_CONCURRENCY, max(64, soft // 2))
+    print(f"[*] 阶段一并发数调整为: {STAGE1_CONCURRENCY}", flush=True)
 except Exception as e:
     print(f"[!] 提升文件描述符失败 (若非 Linux 环境可忽略): {e}", flush=True)
 
