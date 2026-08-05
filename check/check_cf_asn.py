@@ -275,6 +275,8 @@ async def main():
 
     print(f"\n[+] 最终结果已排序保存至：{output_filename} (格式为 IP:PORT)", flush=True)
 
+    await asyncio.sleep(0.5)
+
 
 if __name__ == "__main__":
     asyncio.run(main())

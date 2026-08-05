@@ -36,7 +36,7 @@ jobs:
           CUSTOM_CF_DOMAIN: ${{ secrets.CUSTOM_CF_DOMAIN }}
         run: |
           python check/check_cf_asn.py "${{ github.event.inputs.scan_input }}" 2>&1 | tee /tmp/scan.log
-          output_file=$(tail -1 /tmp/scan.log | grep -oP '保存至：\K(.+\.txt)' || echo "")
+          output_file=$(grep '保存至' /tmp/scan.log | tail -1 | grep -oP '保存至：\K[^ )]+\.txt' || echo "")
           echo "SCAN_OUTPUT=$output_file" >> $GITHUB_ENV
 
       - name: Validate IPs via API
