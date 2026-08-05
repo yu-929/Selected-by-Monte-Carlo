@@ -57,7 +57,7 @@ jobs:
 
       - name: Merge valid into ipchi.txt
         run: |
-          grep -vh '#timeout' check/history/*_valid.txt 2>/dev/null | sort -u -t: -k1,2 > check/ipchi.txt
+          cat check/ipchi.txt 2>/dev/null check/history/*_valid.txt 2>/dev/null | grep -vh '#timeout' | sort -u -t: -k1,2 > check/ipchi.tmp && mv check/ipchi.tmp check/ipchi.txt
 
       - name: Commit results
         run: |

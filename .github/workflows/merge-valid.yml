@@ -17,7 +17,7 @@ jobs:
 
       - name: Merge valid files, exclude timeout
         run: |
-          grep -vh '#timeout' check/history/*_valid.txt 2>/dev/null | sort -u -t: -k1,2 > check/ipchi.txt
+          cat check/ipchi.txt 2>/dev/null check/history/*_valid.txt 2>/dev/null | grep -vh '#timeout' | sort -u -t: -k1,2 > check/ipchi.tmp && mv check/ipchi.tmp check/ipchi.txt
 
       - name: Commit and push if changed
         run: |
