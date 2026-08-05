@@ -38,20 +38,35 @@ SSL_CTX.check_hostname = False
 SSL_CTX.verify_mode = ssl.CERT_NONE
 
 
+class QuietStreamReaderProtocol(asyncio.StreamReaderProtocol):
+    """自定义协议：抑制 SSL 下的 eof_received 无效果警告"""
+    def eof_received(self):
+        return False
+
+
 async def open_tls_connection(ip, port, sni, timeout_val):
-    """自定义 TLS 连接：开启 TCP_NODELAY 降低短连接延迟"""
+    """自定义 TLS 连接：TCP_NODELAY + 超时重试一次"""
     loop = asyncio.get_running_loop()
-    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.setblocking(False)
-    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
-    try:
-        await asyncio.wait_for(loop.sock_connect(sock, (ip, port)), timeout=timeout_val)
-    except Exception:
-        sock.close()
-        raise
+    for attempt in range(2):
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.setblocking(False)
+        sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+        try:
+            await asyncio.wait_for(loop.sock_connect(sock, (ip, port)), timeout=timeout_val)
+            break
+        except asyncio.TimeoutError:
+            sock.close()
+            if attempt == 0:
+                continue
+            raise
+        except OSError:
+            sock.close()
+            raise
+    else:
+        raise OSError("connect failed")
 
     reader = asyncio.StreamReader(limit=2 ** 16, loop=loop)
-    protocol = asyncio.StreamReaderProtocol(reader, loop=loop)
+    protocol = QuietStreamReaderProtocol(reader, loop=loop)
     transport, _ = await loop.create_connection(lambda: protocol, sock=sock)
     try:
         transport = await asyncio.wait_for(
@@ -286,6 +301,15 @@ async def run_stage1(targets, sem):
     return passed_items
 
 
+async def run_batched(items, coro_factory, batch_size=10000):
+    """分批执行异步任务，结果顺序与输入一致，降低协程内存峰值"""
+    results = []
+    for i in range(0, len(items), batch_size):
+        batch = items[i:i + batch_size]
+        results.extend(await asyncio.gather(*(coro_factory(item) for item in batch)))
+    return results
+
+
 async def main():
     target_input = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_TARGETS
     ports_input = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_PORTS
@@ -314,8 +338,10 @@ async def main():
         return
 
     print(f"[2/3 第二阶段 HTTP 校验] 正在快速校验 {len(pass_1)} 个候选目标...", flush=True)
-    tasks2 = [check_http_async(ip, port, CF_HOST_TEST, STAGE2_TIMEOUT, sem) for ip, port in pass_1]
-    res2 = await asyncio.gather(*tasks2)
+    res2 = await run_batched(
+        pass_1,
+        lambda item: check_http_async(item[0], item[1], CF_HOST_TEST, STAGE2_TIMEOUT, sem)
+    )
     pass_2 = [pass_1[i] for i, ok in enumerate(res2) if ok]
     print(f"[+] 第二阶段完成！可用 301 重定向目标: {len(pass_2)} 个\n", flush=True)
 
@@ -327,8 +353,10 @@ async def main():
     if CUSTOM_CF_DOMAIN and CUSTOM_CF_DOMAIN.strip():
         domain = CUSTOM_CF_DOMAIN.strip()
         print(f"[3/3 第三阶段自定义域名校验] 正在校验域名 {domain}...", flush=True)
-        tasks3 = [check_tls_sni_async(ip, port, domain, STAGE3_TIMEOUT, sem) for ip, port in pass_2]
-        res3 = await asyncio.gather(*tasks3)
+        res3 = await run_batched(
+            pass_2,
+            lambda item: check_tls_sni_async(item[0], item[1], domain, STAGE3_TIMEOUT, sem)
+        )
         final_items = [pass_2[i] for i, ok in enumerate(res3) if ok]
         print(f"[+] 第三阶段完成！支持自定义托管域名的优选反代 IP: {len(final_items)} 个", flush=True)
     else:
