@@ -1683,6 +1683,11 @@
 179.255.97.81:443#US Los Angeles AS906 DMIT Cloud Services
 18.141.174.211:55553#SG Singapore AS16509 Amazon.com, Inc.
 18.141.192.79:59999#SG Singapore AS16509 Amazon.com, Inc.
+18.142.227.119:16000#SG Singapore AS16509 Amazon.com, Inc.
+18.142.243.81:16000#SG Singapore AS16509 Amazon.com, Inc.
+18.142.46.7:16000#SG Singapore AS16509 Amazon.com, Inc.
+18.142.54.166:16000#SG Singapore AS16509 Amazon.com, Inc.
+18.142.56.120:16000#SG Singapore AS16509 Amazon.com, Inc.
 18.163.101.2:55555#HK Hong Kong AS16509 Amazon.com, Inc.
 18.163.111.103:55555#HK Hong Kong AS16509 Amazon.com, Inc.
 18.163.111.124:55555#HK Hong Kong AS16509 Amazon.com, Inc.
