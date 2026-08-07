@@ -1,0 +1,20 @@
+163.5.29.175:10443#NL Amsterdam AS57043 Ionis Group - Ionis Schools of Technology and Management SAS
+163.5.94.243:4443#GB Reading AS20860 NOCX Online GmbH
+194.233.67.84:10443#SG Singapore AS141995 Contabo Asia Private Limited
+195.172.138.220:14430#SG Singapore AS216245 CYBERJET PTE. LTD.
+43.160.200.156:4443#SG Singapore AS132203 6 COLLYER QUAY
+43.160.220.10:20000#SG Singapore AS132203 ACEVILLE PTE.LTD.
+43.163.225.68:4443#JP Tokyo AS132203 6 COLLYER QUAY
+47.128.153.23:14000#SG Singapore AS16509 Amazon.com, Inc.
+47.128.153.23:14430#SG Singapore AS16509 Amazon.com, Inc.
+47.128.153.23:20000#SG Singapore AS16509 Amazon.com, Inc.
+47.128.243.221:14000#SG Singapore AS16509 Amazon.com, Inc.
+47.128.243.221:14430#SG Singapore AS16509 Amazon.com, Inc.
+47.128.243.221:20000#SG Singapore AS16509 Amazon.com, Inc.
+47.128.247.166:14000#SG Singapore AS16509 Amazon.com, Inc.
+47.128.247.166:14430#SG Singapore AS16509 Amazon.com, Inc.
+47.128.247.166:20000#SG Singapore AS16509 Amazon.com, Inc.
+47.128.64.194:14000#SG Singapore AS16509 Amazon.com, Inc.
+47.128.64.194:14430#SG Singapore AS16509 Amazon.com, Inc.
+47.128.64.194:20000#SG Singapore AS16509 Amazon.com, Inc.
+47.128.66.244:4443#timeout
