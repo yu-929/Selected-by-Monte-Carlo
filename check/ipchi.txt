@@ -1122,6 +1122,18 @@
 179.255.97.81:443#US Los Angeles AS906 DMIT Cloud Services
 18.141.174.211:55553#SG Singapore AS16509 Amazon.com, Inc.
 18.141.192.79:59999#SG Singapore AS16509 Amazon.com, Inc.
+18.163.101.2:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.111.103:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.111.124:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.116.212:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.117.102:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.122.175:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.184.150:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.189.216:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.190.60:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.206.167:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.238.195:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.62.174:55555#HK Hong Kong AS16509 Amazon.com, Inc.
 18.166.78.20:49664#HK Hong Kong AS16509 Amazon.com, Inc.
 18.167.96.226:18852#HK Hong Kong AS16509 Amazon.com, Inc.
 184.34.35.49:443#US Boardman AS16509 Amazon.com, Inc.
@@ -1898,6 +1910,11 @@
 43.168.16.112:443#HK Hong Kong AS139341 ACE
 43.170.25.96:443#US Ashburn AS139341 ACE
 43.170.8.95:443#JP Asagaya-minami AS139341 6 COLLYER QUAY
+43.198.154.224:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+43.198.184.185:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+43.198.73.198:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+43.198.74.93:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+43.198.87.223:55555#HK Hong Kong AS16509 Amazon.com, Inc.
 43.207.143.139:23998#JP Tokyo AS16509 Amazon.com, Inc.
 45.12.255.177:443#NL Amsterdam AS57043 Snowd Security OU
 45.12.255.191:443#NL Amsterdam AS57043 Snowd Security OU

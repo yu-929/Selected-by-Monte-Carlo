@@ -1,0 +1,18 @@
+18.163.101.2:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.111.103:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.111.124:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.116.212:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.117.102:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.122.175:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.184.150:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.189.216:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.190.60:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.206.167:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.238.195:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+18.163.62.174:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+43.198.154.224:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+43.198.184.185:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+43.198.73.198:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+43.198.74.93:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+43.198.81.47:55555#timeout
+43.198.87.223:55555#HK Hong Kong AS16509 Amazon.com, Inc.
