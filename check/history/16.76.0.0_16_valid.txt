@@ -1,0 +1,4 @@
+16.76.125.38:25565#JP Tokyo AS16509 Amazon.com, Inc.
+16.76.125.93:25565#JP Tokyo AS16509 Amazon.com, Inc.
+16.76.152.121:25565#JP Tokyo AS16509 Amazon.com, Inc.
+16.76.98.42:25565#JP Tokyo AS16509 Amazon.com, Inc.

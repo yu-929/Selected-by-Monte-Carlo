@@ -639,7 +639,11 @@
 159.89.107.144:443#DE Frankfurt am Main AS14061 DigitalOcean, LLC
 159.89.91.17:443#US North Bergen AS14061 DigitalOcean, LLC
 16.16.207.129:443#SE Stockholm AS16509 Amazon Data Services Sweden
+16.76.125.38:25565#JP Tokyo AS16509 Amazon.com, Inc.
+16.76.125.93:25565#JP Tokyo AS16509 Amazon.com, Inc.
+16.76.152.121:25565#JP Tokyo AS16509 Amazon.com, Inc.
 16.76.152.121:38968#JP Tokyo AS16509 Amazon.com, Inc.
+16.76.98.42:25565#JP Tokyo AS16509 Amazon.com, Inc.
 160.16.62.225:443#JP Tokyo AS9370 SAKURA Internet Inc.
 161.104.44.138:443#RU Moscow AS50340 Selectel Network
 161.35.22.108:443#DE Frankfurt am Main AS14061 DigitalOcean, LLC
