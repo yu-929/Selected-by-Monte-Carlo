@@ -1780,7 +1780,15 @@
 31.77.158.93:443#FI Helsinki AS215439 play2go.cloud - Cheap and reliable hosting
 35.176.187.206:443#GB London AS16509 Amazon Data Services UK
 35.228.168.221:443#FI Lappeenranta AS396982 Google LLC
+35.74.0.60:22335#JP Tokyo AS16509 Amazon.com, Inc.
+35.74.240.36:22335#JP Tokyo AS16509 Amazon.com, Inc.
+35.74.243.248:22335#JP Tokyo AS16509 Amazon.com, Inc.
+35.74.246.102:22335#JP Tokyo AS16509 Amazon.com, Inc.
+35.74.25.146:22335#JP Tokyo AS16509 Amazon.com, Inc.
+35.74.26.179:22335#JP Tokyo AS16509 Amazon.com, Inc.
 35.74.26.179:30001#JP Tokyo AS16509 Amazon.com, Inc.
+35.74.36.141:22335#JP Tokyo AS16509 Amazon.com, Inc.
+35.74.64.154:22335#JP Tokyo AS16509 Amazon.com, Inc.
 35.75.183.41:443#JP Tokyo AS16509 Amazon.com, Inc.
 37.220.82.145:443#DE Frankfurt am Main AS210976 Timeweb, LLP
 37.220.82.56:443#DE Frankfurt am Main AS9123 JSC TIMEWEB
