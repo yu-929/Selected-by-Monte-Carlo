@@ -3345,6 +3345,9 @@
 43.198.73.198:55555#HK Hong Kong AS16509 Amazon.com, Inc.
 43.198.74.93:55555#HK Hong Kong AS16509 Amazon.com, Inc.
 43.198.87.223:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+43.200.164.74:443#KR Incheon AS16509 Amazon.com, Inc.
+43.200.66.92:443#KR Incheon AS16509 Amazon.com, Inc.
+43.200.7.70:443#KR Incheon AS16509 Amazon.com, Inc.
 43.206.105.108:13579#JP Tokyo AS16509 Amazon.com, Inc.
 43.206.105.108:16922#JP Tokyo AS16509 Amazon.com, Inc.
 43.206.105.108:18790#JP Tokyo AS16509 Amazon.com, Inc.
