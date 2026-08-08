@@ -22,6 +22,7 @@
 103.143.81.178:443#HK Tung Chung AS139659 MR 1605 HO KING COMM CTR 2-16 FA YUEN ST MONGKOK KL
 103.143.81.249:443#HK Tung Chung AS139659 MR 1605 HO KING COMM CTR 2-16 FA YUEN ST MONGKOK KL
 103.150.215.69:443#US Los Angeles AS979 Alanyhq Networks
+103.150.8.222:443#JP Tokyo AS3258 xTom
 103.158.117.157:9443#HK Hong Kong AS61112 AKILE LTD
 103.167.234.26:443#PL Warsaw AS48014 Albanian Hosting SH.P.K. t/a AlbHost SH.P.K.
 103.175.98.81:2222#JP Ebara AS46997 Illyasviel von Einzbern
@@ -2386,6 +2387,7 @@
 211.75.210.32:443#TW Taichung AS3462 Data Communication Business Group,
 211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,
 211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,103.150.8.222:443#JP Tokyo AS3258 xTom
+211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,3.112.128.75:20547#JP Tokyo AS16509 Amazon.com, Inc.
 211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,35.74.0.60:22335#JP Tokyo AS16509 Amazon.com, Inc.
 211.75.210.34:443#TW Taichung AS3462 Data Communication Business Group,
 212.113.112.223:443#DE Frankfurt am Main AS215590 LIMITED LIABILITY COMPANY RELCOM-SPB
@@ -2518,6 +2520,7 @@
 3.112.128.75:20002#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.128.75:20005#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.128.75:20547#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.128.75:443#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.128.75:49151#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.128.75:49159#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.128.75:49668#JP Tokyo AS16509 Amazon.com, Inc.
@@ -2526,36 +2529,57 @@
 3.112.175.163:18086#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.175.163:18245#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.175.163:18789#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.175.163:20547#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.175.163:40001#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.175.163:43337#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.175.163:443#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.175.163:49159#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.175.163:49673#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.177.2:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.188.74:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.195.202:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.205.51:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.205.83:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.21.143:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.219.69:443#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.246.205:11001#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.246.205:11300#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.246.205:14265#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.246.205:19195#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.246.205:20547#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.246.205:25105#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.246.205:27088#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.246.205:32257#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.246.205:41589#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.246.205:443#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.246.205:44818#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.246.205:50910#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.3.59:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.30.38:20547#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.30.38:23023#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.30.38:443#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.32.177:18086#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.32.177:20547#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.32.177:21637#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.32.177:26257#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.32.177:29015#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.32.177:40001#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.32.177:40428#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.32.177:443#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.32.177:49670#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.41.210:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.44.186:443#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.55.168:16923#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.55.168:20547#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.55.168:23424#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.55.168:28017#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.55.168:443#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.55.168:46349#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.55.168:49672#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.55.168:49948#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.55.168:53413#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.55.168:56777#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.62.218:443#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.63.35:18081#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.63.35:18789#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.63.35:19530#JP Tokyo AS16509 Amazon.com, Inc.
@@ -2565,6 +2589,10 @@
 3.112.63.35:49672#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.63.35:50000#JP Tokyo AS16509 Amazon.com, Inc.
 3.112.63.35:57076#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.67.101:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.69.236:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.70.249:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.90.2:443#JP Tokyo AS16509 Amazon.com, Inc.
 3.113.113.202:11001#JP Tokyo AS16509 Amazon.com, Inc.
 3.113.113.202:11235#JP Tokyo AS16509 Amazon.com, Inc.
 3.113.113.202:18086#JP Tokyo AS16509 Amazon.com, Inc.

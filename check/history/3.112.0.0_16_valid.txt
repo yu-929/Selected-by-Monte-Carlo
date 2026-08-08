@@ -1,0 +1,29 @@
+3.112.128.75:20547#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.128.75:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.175.163:20547#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.175.163:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.177.2:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.188.74:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.195.202:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.205.51:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.205.83:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.21.143:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.219.69:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.246.205:20547#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.246.205:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.3.168:443#timeout
+3.112.3.59:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.30.38:20547#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.30.38:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.32.177:20547#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.32.177:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.41.210:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.44.186:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.55.168:20547#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.55.168:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.62.218:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.67.101:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.69.236:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.70.249:443#JP Tokyo AS16509 Amazon.com, Inc.
+3.112.89.6:443#timeout
+3.112.90.2:443#JP Tokyo AS16509 Amazon.com, Inc.
