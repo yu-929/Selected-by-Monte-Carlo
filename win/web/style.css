@@ -165,12 +165,11 @@ thead th[data-dir=asc]::after{content:'▲'}
 thead th[data-dir=desc]::after{content:'▼'}
 tbody td{padding:7px 6px;white-space:nowrap;transition:background .12s;overflow:hidden;text-overflow:ellipsis}
 tbody tr:hover td{background:var(--panel2)}
-.c-idx{color:var(--ink3);font-family:var(--mono);font-size:10.5px;text-align:center}
-.c-ip{font-family:var(--mono);font-size:11.5px;letter-spacing:.01em;font-variant-numeric:tabular-nums}
-.c-num{text-align:right;font-family:var(--mono);font-size:11.5px;letter-spacing:.01em;font-variant-numeric:tabular-nums}
-.c-tag{color:var(--ink2);font-size:11px;font-weight:500}
+.c-idx{color:var(--ink3);font-family:var(--mono);font-size:11px;text-align:center}
+.c-ip{font-family:var(--mono);font-size:11.5px;letter-spacing:.01em;font-variant-numeric:tabular-nums;text-align:left}
+.c-num{text-align:left;font-family:var(--mono);font-size:11.5px;letter-spacing:.01em;font-variant-numeric:tabular-nums}
+.c-tag{color:var(--ink2);font-family:var(--mono);font-size:11.5px;font-weight:400;text-align:left}
 .c-act{width:30px;text-align:center}
-.g{color:var(--ok)} .y{color:#f59e0b} .r{color:var(--bad)}
 .g{color:var(--ok)} .y{color:#f59e0b} .r{color:var(--bad)}
 .copy{background:none;border:0;color:var(--ink3);cursor:pointer;padding:2px 4px;border-radius:5px;
   transition:all .15s;font-size:11px;font-family:var(--font)}
