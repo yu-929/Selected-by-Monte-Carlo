@@ -151,7 +151,6 @@ em.note{font-style:normal;font-size:10px;color:var(--ink3);line-height:1.4}
 .table-wrap::before{content:'';display:block;height:1px;background:rgba(255,255,255,.06);margin:0 0 0;flex:0 0 auto}
 html[data-theme="light"] .table-wrap::before{background:rgba(0,0,0,.08)}
 table{width:100%;border-collapse:collapse;font-size:12px}
-colgroup col{width:25%}
 col.c-act{width:30px}
 thead{position:sticky;top:0;z-index:5}
 thead th{padding:8px 6px;font-weight:600;font-size:10.5px;color:var(--ink2);
