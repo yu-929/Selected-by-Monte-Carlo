@@ -721,6 +721,12 @@ func Scan(ctx context.Context, targetInput, portsInput string, cfg Config, onPro
 	if outputDir == "" {
 		outputDir = "check/history"
 	}
+	if !filepathIsAbs(outputDir) {
+		exe, _ := os.Executable()
+		if exe != "" {
+			outputDir = filepathJoin(filepathBaseDir(exe), outputDir)
+		}
+	}
 	cleanName := regexp.MustCompile(`[^\w\.-]`).ReplaceAllString(strings.Split(targetInput, ",")[0], "_")
 	cleanName = strings.TrimSpace(cleanName)
 	if strings.HasSuffix(strings.ToLower(cleanName), ".txt") {
@@ -755,6 +761,18 @@ func filepathBase(p string) string {
 		return p[idx+1:]
 	}
 	return p
+}
+
+func filepathBaseDir(p string) string {
+	idx := strings.LastIndexAny(p, `/\`)
+	if idx >= 0 {
+		return p[:idx]
+	}
+	return "."
+}
+
+func filepathIsAbs(p string) bool {
+	return strings.HasPrefix(p, "/") || strings.HasPrefix(p, `\`) || len(p) >= 3 && p[1] == ':'
 }
 
 func runStage1(ctx context.Context, targets []Target, sni string, concurrency int, onProgress func(Progress)) []Target {
