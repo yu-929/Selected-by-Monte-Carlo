@@ -478,6 +478,16 @@
 13.231.142.17:44818#JP Tokyo AS16509 Amazon.com, Inc.
 13.231.142.17:50075#JP Tokyo AS16509 Amazon.com, Inc.
 13.248.215.36:443#IE Dublin AS16509 Amazon Data Services Ireland Limited
+13.251.102.15:443#SG Singapore AS16509 Amazon.com, Inc.
+13.251.105.79:443#SG Singapore AS16509 Amazon.com, Inc.
+13.251.110.21:443#SG Singapore AS16509 Amazon.com, Inc.
+13.251.110.235:38570#SG Singapore AS16509 Amazon.com, Inc.
+13.251.110.235:443#SG Singapore AS16509 Amazon.com, Inc.
+13.251.115.219:443#SG Singapore AS16509 Amazon.com, Inc.
+13.251.156.14:443#SG Singapore AS16509 Amazon.com, Inc.
+13.251.201.138:443#SG Singapore AS16509 Amazon.com, Inc.
+13.251.43.214:443#SG Singapore AS16509 Amazon.com, Inc.
+13.251.81.206:443#SG Singapore AS16509 Amazon.com, Inc.
 13.51.254.112:443#SE Stockholm AS16509 Amazon Data Services Sweden
 130.162.40.56:443#DE Frankfurt am Main AS31898 Oracle Public Cloud
 130.94.47.203:443#AE Dubai AS154177 LIGHT NODE LIMITED
