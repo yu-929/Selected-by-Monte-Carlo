@@ -4513,6 +4513,13 @@
 79.132.138.87:443#DE Frankfurt am Main AS44051 Fornex Hosting S.L.
 79.99.78.180:443#US Salt Lake City AS212336 ByteVirt LLC
 8.133.163.194:443#US Los Angeles AS45102 Alibaba Cloud - US
+8.209.104.124:443#DE Frankfurt am Main AS45102 Alibaba Cloud (Singapore) Private Limited
+8.209.105.99:443#DE Frankfurt am Main AS45102 Alibaba Cloud LLC
+8.209.108.3:443#DE Frankfurt am Main AS45102 Alibaba Cloud (Singapore) Private Limited
+8.209.111.225:443#DE Frankfurt am Main AS45102 Alibaba Cloud LLC
+8.209.118.3:443#DE Frankfurt am Main AS45102 Alibaba Cloud LLC
+8.209.253.101:34237#JP Tokyo AS45102 Shiodome Sumitomo Blog 1-9-2 TOKYO
+8.209.83.19:443#DE Frankfurt am Main AS45102 Westendstrabe 28, 60325 Frankfurt am Main
 8.210.29.68:443#HK Hong Kong AS45102 Aliyun Computing Co.LTD
 8.218.22.14:443#HK Hong Kong AS45102 Alibaba Cloud (Singapore) Private Limited
 8.219.155.125:443#JP Tokyo AS45102 Alibaba Cloud (Singapore) Private Limited
