@@ -2457,6 +2457,7 @@
 217.60.60.49:443#LV Riga AS56971 CGI GLOBAL LIMITED
 217.60.60.83:443#FI Helsinki AS56971 as56971 network
 217.60.62.8:443#LV Riga AS56971 CGI GLOBAL LIMITED
+218.156.157.76:30005#KR Hwado AS4766 Korea Telecom
 219.76.13.166:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet
 219.76.13.167:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet
 219.76.13.169:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet
