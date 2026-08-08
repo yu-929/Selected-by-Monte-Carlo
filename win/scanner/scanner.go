@@ -386,9 +386,6 @@ func dialWithRetry(ip string, port int, timeout time.Duration) (net.Conn, error)
 }
 
 func checkTLS(t Target, sni string, timeout time.Duration) bool {
-	ctx, cancel := context.WithTimeout(context.Background(), timeout)
-	defer cancel()
-
 	conn, err := dialWithRetry(t.IP.String(), t.Port, timeout)
 	if err != nil {
 		return false
@@ -400,7 +397,7 @@ func checkTLS(t Target, sni string, timeout time.Duration) bool {
 		InsecureSkipVerify: true,
 	})
 	tlsConn.SetDeadline(time.Now().Add(timeout))
-	if err := tlsConn.HandshakeContext(ctx); err != nil {
+	if err := tlsConn.Handshake(); err != nil {
 		return false
 	}
 	state := tlsConn.ConnectionState()
@@ -411,9 +408,6 @@ func checkTLS(t Target, sni string, timeout time.Duration) bool {
 }
 
 func checkHTTP(t Target, host string, timeout time.Duration) bool {
-	ctx, cancel := context.WithTimeout(context.Background(), timeout)
-	defer cancel()
-
 	conn, err := dialWithRetry(t.IP.String(), t.Port, timeout)
 	if err != nil {
 		return false
@@ -425,7 +419,7 @@ func checkHTTP(t Target, host string, timeout time.Duration) bool {
 		InsecureSkipVerify: true,
 	})
 	tlsConn.SetDeadline(time.Now().Add(timeout))
-	if err := tlsConn.HandshakeContext(ctx); err != nil {
+	if err := tlsConn.Handshake(); err != nil {
 		return false
 	}
 
@@ -434,6 +428,7 @@ func checkHTTP(t Target, host string, timeout time.Duration) bool {
 		return false
 	}
 
+	tlsConn.SetDeadline(time.Now().Add(timeout))
 	buf := make([]byte, 1024)
 	n, err := tlsConn.Read(buf)
 	if err != nil && err != io.EOF {
