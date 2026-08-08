@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Universe Million IP Scanner</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="brand">
+    <span class="dot" id="statusDot"></span>
+    <span class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+    <strong>Universe Million IP Scanner</strong>
+  </div>
+  <div class="topbar-right">
+    <span class="stat" id="statResult">结果 0</span>
+    <button class="toolbar-btn" id="btnTheme" title="切换明亮/暗色模式">
+      <svg viewBox="0 0 24 24" class="ico" id="themeIco"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+    <button class="toolbar-btn" id="btnHistory" title="历史记录">
+      <svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="layout">
+  <!-- 左侧参数面板 -->
+  <aside class="panel-left">
+    <div class="card">
+
+      <div class="sec">
+        <div class="sec-title">扫描目标</div>
+        <div class="sec-body">
+          <div class="field">
+            <label>目标 <span class="hint" id="poolHint"></span></label>
+            <textarea id="inTarget" rows="3" spellcheck="false"></textarea>
+          </div>
+          <div class="grid2">
+            <div class="field">
+              <label>端口</label>
+<input type="text" id="inPorts" value="443">
+          </div>
+          <div class="field">
+            <label>自定义 CF 域名</label>
+            <input type="text" id="inDomain">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="sec">
+        <div class="sec-title">扫描参数</div>
+        <div class="sec-body">
+          <div class="field">
+            <label>并发数</label>
+            <div class="seg" id="segConc">
+              <button data-conc="100">100</button>
+              <button data-conc="500">500</button>
+              <button data-conc="1000">1000</button>
+              <button data-conc="0" class="on">自动</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="sec">
+        <div class="actions">
+          <button class="btn primary" id="btnStart">
+            <svg viewBox="0 0 24 24" class="ico"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            开始扫描
+          </button>
+          <button class="btn danger hidden" id="btnStop">
+            <svg viewBox="0 0 24 24" class="ico"><rect x="6" y="6" width="12" height="12"/></svg>
+            停止
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- 右侧结果区 -->
+  <section class="panel-right">
+    <div class="card-full">
+      <div class="progress" id="progressBar"><i id="progressFill"></i></div>
+      <div class="card-body">
+
+        <div class="headrow">
+          <span class="dot" id="statusDot2"></span>
+          <span id="statusText" class="status-text">SCANNER 已就绪</span>
+          <button class="btn ghost btn-sm icon-btn" id="btnLogToggle" title="切换日志面板">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          </button>
+          <button class="btn ghost btn-sm" id="btnCopyAll" title="复制全部结果">
+            <svg viewBox="0 0 24 24" class="ico" style="width:13px;height:13px"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            复制全部
+          </button>
+        </div>
+
+        <div class="log-panel hidden" id="logPanel">
+          <div class="log-header">扫描日志</div>
+          <pre id="logContent"></pre>
+        </div>
+
+        <div class="table-wrap">
+          <table id="tbl">
+            <thead>
+              <tr>
+                <th class="c-idx">#</th>
+                <th data-sort="ip">IP</th>
+                <th class="c-num" data-sort="port">端口</th>
+                <th data-sort="tag">国家</th>
+                <th class="c-act"></th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+          <div class="empty" id="emptyBox">
+            <svg viewBox="0 0 24 24" class="ico empty-ico"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/><path d="M12 16.5v.01"/></svg>
+            <p>暂无扫描结果</p>
+            <span>配置左侧参数后点击「开始扫描」</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 历史记录弹窗 -->
+<div class="mask hidden" id="historyMask">
+  <div class="modal">
+    <h3>历史记录</h3>
+    <div class="field">
+      <div class="hist-list" id="historyList"></div>
+      <em class="note" id="historyHint"></em>
+    </div>
+    <div class="modal-actions">
+      <button class="btn ghost" id="btnHistClose">关闭</button>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+<script src="/app.js"></script>
+</body>
+</html>
