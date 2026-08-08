@@ -2665,6 +2665,21 @@
 3.28.218.23:443#AE Dubai AS16509 Amazon Data Services UAE
 3.33.157.34:443#US Ashburn AS14618 Amazon Data Services Northern Virginia
 3.33.157.34:443#US Boardman AS16509 Amazon.com, Inc.
+3.34.141.95:443#KR Incheon AS16509 Amazon.com, Inc.
+3.34.192.97:443#KR Incheon AS16509 Amazon.com, Inc.
+3.34.196.196:13866#KR Incheon AS16509 Amazon.com, Inc.
+3.34.196.196:443#KR Incheon AS16509 Amazon.com, Inc.
+3.34.196.196:49673#KR Incheon AS16509 Amazon.com, Inc.
+3.34.198.153:13866#KR Incheon AS16509 Amazon.com, Inc.
+3.34.198.153:443#KR Incheon AS16509 Amazon.com, Inc.
+3.34.198.153:49673#KR Incheon AS16509 Amazon.com, Inc.
+3.34.198.185:13866#KR Incheon AS16509 Amazon.com, Inc.
+3.34.198.185:443#KR Incheon AS16509 Amazon.com, Inc.
+3.34.198.185:49673#KR Incheon AS16509 Amazon.com, Inc.
+3.34.205.157:13866#KR Incheon AS16509 Amazon.com, Inc.
+3.34.205.157:443#KR Incheon AS16509 Amazon.com, Inc.
+3.34.205.157:49673#KR Incheon AS16509 Amazon.com, Inc.
+3.34.99.151:443#KR Incheon AS16509 Amazon.com, Inc.
 3.35.51.140:14443#KR Incheon AS16509 Amazon.com, Inc.
 3.36.122.226:41695#KR Incheon AS16509 Amazon.com, Inc.
 31.129.48.139:443#RU Saint Petersburg AS49505 Selectel Network
