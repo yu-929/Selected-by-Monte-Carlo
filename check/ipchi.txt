@@ -2681,7 +2681,14 @@
 3.34.205.157:49673#KR Incheon AS16509 Amazon.com, Inc.
 3.34.99.151:443#KR Incheon AS16509 Amazon.com, Inc.
 3.35.51.140:14443#KR Incheon AS16509 Amazon.com, Inc.
+3.36.109.49:443#KR Incheon AS16509 Amazon.com, Inc.
 3.36.122.226:41695#KR Incheon AS16509 Amazon.com, Inc.
+3.36.122.226:443#KR Incheon AS16509 Amazon.com, Inc.
+3.36.122.226:49674#KR Incheon AS16509 Amazon.com, Inc.
+3.36.127.156:443#KR Incheon AS16509 Amazon.com, Inc.
+3.36.127.156:49674#KR Incheon AS16509 Amazon.com, Inc.
+3.36.131.160:443#KR Incheon AS16509 Amazon.com, Inc.
+3.36.37.208:443#KR Incheon AS16509 Amazon.com, Inc.
 31.129.48.139:443#RU Saint Petersburg AS49505 Selectel Network
 31.129.49.103:443#RU Saint Petersburg AS49505 Selectel Network
 31.15.16.151:443#NL Amsterdam AS56971 CGI GLOBAL LIMITED
