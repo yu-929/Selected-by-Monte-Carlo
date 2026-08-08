@@ -15,6 +15,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: scan-asn
+  cancel-in-progress: false
+
 jobs:
   scan:
     runs-on: ubuntu-latest
@@ -65,4 +69,8 @@ jobs:
           git config user.email "github-actions@github.com"
           git add check/
           git diff --cached --quiet || git commit -m "chore: 扫描结果"
-          git push
+          git pull --rebase origin main
+          for i in 1 2 3; do
+            git push && break
+            sleep 5
+          done
