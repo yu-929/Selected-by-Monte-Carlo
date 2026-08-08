@@ -1,4 +1,4 @@
-# Cloudflare 优选 IP 扫描器
+# Universe Million IP Scanner
 
 高性能 Go 实现，基于 TLS 握手 + HTTP 301 校验，快速筛选出可用的 Cloudflare 优选 IP。
 
