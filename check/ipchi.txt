@@ -4744,6 +4744,7 @@
 94.75.223.51:8443#NL Lelystad AS60781 LeaseWeb Netherlands B.V.
 95.169.2.246:443#US Los Angeles AS25820 Cluster Logic Inc
 95.179.248.158:443#DE Frankfurt am Main AS20473 Vultr Holdings, LLC
+95.40.47.56:27015#HK Hong Kong AS16509 Amazon.com, Inc.
 95.85.12.169:443#NL Amsterdam AS14061 DigitalOcean, LLC
 95.85.12.222:443#NL Amsterdam AS14061 DigitalOcean, LLC
 95.85.12.92:443#NL Amsterdam AS14061 DigitalOcean, LLC
