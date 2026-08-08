@@ -150,28 +150,25 @@ em.note{font-style:normal;font-size:10px;color:var(--ink3);line-height:1.4}
 .table-wrap{flex:1;overflow:auto;min-height:0;display:flex;flex-direction:column}
 .table-wrap::before{content:'';display:block;height:1px;background:rgba(255,255,255,.06);margin:0 0 0;flex:0 0 auto}
 html[data-theme="light"] .table-wrap::before{background:rgba(0,0,0,.08)}
-table{width:100%;border-collapse:collapse;font-size:12px}
+table{width:100%;border-collapse:collapse;font-size:12px;table-layout:fixed}
 thead{position:sticky;top:0;z-index:5}
-thead th{padding:8px 9px;font-weight:600;font-size:10.5px;color:var(--ink2);
+thead th{padding:8px 6px;font-weight:600;font-size:10.5px;color:var(--ink2);
   white-space:nowrap;cursor:pointer;user-select:none;background:var(--panel);
   border-bottom:1px solid rgba(255,255,255,.06)}
 html[data-theme="light"] thead th{border-bottom-color:rgba(0,0,0,.08)}
-thead th:first-child{padding-left:6px}
-thead th:last-child{padding-right:6px}
 thead th:hover{color:var(--ink)}
 thead th.c-idx,thead th.c-act{cursor:default}
 thead th[data-dir]::after{content:'';margin-left:3px;display:inline-block;font-size:7px}
 thead th[data-dir=asc]::after{content:'▲'}
 thead th[data-dir=desc]::after{content:'▼'}
-tbody td{padding:7px 9px;white-space:nowrap;transition:background .12s}
-tbody td:first-child{padding-left:6px}
-tbody td:last-child{padding-right:6px}
+tbody td{padding:7px 6px;white-space:nowrap;transition:background .12s;overflow:hidden;text-overflow:ellipsis}
 tbody tr:hover td{background:var(--panel2)}
-.c-idx{width:32px;color:var(--ink3);font-family:var(--mono);font-size:10.5px;text-align:center}
-.c-num{text-align:right}
-.c-tag{color:var(--ink2);font-size:11px;max-width:220px;font-weight:500;
+.c-idx{width:10%;color:var(--ink3);font-family:var(--mono);font-size:10.5px;text-align:center}
+.c-ip{width:32%}
+.c-num{width:18%;text-align:right}
+.c-tag{width:18%;color:var(--ink2);font-size:11px;font-weight:500;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.c-act{width:30px;text-align:center}
+.c-act{width:30px;min-width:30px;text-align:center}
 td.mono{font-family:var(--mono);font-size:11.5px;letter-spacing:.01em;font-variant-numeric:tabular-nums}
 .g{color:var(--ok)} .y{color:#f59e0b} .r{color:var(--bad)}
 .copy{background:none;border:0;color:var(--ink3);cursor:pointer;padding:2px 4px;border-radius:5px;

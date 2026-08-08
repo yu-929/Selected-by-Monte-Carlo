@@ -89,7 +89,7 @@ function renderTable() {
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td class="c-idx">${i + 1}</td>
-      <td class="mono">${r.ip}</td>
+      <td class="c-ip mono">${r.ip}</td>
       <td class="c-num mono">${r.port}</td>
       <td class="c-tag">${r.tag}</td>
       <td class="c-act"><button class="copy" data-line="${r.raw}" title="复制">⧉</button></td>`;
