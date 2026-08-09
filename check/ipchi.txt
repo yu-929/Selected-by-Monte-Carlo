@@ -4287,6 +4287,7 @@
 64.186.232.240:443#US Los Angeles AS906 DMIT Cloud Services
 64.186.232.37:443#US Los Angeles AS906 DMIT Cloud Services
 64.186.233.254:443#US Los Angeles AS906 DMIT Cloud Services
+64.186.233.26:13691#US Los Angeles AS906 Private Customer
 64.186.234.221:443#US Los Angeles AS906 DMIT Cloud Services
 64.186.234.251:443#US Los Angeles AS906 DMIT Cloud Services
 64.186.235.109:443#US Los Angeles AS906 Private Customer
