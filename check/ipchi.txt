@@ -4201,6 +4201,7 @@
 57.183.36.250:23023#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.250:29015#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.250:31337#JP Tokyo AS16509 Amazon.com, Inc.
+58.152.13.239:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet
 60.249.21.29:443#TW Taichung AS3462 Chunghwa Telecom Data Communication Business Group
 60.249.21.30:443#TW Taichung AS3462 Chunghwa Telecom Data Communication Business Group
 61.34.98.103:12326#KR Seoul AS3786 LG DACOM Corporation
