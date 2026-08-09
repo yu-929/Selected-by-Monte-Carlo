@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trace - 路由追踪与线路识别</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Trace 路由追踪与线路识别</h1>
+  <nav>
+    <button id="nav-scan" class="active">扫描</button>
+    <button id="nav-hops">路由详情</button>
+    <button id="nav-tasks">历史任务</button>
+  </nav>
+</header>
+
+<main>
+  <!-- 扫描视图 -->
+  <section id="view-scan" class="view">
+    <div class="panel">
+      <h2>新建扫描</h2>
+      <textarea id="targets" rows="6" placeholder="每行一个目标 IP 或域名，例如：&#10;104.16.0.1&#10;8.8.8.8&#10;1.1.1.1"></textarea>
+      <div class="row">
+        <label><input type="checkbox" id="skip-tracer"> 跳过 tracert</label>
+        <label>并发数 <input type="number" id="workers" value="8" min="1" max="64" style="width:60px"></label>
+        <label>最大跳数 <input type="number" id="max-hops" value="12" min="1" max="30" style="width:60px"></label>
+      </div>
+      <button id="btn-submit" class="primary">开始扫描</button>
+    </div>
+
+    <div class="panel">
+      <h2>实时日志</h2>
+      <pre id="log" class="log"></pre>
+    </div>
+
+    <div class="panel">
+      <h2>扫描结果</h2>
+      <table id="results">
+        <thead>
+          <tr>
+            <th>IP</th><th>ASN</th><th>运营商</th><th>线路</th>
+            <th>国家</th><th>城市</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 路由详情视图 -->
+  <section id="view-hops" class="view hidden">
+    <div class="panel">
+      <h2>单目标路由追踪</h2>
+      <div class="row">
+        <input type="text" id="hop-target" placeholder="目标 IP，例如 104.16.0.1" style="flex:1">
+        <button id="btn-hops" class="primary">追踪</button>
+      </div>
+      <table id="hops">
+        <thead>
+          <tr><th>跳数</th><th>IP</th><th>延迟</th><th>ASN</th><th>组织</th><th>线路</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="hop-status" class="status"></div>
+    </div>
+  </section>
+
+  <!-- 历史任务视图 -->
+  <section id="view-tasks" class="view hidden">
+    <div class="panel">
+      <h2>历史任务</h2>
+      <table id="tasks">
+        <thead>
+          <tr><th>ID</th><th>目标数</th><th>状态</th><th>创建时间</th><th>结果数</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
