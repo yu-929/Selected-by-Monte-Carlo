@@ -24,7 +24,9 @@ func main() {
 		*targetInput = os.Getenv("ASN_LIST")
 	}
 	if *targetInput == "" {
-		*targetInput = "AS206300"
+		flag.Usage()
+		fmt.Fprintln(os.Stderr, "\n错误：必须指定目标，请使用 -target 指定 ASN / CIDR / IP / 文件路径")
+		os.Exit(2)
 	}
 
 	cfg := scanner.Config{
