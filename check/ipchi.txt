@@ -1575,6 +1575,7 @@
 166.88.117.22:35062#DE Frankfurt am Main AS149440 Evoxt.com
 166.88.117.234:13148#DE Frankfurt am Main AS149440 Evoxt.com
 166.88.117.5:58803#DE Frankfurt am Main AS149440 Evoxt.com
+166.88.117.83:13148#DE Frankfurt am Main AS149440 Evoxt.com
 166.88.117.89:13148#DE Frankfurt am Main AS149440 Evoxt.com
 166.88.117.97:13148#DE Frankfurt am Main AS149440 Evoxt.com
 166.88.132.175:13148#DE Frankfurt am Main AS149440 Evoxt.com
@@ -3021,7 +3022,9 @@
 23.27.124.31:50663#DE Frankfurt am Main AS149440 Evoxt.com
 23.27.124.38:39917#DE Frankfurt am Main AS149440 Evoxt.com
 23.27.124.52:13148#DE Frankfurt am Main AS149440 Evoxt.com
+23.27.140.197:13148#US New York City AS18450 WebNX, Inc.
 23.27.141.214:443#US New York City AS18450 WebNX, Inc.
+23.27.142.44:13148#US New York City AS18450 WebNX, Inc.
 23.27.143.196:17347#US New York City AS149440 Evoxt.com
 23.27.163.112:10280#US Los Angeles AS149440 Evoxt.com
 23.27.163.198:443#US Los Angeles AS149440 Evoxt.com
@@ -3074,6 +3077,7 @@
 23.27.49.219:20862#US Los Angeles AS149440 Evoxt.com
 23.27.50.243:14934#US New York City AS149440 Evoxt.com
 23.27.50.246:13148#US New York City AS18450 WebNX, Inc.
+23.27.51.86:13148#US New York City AS18450 WebNX, Inc.
 23.27.52.133:29723#JP Tokyo AS149440 Evoxt.com
 23.27.52.60:8765#JP Tokyo AS149440 Evoxt.com
 23.27.53.191:33562#MY Kuala Lumpur AS149440 Evoxt.com
