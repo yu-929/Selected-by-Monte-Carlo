@@ -1,0 +1,4 @@
+13.215.161.131:443#timeout
+13.215.161.132:443#SG Singapore AS16509 Amazon.com, Inc.
+13.215.161.132:49151#SG Singapore AS16509 Amazon.com, Inc.
+13.215.161.217:443#timeout
