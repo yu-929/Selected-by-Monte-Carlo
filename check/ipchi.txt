@@ -1327,6 +1327,13 @@
 16.162.91.19:443#HK Hong Kong AS16509 Amazon.com, Inc.
 16.162.91.7:13720#HK Hong Kong AS16509 Amazon.com, Inc.
 16.162.91.7:443#HK Hong Kong AS16509 Amazon.com, Inc.
+16.163.127.115:47566#HK Hong Kong AS16509 Amazon.com, Inc.
+16.163.129.251:47566#HK Hong Kong AS16509 Amazon.com, Inc.
+16.163.138.70:47566#HK Hong Kong AS16509 Amazon.com, Inc.
+16.163.143.85:47566#HK Hong Kong AS16509 Amazon.com, Inc.
+16.163.31.97:47566#HK Hong Kong AS16509 Amazon.com, Inc.
+16.163.56.180:47566#HK Hong Kong AS16509 Amazon.com, Inc.
+16.163.57.118:47566#HK Hong Kong AS16509 Amazon.com, Inc.
 16.76.125.38:16030#JP Tokyo AS16509 Amazon.com, Inc.
 16.76.125.38:20002#JP Tokyo AS16509 Amazon.com, Inc.
 16.76.125.38:22335#JP Tokyo AS16509 Amazon.com, Inc.
