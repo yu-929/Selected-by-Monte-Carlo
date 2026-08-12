@@ -1,2 +1,226 @@
+103.244.91.194:40400#HK Tung Chung AS6134 Hongkong Wen Jing Network Limited
+103.96.74.18:16000#HK Hong Kong AS55933 Room1405,14/F Lucky Centre 171 Wanchai road, Wanchai
+104.194.66.92:443#US Los Angeles AS25820 IT7 Networks Inc
+107.148.239.178:16027#HK Hong Kong AS398478 PEG TECH INC
+108.174.61.161:38712#US New York City AS6939 Hurricane Electric LLC
+108.174.61.161:59581#US Buffalo AS36352 RackNerd LLC
+109.107.140.90:443#JP Tokyo AS3258 xTom
+109.176.207.168:443#NL Amsterdam AS214036 Private Customer
+111.97.164.62:8443#JP Tokyo AS2516 KDDI CORPORATION
+114.204.41.241:30001#KR Ansan-si AS9318 SK Broadband Co Ltd
+114.204.41.241:30003#KR Ansan-si AS9318 SK Broadband Co Ltd
+116.251.216.23:8443#SG Singapore AS24482 SG.GS
+116.251.217.107:443#SG Singapore AS24482 SG.GS
+116.251.217.65:443#SG Singapore AS24482 SG.GS
+118.156.166.251:443#JP Kawaguchi AS2516 KDDI CORPORATION
+119.28.162.39:8443#KR Seolcheon AS13335 Cloudflare London, LLC
+121.166.39.76:12433#KR Pyeongtaek AS4766 Korea Telecom
+122.10.119.252:443#HK Tung Chung AS55933 Cloudie Limited
+123.111.169.70:2053#KR Seoul AS9318 SK Broadband Co Ltd
+123.111.169.70:2083#KR Seoul AS9318 SK Broadband Co Ltd
+123.111.169.70:2087#KR Seoul AS9318 SK Broadband Co Ltd
+123.111.169.70:2096#KR Seoul AS9318 SK Broadband Co Ltd
+123.111.169.70:443#KR Seoul AS9318 SK Broadband Co Ltd
+128.241.25.11:30021#US Los Angeles AS2914
+128.241.25.3:30021#US Los Angeles AS2914
+129.151.64.169:31867#GB Cardiff AS31898 Oracle Corporation
+129.153.71.28:28863#US Phoenix AS31898 Oracle Corporation
+13.212.19.68:56138#SG Singapore AS16509 Amazon Data Services Singapore
+13.212.82.58:2000#SG Singapore AS16509 Amazon.com, Inc.
+13.248.215.36:443#IE Dublin AS16509 Amazon Data Services Ireland Limited
+13.51.254.112:443#SE Stockholm AS16509 Amazon Data Services Sweden
+132.145.127.203:2053#JP Inzai AS31898 Oracle Public Cloud
+132.243.203.239:8443#AT Vienna AS40994 InterLIR-Marketplace
+134.209.148.128:443#IN Bāshettihalli AS14061 DigitalOcean, LLC
+135.181.250.100:2053#FI Helsinki AS24940 Hetzner Online GmbH
+138.197.176.152:2087#DE Frankfurt am Main AS14061 DigitalOcean, LLC
+138.2.32.76:15821#JP Osaka AS31898 Oracle Corporation
+138.2.71.48:48397#SG Kampong Loyang AS31898 Oracle Corporation
+138.68.94.36:443#DE Frankfurt am Main AS14061 DigitalOcean, LLC
+139.162.133.162:20091#DE Frankfurt am Main AS63949 139.162.0.0/16
+139.28.221.213:48004#FI Helsinki AS207569 PSERVERS Enterprise Network
+139.59.148.136:443#DE Frankfurt am Main AS14061 DigitalOcean, LLC
+139.84.139.219:443#IN Bāshettihalli AS20473 The Constant Company, LLC
+139.84.166.44:443#IN Dādri AS20473 The Constant Company, LLC
+14.52.210.173:12312#KR Seoul AS4766 Korea Telecom
+140.150.236.158:443#HK Kwai Chung AS205548 ZOUTER HK
+140.245.107.0:8443#SG Kampong Loyang AS31898 Oracle Corporation
+140.83.54.126:34237#JP Osaka AS31898 imported inetnum object for OCPL-1
+141.11.91.67:8080#HK Hong Kong AS61112 Tusker Technologies Pty Ltd
+141.148.164.46:57239#US Phoenix AS31898 Oracle Corporation
+142.248.137.22:443#JP Tokyo AS137535 NetFuture Technology LLC
 142.248.139.188:443#JP Tokyo AS137535 NetFuture Technology LLC
 142.248.139.237:443#JP Tokyo AS137535 NetFuture Technology LLC
+142.248.139.25:443#JP Tokyo AS137535 NetFuture Technology LLC
+142.91.108.54:443#JP Tokyo AS134351 Leaseweb Japan K.K.
+143.110.184.105:443#IN Mumbai AS149020
+143.14.11.61:443#TH Bangkok AS153996 VP InfoTech Co., Ltd.
+144.126.199.82:443#GB London AS14061 DigitalOcean, LLC
+145.79.143.187:443#HK Kwai Chung AS205548 ZOUTER LIMITED
+145.79.143.217:443#HK Kwai Chung AS205548 ZOUTER HK
+145.79.143.63:443#HK Kwai Chung AS205548 ZOUTER LIMITED
+146.56.140.79:44699#KR Seoul AS13335 Cloudflare London, LLC
+146.56.174.193:58567#KR Gangseo-gu AS31898 Oracle Corporation , Global software solutions , California , USA
+147.224.59.149:443#US San Jose AS31898 Oracle Corporation
+147.45.198.205:443#DE Frankfurt am Main AS212701 Hostinux Limited
+147.45.76.61:443#GB London AS210644 AEZA GROUP LLC
+147.90.26.58:443#FR Paris AS61003 Seigohost LLC
+148.251.41.50:10000#DE Falkenstein AS24940 Hetzner Online GmbH
+149.118.131.245:443#MY Kampung Sedenak AS31898 Oracle Corporation
+149.118.156.142:443#MY Kampung Sedenak AS31898 Oracle Corporation
+149.28.138.97:30680#SG Singapore AS20473 The Constant Company, LLC
+149.28.158.103:10030#SG Singapore AS20473 Vultr Holdings, LLC
+151.241.129.98:7219#JP Tokyo AS36530 DIAMOND IP BROKERS FZCO
+151.245.90.96:8443#HK Hong Kong AS36530 RIPE NCC
+152.53.45.7:443#AT Vienna AS197540 netcup GmbH
+152.70.239.74:443#KR Gangseo-gu AS31898 Oracle Corporation
+152.70.254.197:443#KR Gangseo-gu AS31898 Oracle Corporation
+153.121.32.71:443#JP Tokyo AS9370 SAKURA Internet Inc.
+153.121.45.101:443#JP Tokyo AS9370 SAKURA Internet Inc.
+153.121.76.150:443#JP Tokyo AS9370 SAKURA Internet Inc.
+154.17.26.204:443#US Los Angeles AS906 DMIT Cloud Services
+154.17.9.119:16378#US Los Angeles AS906 DMIT Cloud Services
+154.17.9.159:443#US Los Angeles AS906 Private Customer
+154.222.86.2:443#DE Frankfurt am Main AS63023 GTHost
+156.154.245.84:443#JP Tokyo AS19905 Arbor Cloud
+157.20.27.35:443#IN Mumbai AS149020
+157.230.110.242:443#DE Frankfurt am Main AS14061 DigitalOcean, LLC
+157.85.105.126:443#TH Pak Kret AS56309 ReadyIDC Co.,Ltd.
+158.247.198.196:443#KR Gangseo-gu AS20473 The Constant Company, LLC
+159.223.85.214:443#SG Singapore AS14061 DigitalOcean, LLC
+159.65.21.201:443#GB London AS14061 DigitalOcean, LLC
+16.16.207.129:443#SE Stockholm AS16509 Amazon Data Services Sweden
+160.16.57.18:443#JP Tokyo AS9370 SAKURA Internet Inc.
+160.16.62.84:443#JP Tokyo AS9370 SAKURA Internet Inc.
+165.101.65.72:443#TH Bangkok AS153996 VP InfoTech Co., Ltd.
+165.22.104.36:443#SG Singapore AS14061 DigitalOcean, LLC
+166.117.184.30:443#US Ashburn AS14618 Amazon Data Services Northern Virginia
+167.179.115.135:443#JP Ōi AS20473 The Constant Company, LLC
+167.99.80.243:2096#GB London AS14061 DigitalOcean, LLC
+168.119.118.129:443#DE Nuremberg AS24940 Hetzner Online GmbH
+168.138.180.178:44443#SG Kampong Loyang AS31898 Oracle Corporation
+169.40.5.202:443#LV Riga AS42532 SIA VEESP
+174.138.17.183:443#SG Singapore AS14061 DigitalOcean, LLC
+174.138.20.108:443#SG Singapore AS14061 DigitalOcean, LLC
+175.213.58.158:21240#KR Goyang-si AS4766 KT
+176.97.66.175:443#AE Dubai AS9009 3nt solutions LLP
+176.97.70.51:8443#JP Tokyo AS9009 3nt solutions LLP
+178.128.192.26:2083#DE Frankfurt am Main AS14061 DigitalOcean, LLC
+178.128.209.190:443#SG Singapore AS14061 DigitalOcean, LLC
+179.253.236.186:443#US Los Angeles AS906 DMIT Cloud Services
+18.138.34.221:443#SG Singapore AS16509 Amazon.com, Inc.
+185.125.103.62:8082#DE Frankfurt am Main AS210644 AEZA GROUP LLC
+185.18.52.254:8443#NL Rotterdam AS16003 www.fornex.com, Fornex Hosting S.L.
+185.186.246.8:443#NL Lelystad AS35415 INXY LTD.
+185.232.204.189:443#FI Helsinki AS50053 Individual Entrepreneur Anton Levin
+185.250.181.147:8443#FI Helsinki AS50053 Individual Entrepreneur Anton Levin
+185.81.28.39:443#SG Singapore AS61112 AKILE LTD
+188.166.27.250:2053#NL Amsterdam AS14061 DigitalOcean, LLC
+191.222.210.36:443#JP Tokyo AS906 DMIT Inc.
+192.210.196.158:36414#US Santa Clara AS36352 RackNerd LLC
+192.220.28.221:2083#US Los Angeles AS13335 Cloudflare London, LLC
+192.9.230.55:443#US San Jose AS31898 Oracle Corporation
+193.124.49.35:443#NL Amsterdam AS26383 Baxet Group Inc.
+193.32.151.205:51926#JP Tokyo AS3258 xTom Japan Corporation
+194.180.191.123:443#MD Chisinau AS39798 MivoCloud
+194.87.208.118:443#NL Amsterdam AS210976 Timeweb, LLP
+194.87.83.44:443#NL Amsterdam AS210976 Timeweb, LLP
+195.133.53.166:8443#RU Novosibirsk AS49392 LLC Baxet
+195.200.30.195:8443#NL Amsterdam AS216071 Amsterdam, Netherlands
+198.211.120.58:2083#NL Amsterdam AS14061 DigitalOcean, LLC
+2.26.248.152:443#DE Frankfurt am Main AS216127 nuxtcloud
+2.27.109.35:443#HK Tung Chung AS150452 LANDUPS LIMITED
+20.120.129.200:443#US Moses Lake AS8075 Microsoft Corporation
+203.137.165.164:57554#JP Tokyo AS4694 IDC Frontier Inc.
+203.69.248.40:33699#TW Kaohsiung AS3462 Data Communication Business Group,
+206.189.118.129:443#GB London AS14061 DigitalOcean, LLC
+206.189.12.181:2087#NL Amsterdam AS14061 DigitalOcean, LLC
+206.81.30.239:443#DE Frankfurt am Main AS14061 DigitalOcean, LLC
+207.148.119.176:8443#SG Singapore AS20473 Vultr Holdings, LLC
+207.148.125.245:8444#SG Singapore AS20473 SGP_VULTR_CUST
+207.65.189.9:443#JP Kisarazu AS2527 So-net Service
+209.33.166.199:443#HK Hong Kong AS63150 BAGE CLOUD LLC
+209.38.23.235:443#AU Sydney AS14061 Digital Ocean, Inc.
+209.97.170.177:443#SG Singapore AS14061 DigitalOcean, LLC
+210.103.67.11:32312#KR Suwon AS4766 Korea Telecom
+210.152.85.154:19364#JP Tokyo AS4694 IDC Frontier Inc.
+211.220.53.131:12545#KR Busan AS4766 KT
+213.21.229.126:12345#GB London AS210644 AEZA GROUP LLC
+213.35.100.31:47112#SG Kampong Loyang AS31898 Oracle Svenska AB
+216.10.243.159:443#IN Mumbai AS394695 P.D.R Solutions FZC
+218.155.85.44:28973#KR Suwon AS4766 Korea Telecom
+222.113.18.213:12320#KR Gangneung AS4766 Korea Telecom
+23.105.194.212:443#US Los Angeles AS25820 IT7 Networks Inc
+23.133.52.10:2053#HK Hong Kong AS15012 NextStage Innovations LLC
+3.28.218.23:443#AE Dubai AS16509 Amazon Data Services UAE
+31.15.19.21:443#NL Dronten AS52000 Individual Entrepreneur Ildar Gilmutdinov
+31.59.170.251:2053#NL Amsterdam AS56971 GOLD IP L.L.C-FZ
+37.139.9.209:443#NL Amsterdam AS14061 DigitalOcean, LLC
+38.147.173.136:443#HK Hong Kong AS139659 MR 1605 HO KING COMM CTR 2-16 FA YUEN ST MONGKOK KL
+38.60.89.231:8443#US Los Angeles AS8796 KURUN CLOUD INC
+4.240.110.47:443#IN Pune AS8075 Microsoft Corporation
+40.172.89.195:8443#AE Dubai AS16509 Amazon Data Services UAE
+43.133.110.81:443#TH Bangkok AS132203 6 COLLYER QUAY
+43.133.237.158:8443#KR Seoul AS132203 6 COLLYER QUAY
+43.134.174.114:443#SG Singapore AS132203 6 COLLYER QUAY
+43.155.221.27:8443#KR Seoul AS13335 Cloudflare London, LLC
+43.168.16.112:443#HK Hong Kong AS139341 ACE
+43.248.11.175:24807#HK Tung Chung AS42960 FLAT A5, 9F
+45.131.66.247:20002#DE Frankfurt am Main AS213250 DeinServerHost
+45.131.66.61:20001#DE Frankfurt am Main AS213250 combahton IT Services UG
+45.146.82.216:50360#US Seattle AS152672 Internet Utilities Europe and Asia Limited
+45.147.48.147:443#DE Frankfurt am Main AS3214 xTom
+45.150.128.159:443#TH Mueang Nonthaburi AS56309 ReadyIDC Co., Ltd.
+45.150.131.246:443#TH Mueang Nonthaburi AS9335 ReadyIDC Co., Ltd.
+45.38.42.198:2053#HK Hong Kong AS56971 Subnet Digital LLC
+45.77.241.190:8441#SG Singapore AS20473 Vultr Holdings, LLC
+45.77.25.6:27854#JP Ōi AS20473 Vultr Holdings, LLC
+45.89.52.247:443#TR Istanbul AS209847 WorkTitans B.V.
+46.149.76.150:443#NL Amsterdam AS216071 Amsterdam, Netherlands
+46.225.82.231:8443#DE Nuremberg AS24940 Hetzner Online GmbH
+46.243.1.237:443#FI Helsinki AS207569 I-SERVERS LTD
+46.62.230.149:443#FI Helsinki AS24940 Hetzner Online GmbH
+47.243.54.45:18080#HK Hong Kong AS45102 ALIBABA CLOUD - HK
+47.250.81.46:2087#MY Kuala Lumpur AS45102 Alibaba Cloud - MY
+47.57.181.17:443#US Los Angeles AS45102 Alibaba Cloud - US
+47.75.113.97:443#HK Hong Kong AS45102 ALIBABA CLOUD - HK
+47.83.139.13:8443#CN Guangzhou AS37963 Aliyun Computing Co.LTD
+5.255.123.63:443#NL Dronten AS60404 The Infrastructure Group B.V.
+51.20.202.203:443#SE Stockholm AS16509 A100 ROW Inc
+54.248.55.203:443#JP Tokyo AS16509 Amazon.com, Inc.
+54.254.145.25:6768#SG Singapore AS16509 Amazon.com, Inc.
+54.46.72.234:8001#HK Hong Kong AS16509 Amazon Data Services Hong Kong
+54.46.72.234:8003#HK Hong Kong AS16509 Amazon Data Services Hong Kong
+57.129.130.57:52014#GB Bexley AS16276 OVH Ltd
+61.245.11.45:443#PH Quezon City AS19970 R&R Managed Telecom Services
+64.186.239.138:443#US Los Angeles AS906 DMIT Cloud Services
+64.186.247.120:443#US Los Angeles AS906 Private Customer
+64.226.125.55:2083#DE Frankfurt am Main AS14061 DigitalOcean, LLC
+64.226.84.161:443#DE Frankfurt am Main AS14061 DigitalOcean, LLC
+64.227.146.37:443#IN Bāshettihalli AS14061 DigitalOcean, LLC
+65.21.182.84:443#FI Helsinki AS24940 Hetzner Online GmbH
+66.42.61.215:443#SG Singapore AS20473 The Constant Company, LLC
+68.183.0.4:2087#NL Amsterdam AS14061 DigitalOcean, LLC
+68.183.225.227:443#SG Singapore AS14061 DigitalOcean, LLC
+68.64.178.42:443#HK Hong Kong AS139659 MR 1605 HO KING COMM CTR 2-16 FA YUEN ST MONGKOK KL
+75.2.79.84:443#US Ashburn AS14618 Amazon Technologies Inc.
+76.223.77.48:443#IE Dublin AS16509 Amazon Data Services Ireland Limited
+77.93.90.231:443#SG Singapore AS63150 BAGE CLOUD LLC
+78.142.228.156:443#NL Amsterdam AS3214 Virtual Machine Solutions LLC
+78.142.230.76:443#NL Amsterdam AS3214 Virtual Machine Solutions LLC
+8.210.29.68:443#HK Hong Kong AS45102 Aliyun Computing Co.LTD
+8.218.36.133:9010#HK Hong Kong AS45102 Alibaba Cloud (Singapore) Private Limited
+8.219.155.125:443#JP Tokyo AS45102 Alibaba Cloud (Singapore) Private Limited
+8.219.195.31:443#JP Tokyo AS45102 Alibaba Cloud (Singapore) Private Limited
+8.222.185.236:443#JP Tokyo AS45102 Alibaba Cloud (Singapore) Private Limited
+80.251.213.187:443#US Los Angeles AS25820 Cluster Logic Inc
+82.152.90.213:8080#TW Taipei AS61112 AKILE LTD
+85.121.51.114:8443#HK Hong Kong AS9009 STYLISH BY A&L SRL
+85.155.176.11:8443#KR Seoul AS63473 Prinode AB
+91.107.166.26:8888#DE Falkenstein AS24940 Hetzner Online GmbH
+91.107.249.84:1443#DE Nuremberg AS24940 Hetzner Online GmbH
+91.186.218.227:4443#GB London AS210644 AEZA GROUP LLC
+92.113.124.204:18443#JP Kanda-jinbōchō AS36530 RIPE NCC
+94.131.123.74:443#TR Istanbul AS209847 WorkTitans B.V.
+95.85.11.18:443#NL Amsterdam AS14061 DigitalOcean, LLC
+95.85.42.135:2053#NL Amsterdam AS14061 DigitalOcean, LLC
