@@ -2455,7 +2455,9 @@
 185.200.196.152:8443#EE Tallinn AS34702 3nt solutions LLP
 185.200.196.176:443#EE Tallinn AS34702 3nt solutions LLP
 185.200.196.57:443#EE Tallinn AS34702 3nt solutions LLP
+185.200.64.11:443#JP Tokyo AS3258 xTom Japan Corporation
 185.200.64.125:1443#JP Tokyo AS3258 xTom Japan Corporation
+185.200.64.132:443#JP Tokyo AS3258 xTom Japan Corporation
 185.200.64.15:443#JP Tokyo AS3258 xTom Japan Corporation
 185.200.64.17:443#JP Tokyo AS3258 xTom Japan Corporation
 185.200.65.32:443#JP Tokyo AS3258 xTom Japan Corporation
@@ -4179,6 +4181,7 @@
 45.142.126.231:443#JP Tokyo AS3258 xTom Japan Corporation
 45.142.126.32:443#JP Tokyo AS3258 xTom Japan Corporation
 45.142.127.116:443#JP Tokyo AS3258 xTom Japan Corporation
+45.142.127.16:443#JP Tokyo AS3258 xTom Japan Corporation
 45.142.127.205:443#JP Tokyo AS3258 xTom Japan Corporation
 45.142.127.22:443#JP Tokyo AS3258 xTom Japan Corporation
 45.142.127.27:443#JP Tokyo AS3258 xTom Japan Corporation
@@ -4286,6 +4289,7 @@
 45.89.219.65:443#SG Singapore AS8888 365 Group LLC
 45.89.219.72:443#SG Singapore AS8888 365 Group LLC
 45.89.232.128:443#JP Tokyo AS3258 xTom Japan Corporation
+45.89.232.185:443#JP Tokyo AS3258 xTom Japan Corporation
 45.89.234.109:443#JP Tokyo AS3258 xTom Japan Corporation
 45.89.234.115:443#JP Tokyo AS3258 xTom Japan Corporation
 45.89.234.29:4443#JP Tokyo AS3258 xTom Japan Corporation
@@ -4798,6 +4802,7 @@
 60.249.21.29:443#TW Taichung AS3462 Chunghwa Telecom Data Communication Business Group
 60.249.21.30:443#TW Taichung AS3462 Chunghwa Telecom Data Communication Business Group
 61.34.98.103:12326#KR Seoul AS3786 LG DACOM Corporation
+62.106.70.39:443#JP Tokyo AS3258 xTom
 62.106.70.68:443#JP Tokyo AS3258 xTom
 62.60.150.196:443#SE Stockholm AS210644 AEZA GROUP LLC
 62.60.150.202:443#GB London AS210644 AEZA GROUP LLC
