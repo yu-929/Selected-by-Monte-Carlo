@@ -667,6 +667,8 @@
 141.98.196.40:443#JP Tokyo AS3258 365 Group LLC
 141.98.197.154:443#JP Tokyo AS3258 xTom
 141.98.197.42:443#JP Tokyo AS3258 xTom
+141.98.199.148:443#SG Singapore AS8888 xTom Pty Ltd
+141.98.199.168:443#SG Singapore AS8888 xTom Pty Ltd
 142.111.135.164:443#US Los Angeles AS149440 Evoxt.com
 142.111.143.108:443#MY Kuala Lumpur AS149440 Evoxt.com
 142.111.143.193:45205#MY Kuala Lumpur AS149440 Evoxt.com
@@ -1653,6 +1655,7 @@
 167.172.65.175:443#SG Singapore AS14061 DigitalOcean, LLC
 167.179.81.76:10000#JP Ōi AS20473 Vultr Holdings, LLC
 167.179.96.147:8444#JP Ōi AS20473 The Constant Company, LLC
+167.253.159.197:443#SG Singapore AS8888 xTom Pty Ltd
 167.71.140.229:443#GB London AS14061 DigitalOcean, LLC
 167.71.195.31:443#SG Singapore AS14061 DigitalOcean, LLC
 167.71.2.98:443#NL Amsterdam AS14061 DigitalOcean, LLC
@@ -2470,6 +2473,7 @@
 185.253.46.31:443#CZ Prague AS204957 Friendhosting LTD
 185.253.46.5:443#CZ Prague AS204957 Friendhosting LTD
 185.253.46.98:443#CZ Prague AS204957 Friendhosting LTD
+185.37.255.190:443#SG Singapore AS8888 xTom Pty Ltd
 185.37.8.121:443#NL Meppel AS214790 Brainoza OU
 185.37.8.133:443#NL Meppel AS214790 Brainoza OU
 185.37.8.139:443#NL Meppel AS214790 Brainoza OU
@@ -2797,6 +2801,8 @@
 202.61.75.38:443#MY Kuala Lumpur AS149440 Evoxt.com
 202.61.75.68:2053#MY Kuala Lumpur AS149440 Evoxt.com
 202.85.53.11:443#HK Hong Kong AS137897 Mazen Ind Ltd
+203.55.176.212:443#SG Singapore AS8888 xTom Pty Ltd
+203.55.176.47:443#SG Singapore AS8888 xTom Pty Ltd
 205.186.64.149:47553#MY Kuala Lumpur AS149440 Evoxt.com
 205.186.64.216:443#MY Kuala Lumpur AS149440 Evoxt.com
 205.186.64.23:40173#MY Kuala Lumpur AS149440 Evoxt.com
@@ -4276,6 +4282,7 @@
 45.87.121.218:443#NL Amsterdam AS216300 New Hosting Technologies LLC
 45.87.121.7:443#NL Amsterdam AS216300 New Hosting Technologies LLC
 45.87.121.9:443#NL Amsterdam AS216300 New Hosting Technologies LLC
+45.87.92.138:443#SG Singapore AS8888 xTom
 45.89.219.65:443#SG Singapore AS8888 365 Group LLC
 45.89.219.72:443#SG Singapore AS8888 365 Group LLC
 45.89.232.128:443#JP Tokyo AS3258 xTom Japan Corporation
@@ -4291,6 +4298,7 @@
 45.89.235.72:10443#JP Tokyo AS3258 xTom Japan Corporation
 45.90.216.27:443#RU Moscow AS205090 FIRST SERVER, SOCIEDAD LIMITADA
 45.92.158.117:443#SG Singapore AS8888 xTom Pty Ltd
+45.92.158.166:443#SG Singapore AS8888 xTom Pty Ltd
 45.92.158.89:443#SG Singapore AS8888 xTom Pty Ltd
 45.92.159.134:443#JP Tokyo AS3258 365 Group LLC
 45.94.41.19:443#SG Singapore AS8888 xTom Pty Ltd
@@ -5518,6 +5526,7 @@
 96.126.191.110:2443#JP Osaka AS149440 Evoxt.com
 96.126.191.234:8443#JP Osaka AS149440 Evoxt.com
 96.126.191.250:443#JP Osaka AS149440 Evoxt.com
+96.9.211.91:443#SG Singapore AS8888 xTom Pty Ltd
 98.70.26.236:443#IN Pune AS8075 Microsoft Corporation
 98.98.207.132:443#GB London AS21859 Zenlayer Inc
 98.98.207.136:443#GB London AS21859 Zenlayer Inc
