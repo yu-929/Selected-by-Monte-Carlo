@@ -3214,6 +3214,7 @@
 3.114.209.125:49668#JP Tokyo AS16509 Amazon.com, Inc.
 3.114.209.125:49673#JP Tokyo AS16509 Amazon.com, Inc.
 3.114.209.125:50000#JP Tokyo AS16509 Amazon.com, Inc.
+3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.23.27.47.118:443#US Los Angeles AS149440 Evoxt.com
 3.114.209.125:55553#JP Tokyo AS16509 Amazon.com, Inc.
 3.115.214.198:14534#JP Tokyo AS16509 Amazon.com, Inc.
 3.115.214.198:16993#JP Tokyo AS16509 Amazon.com, Inc.
@@ -3697,6 +3698,7 @@
 35.78.212.100:32769#JP Tokyo AS16509 Amazon.com, Inc.
 35.78.212.100:40089#JP Tokyo AS16509 Amazon.com, Inc.
 35.78.212.100:49156#JP Tokyo AS16509 Amazon.com, Inc.
+35.78.235.34:13579#JP Tokyo AS16509 Amazon.com, Inc.
 35.78.242.84:16922#JP Tokyo AS16509 Amazon.com, Inc.
 35.78.242.84:18789#JP Tokyo AS16509 Amazon.com, Inc.
 35.78.242.84:20547#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4470,6 +4472,7 @@
 54.238.120.224:19999#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.120.224:28017#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.120.224:30001#JP Tokyo AS16509 Amazon.com, Inc.
+54.238.170.47:16000#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.170.47:17000#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.170.47:18245#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.170.47:20005#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4669,6 +4672,7 @@
 57.181.36.86:34599#JP Tokyo AS16509 Amazon.com, Inc.
 57.181.36.86:37810#JP Tokyo AS16509 Amazon.com, Inc.
 57.181.36.86:49158#JP Tokyo AS16509 Amazon.com, Inc.
+57.181.36.86:49167#JP Tokyo AS16509 Amazon.com, Inc.
 57.181.36.86:56761#JP Tokyo AS16509 Amazon.com, Inc.
 57.182.245.3:16030#JP Tokyo AS16509 Amazon.com, Inc.
 57.182.245.3:17988#JP Tokyo AS16509 Amazon.com, Inc.
