@@ -480,6 +480,7 @@
 13.193.73.233:49664#JP Tokyo AS16509 Amazon.com, Inc.
 13.193.73.233:55442#JP Tokyo AS16509 Amazon.com, Inc.
 13.193.73.233:58028#JP Tokyo AS16509 Amazon.com, Inc.
+13.212.102.140:16010#SG Singapore AS16509 Amazon.com, Inc.
 13.212.19.68:56138#SG Singapore AS16509 Amazon Data Services Singapore
 13.212.82.58:2000#SG Singapore AS16509 Amazon.com, Inc.
 13.214.134.184:20005#SG Singapore AS16509 Amazon.com, Inc.
