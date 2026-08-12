@@ -2396,6 +2396,7 @@
 18.182.22.78:27017#JP Tokyo AS16509 Amazon.com, Inc.
 18.182.22.78:28104#JP Tokyo AS16509 Amazon.com, Inc.
 18.182.22.78:48402#JP Tokyo AS16509 Amazon.com, Inc.
+18.182.38.93:26257#JP Tokyo AS16509 Amazon.com, Inc.
 18.182.47.183:17907#JP Tokyo AS16509 Amazon.com, Inc.
 18.182.47.183:18000#JP Tokyo AS16509 Amazon.com, Inc.
 18.182.47.183:26871#JP Tokyo AS16509 Amazon.com, Inc.
