@@ -1,3 +1,4 @@
+101.69.181.108:443#US Los Angeles AS21859 ZENLA-1
 102.134.52.116:444#HK Tung Chung AS932 Telkom SA Ltd.
 102.134.53.237:444#HK Tung Chung AS932 VH Global Limited
 103.106.228.4:443#JP Tokyo AS136258 oneprovider.com - Tokyo Infrastructure
@@ -23,7 +24,12 @@
 103.143.81.249:443#HK Tung Chung AS139659 MR 1605 HO KING COMM CTR 2-16 FA YUEN ST MONGKOK KL
 103.150.215.69:443#US Los Angeles AS979 Alanyhq Networks
 103.150.8.222:443#JP Tokyo AS3258 xTom
+103.158.117.120:443#HK Hong Kong AS61112 AKILE LTD
+103.158.117.157:443#HK Hong Kong AS61112 AKILE LTD
 103.158.117.157:9443#HK Hong Kong AS61112 AKILE LTD
+103.158.117.179:443#HK Hong Kong AS61112 AKILE LTD
+103.158.117.226:443#HK Hong Kong AS61112 AKILE LTD
+103.158.117.67:443#HK Hong Kong AS151419 LINKLESS COMMUNICATIONS LIMITED
 103.167.234.26:443#PL Warsaw AS48014 Albanian Hosting SH.P.K. t/a AlbHost SH.P.K.
 103.175.98.81:2222#JP Ebara AS46997 Illyasviel von Einzbern
 103.179.142.53:13672#US Los Angeles AS149440 Evoxt.com
@@ -1127,6 +1133,7 @@
 154.26.177.177:443#US Los Angeles AS906 DMIT Cloud Services
 154.26.177.239:443#US Los Angeles AS906 DMIT Cloud Services
 154.26.178.247:443#US Los Angeles AS906 DMIT Cloud Services
+154.26.178.33:443#US Los Angeles AS906 Private Customer
 154.26.178.77:443#US Los Angeles AS906 DMIT Cloud Services
 154.26.179.240:443#US Los Angeles AS906 DMIT Cloud Services
 154.26.179.55:443#US Los Angeles AS906 DMIT Cloud Services
@@ -4249,6 +4256,7 @@
 45.76.96.77:8443#JP Ōi AS20473 The Constant Company, LLC
 45.77.25.52:443#JP Kawasaki AS13335 Cloudflare, Inc.
 45.8.113.90:443#JP Tokyo AS3258 xTom Japan Corporation
+45.80.188.163:443#DE Frankfurt am Main AS3214 xTom GmbH
 45.80.231.169:443#GB London AS210644 AEZA GROUP LLC
 45.80.231.71:443#SE Stockholm AS210644 AEZA GROUP LLC
 45.80.231.90:443#SE Stockholm AS210644 AEZA GROUP LLC
@@ -4286,6 +4294,7 @@
 45.92.158.89:443#SG Singapore AS8888 xTom Pty Ltd
 45.92.159.134:443#JP Tokyo AS3258 365 Group LLC
 45.94.41.19:443#SG Singapore AS8888 xTom Pty Ltd
+45.94.41.27:443#SG Singapore AS8888 xTom GmbH
 45.95.212.117:443#JP Tokyo AS209554 ISIF Network (Japan Tokyo)
 45.95.212.215:443#JP Tokyo AS209554 ISIF Network (Japan Tokyo)
 46.101.172.132:443#DE Frankfurt am Main AS14061 DigitalOcean, LLC
@@ -4334,6 +4343,7 @@
 47.75.104.211:443#US Los Angeles AS45102 Alibaba Cloud (Singapore) Private Limited
 47.75.104.211:443#US Los Angeles AS45102 Alibaba Cloud - US
 47.75.104.254:443#US Los Angeles AS45102 Alibaba Cloud (Singapore) Private Limited
+47.75.104.254:443#US Los Angeles AS45102 Alibaba Cloud - US
 47.75.104.36:443#US Los Angeles AS45102 Alibaba Cloud - US
 47.75.111.178:443#US Los Angeles AS45102 Alibaba Cloud - US
 47.75.112.231:443#US Los Angeles AS45102 Alibaba Cloud - US
@@ -5092,6 +5102,8 @@
 79.132.138.87:443#DE Frankfurt am Main AS44051 Fornex Hosting S.L.
 79.99.78.180:443#US Salt Lake City AS212336 ByteVirt LLC
 8.133.163.194:443#US Los Angeles AS45102 Alibaba Cloud - US
+8.134.218.35:443#DE Frankfurt am Main AS45102 Alibaba Cloud - DE
+8.134.80.111:443#DE Frankfurt am Main AS45102 Alibaba Cloud LLC
 8.209.104.124:443#DE Frankfurt am Main AS45102 Alibaba Cloud (Singapore) Private Limited
 8.209.105.99:443#DE Frankfurt am Main AS45102 Alibaba Cloud LLC
 8.209.108.3:443#DE Frankfurt am Main AS45102 Alibaba Cloud (Singapore) Private Limited
