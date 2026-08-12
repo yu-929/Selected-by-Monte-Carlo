@@ -4469,9 +4469,11 @@
 54.201.163.91:443#US Boardman AS16509 Amazon Technologies Inc.
 54.238.120.224:13338#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.120.224:13722#JP Tokyo AS16509 Amazon.com, Inc.
+54.238.120.224:16000#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.120.224:19999#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.120.224:28017#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.120.224:30001#JP Tokyo AS16509 Amazon.com, Inc.
+54.238.164.253:16000#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.170.47:16000#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.170.47:17000#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.170.47:18245#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4483,8 +4485,11 @@
 54.238.170.47:49664#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.170.47:49674#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.170.47:54321#JP Tokyo AS16509 Amazon.com, Inc.
+54.238.203.245:16000#JP Tokyo AS16509 Amazon.com, Inc.
+54.238.231.0:16000#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.6.83:12345#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.6.83:15733#JP Tokyo AS16509 Amazon.com, Inc.
+54.238.6.83:16000#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.6.83:16179#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.6.83:16923#JP Tokyo AS16509 Amazon.com, Inc.
 54.238.6.83:17690#JP Tokyo AS16509 Amazon.com, Inc.
