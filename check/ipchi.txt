@@ -4412,7 +4412,11 @@
 52.195.15.1:29015#JP Tokyo AS16509 Amazon.com, Inc.
 52.195.15.1:29090#JP Tokyo AS16509 Amazon.com, Inc.
 52.195.15.1:49664#JP Tokyo AS16509 Amazon.com, Inc.
+52.195.15.1:49672#JP Tokyo AS16509 Amazon.com, Inc.
 52.195.15.1:49674#JP Tokyo AS16509 Amazon.com, Inc.
+52.195.157.223:49672#JP Tokyo AS16509 Amazon.com, Inc.
+52.195.16.47:49672#JP Tokyo AS16509 Amazon.com, Inc.
+52.195.179.169:49672#JP Tokyo AS16509 Amazon.com, Inc.
 52.195.180.70:11235#JP Tokyo AS16509 Amazon.com, Inc.
 52.195.180.70:12000#JP Tokyo AS16509 Amazon.com, Inc.
 52.195.180.70:16923#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4422,6 +4426,7 @@
 52.195.180.70:28017#JP Tokyo AS16509 Amazon.com, Inc.
 52.195.180.70:31624#JP Tokyo AS16509 Amazon.com, Inc.
 52.195.180.70:49156#JP Tokyo AS16509 Amazon.com, Inc.
+52.195.180.70:49672#JP Tokyo AS16509 Amazon.com, Inc.
 52.195.180.70:54101#JP Tokyo AS16509 Amazon.com, Inc.
 52.195.180.70:55990#JP Tokyo AS16509 Amazon.com, Inc.
 52.195.180.70:57497#JP Tokyo AS16509 Amazon.com, Inc.
