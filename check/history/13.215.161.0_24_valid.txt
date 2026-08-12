@@ -1,4 +1,6 @@
-13.215.161.131:443#timeout
-13.215.161.132:443#SG Singapore AS16509 Amazon.com, Inc.
-13.215.161.132:49151#SG Singapore AS16509 Amazon.com, Inc.
-13.215.161.217:443#timeout
+85.121.122.66:88#JP Kanda-jinbōchō AS9009 Urban Network Solutions SRL
+52.195.180.70:49672#JP Tokyo AS16509 Amazon.com, Inc.
+54.238.170.47:16000#JP Tokyo AS16509 Amazon.com, Inc.
+57.181.36.86:49167#JP Tokyo AS16509 Amazon.com, Inc.
+35.78.235.34:13579#JP Tokyo AS16509 Amazon.com, Inc.
+3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.
