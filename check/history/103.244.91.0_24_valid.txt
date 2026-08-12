@@ -1,1 +1,6 @@
-103.244.91.194:40400#HK Tung Chung AS6134 Hongkong Wen Jing Network Limited
+47.128.153.23:25000#SG Singapore AS16509 Amazon.com, Inc.
+47.131.175.206:15000#SG Singapore AS16509 Amazon.com, Inc.
+47.129.47.85:49674#SG Singapore AS16509 Amazon.com, Inc.
+3.0.48.215:15000#SG Singapore AS16509 Amazon.com, Inc.
+3.0.48.215:13427#SG Singapore AS16509 Amazon.com, Inc.
+13.212.102.140:25000#SG Singapore AS16509 Amazon.com, Inc.
