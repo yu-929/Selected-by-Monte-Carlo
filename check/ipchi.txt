@@ -3,6 +3,16 @@
 102.134.53.237:444#HK Tung Chung AS932 VH Global Limited
 103.106.228.4:443#JP Tokyo AS136258 oneprovider.com - Tokyo Infrastructure
 103.111.114.87:443#IN Mumbai AS8849 Melbikomas UAB
+103.112.1.200:31009#SG Singapore AS38136 Akari Networks (Singapore)
+103.112.1.200:31010#SG Singapore AS38136 Akari Networks (Singapore)
+103.112.1.200:31011#SG Singapore AS38136 Akari Networks (Singapore)
+103.112.1.200:31015#TW Taipei AS131642 Pittqiao Network Information Co.,Ltd.
+103.112.1.200:31018#MY Kuala Lumpur AS149440 Evoxt.com
+103.112.1.200:31020#ID Jakarta AS149440 Evoxt.com
+103.112.1.200:31028#IT Milan AS35487 Misaka Network, Inc. (Milan)
+103.112.1.200:31030#UA Kyiv AS35487 Misaka Network, Inc. (Kyiv)
+103.112.1.200:31031#PT Lisbon AS35487 Misaka.io Edge Infrastucture in Lisbon, Portugal
+103.112.1.214:58840#JP Tokyo AS36002 SRMAK TECHNOLOGICAL SYSTEM PRIVATE LIMITED
 103.112.1.96:443#JP Tokyo AS36002 SRMAK TECHNOLOGICAL SYSTEM PRIVATE LIMITED
 103.117.101.28:443#HK Kwai Chung AS32519 DMIT Cloud Service
 103.117.102.145:443#JP Tokyo AS32519 DMIT Cloud Service
@@ -72,7 +82,12 @@
 103.240.198.57:13140#HK Tung Chung AS42960 VH Global Limited
 103.240.198.81:443#HK Tung Chung AS42960 VH Global Limited
 103.244.91.194:40400#HK Tung Chung AS6134 Hongkong Wen Jing Network Limited
+103.26.8.119:50011#JP Tokyo AS61112 AkileCloud LLC
+103.26.8.15:53246#SG Singapore AS38001 Ready Server VPS Hosting
 103.26.8.186:443#SG Singapore AS36002 IPXO
+103.26.8.18:60021#PH Quezon City AS9658 Bugallon DSL-Network103.198.203.181:443#HK Hong Kong AS63139 Bedge Co Limited
+103.26.8.18:61233#SG Singapore AS214483 BROADBAND
+103.26.8.18:62357#SG Singapore AS36002 IPXO
 103.26.8.38:443#SG Singapore AS36002 IPXO
 103.27.77.140:443#HK Hong Kong AS979 NetLab Global
 103.47.186.56:443#JP Azabu-jūban AS3258 Hostsymbol Pte. Ltd.
@@ -82,6 +97,14 @@
 103.53.80.44:443#JP Azabu-jūban AS3258 Hostsymbol Pte. Ltd.
 103.57.248.163:443#HK Kwai Chung AS9009 EDIS IPv6 Infrastructure in Hong Kong
 103.57.248.168:443#HK Kwai Chung AS9009 EDIS IPv6 Infrastructure in Hong Kong
+103.73.220.142:20020#ID Jakarta AS138115 PT Deneva
+103.73.220.142:20021#ID Jakarta AS138115 PT Deneva
+103.73.220.142:20022#PH Quezon City AS19970 R&R Managed Telecom Services
+103.73.220.207:16299#HK Hong Kong AS63150 BAGE CLOUD LLC
+103.73.220.228:49472#TW Banqiao AS3462 HiNet Taiwan
+103.73.220.229:49472#TW Banqiao AS3462 HiNet Taiwan
+103.73.220.236:49472#TW Banqiao AS3462 HiNet Taiwan
+103.73.220.249:49472#TW Banqiao AS3462 HiNet Taiwan
 103.73.220.49:8443#HK Kwai Chung AS36002 Hong Kong Broadband Network Limited
 103.96.140.152:17503#JP Tokyo AS2516 KDDI CORPORATION
 103.96.140.248:22304#HK Tung Chung AS42960 1305 room, buildings 15,
@@ -710,6 +733,13 @@
 141.11.43.86:443#SG Singapore AS136510 PRIVATE CUSTOMER
 141.11.76.148:443#HK Hong Kong AS32167 Private Customer
 141.11.76.66:443#HK Hong Kong AS32167 Private Customer
+141.11.77.10:31401#JP Tokyo AS153371 BACK WAVES LIMITED - JP
+141.11.77.10:31501#TW Taipei AS142433 DATAWAVE GLOBAL LLC
+141.11.77.10:31502#TW Banqiao AS202400 Private Customer
+141.11.77.158:8443#HK Tung Chung AS9304 HGC Global Communications Limited
+141.11.77.23:14168#HK Kwai Chung AS906 DMIT Cloud Service - Los Angeles
+141.11.77.23:45484#HK Kwai Chung AS906 DMIT Cloud Service - Los Angeles
+141.11.77.23:51742#HK Kwai Chung AS906 DMIT Cloud Service - Los Angeles
 141.11.86.182:11803#TW Taipei AS61112 AKILE LTD
 141.11.86.35:443#TW Taipei AS61112 AKILE LTD
 141.11.86.8:443#TW Taipei AS38136 Akari Networks (Taipei)
@@ -1002,6 +1032,12 @@
 151.242.189.33:443#TW Taipei AS212336 ByteVirt LLC
 151.242.189.35:443#TW Taipei AS212336 ByteVirt LLC
 151.242.74.169:10443#JP Tokyo AS63473 HostHatch Tokyo
+151.244.134.166:46444#JP Tokyo AS2516 KDDI CORPORATION
+151.244.134.189:13443#JP Tokyo AS2516 KDDI CORPORATION
+151.244.134.189:47788#JP Tokyo AS2516 KDDI CORPORATION
+151.244.134.192:57035#JP Yokohama AS2527 So-net Service
+151.244.134.217:22000#JP Tokyo AS3258 xTom Japan Corporation
+151.244.134.217:30000#JP Tokyo AS36002 GoMami Networks. LLC
 151.245.90.155:443#HK Tsuen Wan AS134677 OrangeVPS LLC
 151.245.90.60:8443#HK Kwai Chung AS134677 A Pensonal Global Research Network
 151.245.90.96:8443#HK Hong Kong AS36530 RIPE NCC
@@ -1881,6 +1917,14 @@
 178.62.93.76:8443#GB London AS14061 DigitalOcean, LLC
 178.63.62.100:443#DE Falkenstein AS24940 Hetzner Online GmbH
 178.63.62.122:443#DE Falkenstein AS24940 Hetzner Online GmbH
+178.94.14.81:31206#MY Kuala Lumpur AS149440 Evoxt.com
+178.94.14.81:31213#NL Amsterdam AS3214 xTom GmbH
+178.94.14.81:31217#IT Milan AS35487 Misaka Network, Inc. (Milan)
+178.94.14.81:31218#RU Moscow AS57578 St.Petersburg
+178.94.14.81:31219#UA Kyiv AS35487 Misaka Network, Inc. (Kyiv)
+178.94.14.81:39874#JP Tokyo AS2497 BACK WAVES LIMITED
+178.94.14.81:45872#SG Singapore AS38136 Akari Networks (Singapore)
+178.94.14.81:46971#TW Taipei AS131642 Pittqiao Network Information Co.,Ltd.
 179.253.224.122:443#US Los Angeles AS906 DMIT Cloud Services
 179.253.224.128:443#US Los Angeles AS906 DMIT Cloud Services
 179.253.224.12:443#US Los Angeles AS906 DMIT Cloud Services
@@ -2658,6 +2702,58 @@
 189.24.106.172:443#DE Frankfurt am Main AS979 NetLab Global
 189.24.106.196:443#DE Frankfurt am Main AS979 NetLab Global
 189.24.107.165:443#DE Frankfurt am Main AS979 NetLab Global
+191.101.132.130:31306#MY Kuala Lumpur AS149440 Evoxt.com
+191.101.132.130:31307#ID Jakarta AS149440 Evoxt.com
+191.101.132.130:31313#NL Amsterdam AS3214 xTom GmbH
+191.101.132.130:31317#IT Milan AS35487 Misaka Network, Inc. (Milan)
+191.101.132.130:31318#RU Moscow AS57578 St.Petersburg
+191.101.132.130:31319#UA Kyiv AS35487 Misaka Network, Inc. (Kyiv)
+191.101.132.130:31320#PT Lisbon AS35487 Misaka.io Edge Infrastucture in Lisbon, Portugal
+191.101.132.130:31321#ZA Johannesburg AS35487 Misaka.io Customer Infrastructure in Johannesburg, South Africa
+191.101.132.130:39974#JP Tokyo AS2497 BACK WAVES LIMITED
+191.101.132.130:45971#SG Singapore AS38136 Akari Networks (Singapore)
+191.101.132.130:46271#TW Taipei AS131642 Pittqiao Network Information Co.,Ltd.
+191.101.132.149:31010#SG Singapore AS38136 Akari Networks (Singapore)
+191.101.132.149:31011#SG Singapore AS38136 Akari Networks (Singapore)
+191.101.132.149:31015#TW Taipei AS131642 Pittqiao Network Information Co.,Ltd.
+191.101.132.149:31018#MY Kuala Lumpur AS149440 Evoxt.com
+191.101.132.149:31020#ID Jakarta AS149440 Evoxt.com
+191.101.132.149:31029#RU Moscow AS57578 St.Petersburg
+191.101.132.149:31030#UA Kyiv AS35487 Misaka Network, Inc. (Kyiv)
+191.101.132.149:31031#PT Lisbon AS35487 Misaka.io Edge Infrastucture in Lisbon, Portugal
+191.101.132.162:20291#SG Singapore AS38136 Akari Networks (Singapore)
+191.101.132.162:30744#ES Madrid AS174 Private Customer
+191.101.132.162:34868#DE Frankfurt am Main AS174 Private Customer
+191.101.132.162:37924#VN Hanoi AS135905 Vietnam Posts and Telecommunications Group
+191.101.132.163:34659#MY Johor Bahru AS137552 Terabix Technologies Sdn. Bhd.
+191.101.132.163:42736#MY Johor Bahru AS137552 Terabix Technologies Sdn. Bhd.
+191.101.132.200:17859#US La Puente AS5650 Verizon Business
+191.101.132.200:21461#MY Kuala Lumpur AS10030 Celcom Axiata Berhad
+191.101.132.200:21595#TW Taichung AS131596 CCTV
+191.101.132.203:21108#TW Banqiao AS18429 Extra-Lan Technologies Co., LTD
+191.101.132.203:21109#SG Singapore AS21859 Zenlayer (Singapore) PTE. LTD
+191.101.132.203:21110#SG Singapore AS14061 DigitalOcean, LLC
+191.101.132.203:21112#JP Tokyo AS400618 Prime Security Corp.
+191.101.132.203:21120#IN Bāshettihalli AS14061 DigitalOcean, LLC
+191.101.132.203:21122#AU Sydney AS14061 DigitalOcean, LLC
+191.101.132.203:21125#GB London AS14061 DigitalOcean, LLC
+191.101.132.33:20273#SG Singapore AS38136 Akari Networks (Singapore)
+191.101.132.33:20292#SG Singapore AS38136 Akari Networks (Singapore)
+191.101.132.33:20294#SG Singapore AS38136 Akari Networks (Singapore)
+191.101.132.33:37924#VN Hanoi AS135905 Vietnam Posts and Telecommunications Group
+191.101.132.33:61633#VN Hanoi AS135905 Vietnam Posts and Telecommunications Group
+191.101.132.34:20274#SG Singapore AS38136 Akari Networks (Singapore)
+191.101.132.34:30744#ES Madrid AS174 Private Customer
+191.101.132.34:37924#VN Hanoi AS135905 Vietnam Posts and Telecommunications Group
+191.101.132.44:52547#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
+191.101.132.44:52548#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
+191.101.132.47:37924#VN Hanoi AS135905 Vietnam Posts and Telecommunications Group
+191.101.132.47:44996#DE Frankfurt am Main AS174 Private Customer
+191.101.132.47:53620#ES Madrid AS174 Private Customer
+191.101.132.96:17859#US La Puente AS5650 Verizon Business
+191.101.132.96:21461#MY Kuala Lumpur AS10030 Celcom Axiata Berhad
+191.101.132.96:21595#TW Taichung AS131596 CCTV
+191.101.132.96:32641#US New York City AS701 Verizon Business
 191.101.184.50:443#PL Gdańsk AS199058 SERVA ONE LTD
 191.222.208.193:443#JP Tokyo AS906 DMIT Inc.
 191.222.208.209:443#JP Tokyo AS906 DMIT Inc.
@@ -3098,6 +3194,7 @@
 216.234.143.92:443#US Los Angeles AS906 DMIT Cloud Services
 216.236.31.135:443#DE Frankfurt am Main AS138997 Eons Data Communications Limited
 216.236.31.184:443#DE Frankfurt am Main AS138997 Eons Data Communications Limited
+216.236.63.72:40191#SG Singapore AS61112 AKILE LTD
 216.238.54.228:443#JP Kanda-jinbōchō AS212336 ByteVirt LLC
 217.142.238.36:10443#JP Osaka AS31898 Oracle Corporation
 217.147.15.106:443#LV Riga AS50053 Individual Entrepreneur Anton Levin
