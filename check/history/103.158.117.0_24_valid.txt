@@ -1,36 +1,24 @@
-101.69.181.108:443#US Los Angeles AS21859 ZENLA-1
-103.158.117.120:443#HK Hong Kong AS61112 AKILE LTD
-103.158.117.157:443#HK Hong Kong AS61112 AKILE LTD
-103.158.117.179:443#HK Hong Kong AS61112 AKILE LTD
-103.158.117.226:443#HK Hong Kong AS61112 AKILE LTD
-103.158.117.67:443#HK Hong Kong AS151419 LINKLESS COMMUNICATIONS LIMITED
-154.21.94.235:443#US Los Angeles AS906 Private Customer
-154.21.94.42:443#US Los Angeles AS906 DMIT Cloud Services
-154.21.94.53:443#US Los Angeles AS906 DMIT Cloud Services
-154.26.178.247:443#US Los Angeles AS906 DMIT Cloud Services
-154.26.178.33:443#US Los Angeles AS906 Private Customer
-154.26.178.77:443#US Los Angeles AS906 DMIT Cloud Services
-185.194.54.137:443#SG Singapore AS8888 xTom Pty Ltd
-185.194.54.15:443#SG Singapore AS8888 xTom Pty Ltd
-31.25.88.11:443#DE Frankfurt am Main AS41378 Kirino LLC
-45.80.188.138:443#timeout
-45.80.188.163:443#DE Frankfurt am Main AS3214 xTom GmbH
-45.89.219.65:443#SG Singapore AS8888 365 Group LLC
-45.89.219.72:443#SG Singapore AS8888 365 Group LLC
-45.94.41.19:443#SG Singapore AS8888 xTom Pty Ltd
-45.94.41.27:443#SG Singapore AS8888 xTom GmbH
-47.75.104.211:443#US Los Angeles AS45102 Alibaba Cloud (Singapore) Private Limited
-47.75.104.254:443#US Los Angeles AS45102 Alibaba Cloud - US
-64.186.239.138:443#US Los Angeles AS906 DMIT Cloud Services
-64.186.239.154:443#US Los Angeles AS906 DMIT Cloud Services
-64.186.239.178:443#US Los Angeles AS906 DMIT Cloud Services
-64.186.239.1:443#US Los Angeles AS906 DMIT Cloud Services
-64.186.239.202:443#US Los Angeles AS906 DMIT Cloud Services
-64.186.239.246:443#US Los Angeles AS906 Private Customer
-64.186.239.66:443#US Los Angeles AS906 DMIT Cloud Services
-64.186.239.93:443#US Los Angeles AS906 DMIT Cloud Services
-8.134.218.35:443#DE Frankfurt am Main AS45102 Alibaba Cloud - DE
-8.134.80.111:443#DE Frankfurt am Main AS45102 Alibaba Cloud LLC
-8.222.70.238:443#SG Singapore AS7473 SingTel Internet Exchange
+103.20.222.136:443#HK Kwai Chung AS40065 hongkong netbroadband
+91.110.209.76:443#HK Hong Kong AS40065 GDI-HK
+23.225.247.220:443#HK Hong Kong AS40065 GDI-HK
+91.110.209.54:443#HK Hong Kong AS40065 GDI-HK
+38.207.164.126:443#HK Harmony Garden AS967 VMISS Inc.
 8.222.84.103:443#SG Singapore AS7473 SingTel Internet Exchange
+45.94.41.27:443#SG Singapore AS8888 xTom GmbH
+8.222.70.238:443#SG Singapore AS7473 SingTel Internet Exchange
+43.159.4.80:443#SG Singapore AS132203 ACEVILLE PTE.LTD.
+45.89.219.65:443#SG Singapore AS8888 365 Group LLC
+47.238.95.27:443#JP Ōi AS20473 The Constant Company, LLC
+103.112.1.96:443#JP Tokyo AS36002 SRMAK TECHNOLOGICAL SYSTEM PRIVATE LIMITED
+172.104.83.39:443#JP Tokyo AS63949 Akamai Connected Cloud / Linode
+45.89.235.243:443#JP Tokyo AS3258 xTom Japan Corporation
+82.40.33.173:443#JP Tokyo AS400618 Private Customer
+47.75.104.211:443#US Los Angeles AS45102 Alibaba Cloud - US
+120.25.215.98:443#US Los Angeles AS45102 Alibaba Cloud - US
+120.24.63.226:443#US Los Angeles AS45102 Alibaba Cloud - US
+8.133.162.210:443#US Los Angeles AS45102 Alibaba Cloud - US
+116.62.228.236:443#US Los Angeles AS45102 Alibaba Cloud - US
+8.134.218.35:443#DE Frankfurt am Main AS45102 Alibaba Cloud LLC
+8.134.80.111:443#DE Frankfurt am Main AS45102 Alibaba Cloud LLC
+31.25.88.11:443#DE Frankfurt am Main AS41378 Kirino LLC
 82.115.30.30:443#DE Frankfurt am Main AS41378 Parsun Network Solutions PTY LTD
