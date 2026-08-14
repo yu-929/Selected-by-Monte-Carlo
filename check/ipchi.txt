@@ -6353,3 +6353,5 @@
 64.186.237.138:443#US Los Angeles AS906 DMIT Cloud Services
 64.186.237.54:443#US Los Angeles AS906 Private Customer
 64.186.237.81:20880#US Chicago AS25693 Virtual Machine Solutions LLC
+54.251.136.52:443#SG Singapore AS16509 Amazon.com, Inc.
+54.251.136.52:49159#SG Singapore AS16509 Amazon.com, Inc.
