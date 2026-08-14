@@ -5082,6 +5082,13 @@
 54.36.186.141:443#PL Warsaw AS16276 OVH Sp. z o. o.
 54.37.39.40:443#FR Dunkirk AS16276 OVH SAS
 54.38.214.128:443#GB Bexley AS16276 OVH Ltd
+54.46.125.148:13665#HK Hong Kong AS16509 Amazon.com, Inc.
+54.46.126.94:13665#HK Hong Kong AS16509 Amazon.com, Inc.
+54.46.14.237:13665#HK Hong Kong AS16509 Amazon.com, Inc.
+54.46.43.45:13665#HK Hong Kong AS16509 Amazon.com, Inc.
+54.46.48.8:13665#HK Hong Kong AS16509 Amazon.com, Inc.
+54.46.52.48:13665#HK Hong Kong AS16509 Amazon.com, Inc.
+54.46.7.18:13665#HK Hong Kong AS16509 Amazon.com, Inc.
 54.46.72.234:8001#HK Hong Kong AS16509 Amazon Data Services Hong Kong
 54.46.72.234:8003#HK Hong Kong AS16509 Amazon Data Services Hong Kong
 54.64.10.231:12000#JP Tokyo AS16509 Amazon.com, Inc.
