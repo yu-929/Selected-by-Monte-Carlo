@@ -101,7 +101,7 @@ def parse_ports(port_str):
     """动态解析输入的端口列表"""
     if not port_str:
         return [443]
-    raw_ports = re.split(r'[\s,]+', str(port_str).strip())
+    raw_ports = re.split(r'[\s,，]+', str(port_str).strip())
     ports = []
     for p in raw_ports:
         if p.isdigit() and 1 <= int(p) <= 65535:
@@ -169,7 +169,7 @@ def get_ips_from_asn(asn_clean):
 
 def parse_targets(input_str):
     """智能解析目标输入：ASN、CIDR 网段、单个 IP 或目标文件，支持混合"""
-    raw_targets = [t.strip() for t in re.split(r'[\s,]+', input_str) if t.strip()]
+    raw_targets = [t.strip() for t in re.split(r'[\s,，]+', input_str) if t.strip()]
     all_ips = []
 
     for item in raw_targets:
