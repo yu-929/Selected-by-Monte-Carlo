@@ -58,18 +58,13 @@ jobs:
           python3 check/validate.py "$src" "$out"
           echo "Valid: $(wc -l < "$out" 2>/dev/null || echo 0)"
 
-      - name: Merge valid into ipchi.txt
-        run: |
-          awk 'NF {sub(/\r$/, ""); print}' check/ipchi.txt check/history/*_valid.txt 2>/dev/null | grep -vh '#timeout' | sort -u -t: -k1,2 > check/ipchi.tmp && mv check/ipchi.tmp check/ipchi.txt
-
       - name: Commit results
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add check/
+          git add check/history/
           git diff --cached --quiet || git commit -m "chore: 扫描结果"
-          git pull --rebase origin main
-          for i in 1 2 3; do
-            git push && break
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && break
             sleep 5
           done
