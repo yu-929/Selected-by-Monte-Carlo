@@ -6350,3 +6350,6 @@
 98.98.207.93:443#GB London AS21859 Zenlayer Inc
 98.98.233.52:443#SG Singapore AS21859 Zenlayer (Singapore) PTE. LTD
 99.83.207.43:443#US Ashburn AS14618 Amazon Technologies Inc.
+64.186.237.138:443#US Los Angeles AS906 DMIT Cloud Services
+64.186.237.54:443#US Los Angeles AS906 Private Customer
+64.186.237.81:20880#US Chicago AS25693 Virtual Machine Solutions LLC
