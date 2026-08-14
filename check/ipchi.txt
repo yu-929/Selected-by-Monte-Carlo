@@ -87,7 +87,6 @@
 103.26.8.15:53246#SG Singapore AS38001 Ready Server VPS Hosting
 103.26.8.186:443#SG Singapore AS36002 IPXO
 103.26.8.18:60021#PH Quezon City AS9658 Bugallon DSL-Network
-103.198.203.181:443#HK Hong Kong AS63139 Bedge Co Limited
 103.26.8.18:61233#SG Singapore AS214483 BROADBAND
 103.26.8.18:62357#SG Singapore AS36002 IPXO
 103.26.8.38:443#SG Singapore AS36002 IPXO
@@ -521,9 +520,20 @@
 13.193.73.233:49664#JP Tokyo AS16509 Amazon.com, Inc.
 13.193.73.233:55442#JP Tokyo AS16509 Amazon.com, Inc.
 13.193.73.233:58028#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.167.213:11310#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.167.213:47176#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.170.232:11310#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.170.232:47176#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.183.133:11310#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.183.133:47176#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.183.66:11310#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.183.66:47176#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.190.127:11310#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.190.127:47176#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.200.128:11310#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.200.128:47176#JP Tokyo AS16509 Amazon.com, Inc.
 13.212.102.140:16010#SG Singapore AS16509 Amazon.com, Inc.
 13.212.102.140:25000#SG Singapore AS16509 Amazon.com, Inc.
-103.96.74.18:16000#HK Hong Kong AS55933 Room1405,14/F Lucky Centre 171 Wanchai road, Wanchai
 13.212.19.68:56138#SG Singapore AS16509 Amazon Data Services Singapore
 13.212.82.58:2000#SG Singapore AS16509 Amazon.com, Inc.
 13.214.134.184:20005#SG Singapore AS16509 Amazon.com, Inc.
@@ -583,6 +593,7 @@
 13.230.42.128:49670#JP Tokyo AS16509 Amazon.com, Inc.
 13.230.42.128:50000#JP Tokyo AS16509 Amazon.com, Inc.
 13.230.42.128:53809#JP Tokyo AS16509 Amazon.com, Inc.
+13.231.112.245:18245#JP Tokyo AS16509 Amazon.com, Inc.
 13.231.117.189:11001#JP Tokyo AS16509 Amazon.com, Inc.
 13.231.117.189:18086#JP Tokyo AS16509 Amazon.com, Inc.
 13.231.117.189:18245#JP Tokyo AS16509 Amazon.com, Inc.
@@ -1852,7 +1863,6 @@
 167.114.67.25:443#CA Montréal AS16276 OVH Hosting, Inc.
 167.148.203.107:443#HK Kwai Chung AS205548 ZOUTER HK
 167.148.203.140:443#HK Kwai Chung AS205548 ZOUTER HK
-103.96.74.18:16000#HK Hong Kong AS55933 Room1405,14/F Lucky Centre 171 Wanchai road, Wanchai
 167.148.203.153:42024#KR Seoul AS9318 SK Broadband Co Ltd
 167.148.203.171:20801#JP Tokyo AS134351 Leaseweb Japan K.K.
 167.148.203.227:443#HK Kwai Chung AS205548 ZOUTER HK
@@ -3230,9 +3240,9 @@
 211.49.57.178:443#KR Seoul AS9318 SK Broadband Co Ltd
 211.49.57.179:443#KR Seoul AS9318 SK Broadband Co Ltd
 211.75.210.32:443#TW Taichung AS3462 Data Communication Business Group,
-211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,
 211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group
-3.0.100.227:37628#SG Singapore AS16509 Amazon.com, Inc.
+211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,
+211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,3.0.100.227:37628#SG Singapore AS16509 Amazon.com, Inc.
 211.75.210.34:443#TW Taichung AS3462 Data Communication Business Group,
 212.113.112.223:443#DE Frankfurt am Main AS215590 LIMITED LIABILITY COMPANY RELCOM-SPB
 212.113.112.23:443#DE Frankfurt am Main AS215590 LIMITED LIABILITY COMPANY RELCOM-SPB
@@ -3698,10 +3708,7 @@
 3.114.209.125:49673#JP Tokyo AS16509 Amazon.com, Inc.
 3.114.209.125:50000#JP Tokyo AS16509 Amazon.com, Inc.
 3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.
-3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.
-13.231.112.245:18245#JP Tokyo AS16509 Amazon.com, Inc.
-3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.
-23.27.47.118:443#US Los Angeles AS149440 Evoxt.com
+3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.13.231.112.245:18245#JP Tokyo AS16509 Amazon.com, Inc.
 3.114.209.125:55553#JP Tokyo AS16509 Amazon.com, Inc.
 3.115.214.198:14534#JP Tokyo AS16509 Amazon.com, Inc.
 3.115.214.198:16993#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4050,6 +4057,7 @@
 35.75.7.91:27303#JP Tokyo AS16509 Amazon.com, Inc.
 35.75.7.91:28237#JP Tokyo AS16509 Amazon.com, Inc.
 35.75.7.91:29015#JP Tokyo AS16509 Amazon.com, Inc.
+35.76.107.89:23621#JP Tokyo AS16509 Amazon.com, Inc.
 35.76.112.238:11211#JP Tokyo AS16509 Amazon.com, Inc.
 35.76.112.238:14534#JP Tokyo AS16509 Amazon.com, Inc.
 35.76.112.238:15000#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4070,6 +4078,8 @@
 35.76.114.238:49165#JP Tokyo AS16509 Amazon.com, Inc.
 35.76.114.238:49670#JP Tokyo AS16509 Amazon.com, Inc.
 35.76.114.238:50070#JP Tokyo AS16509 Amazon.com, Inc.
+35.76.29.98:23621#JP Tokyo AS16509 Amazon.com, Inc.
+35.76.31.122:23621#JP Tokyo AS16509 Amazon.com, Inc.
 35.77.103.230:12000#JP Tokyo AS16509 Amazon.com, Inc.
 35.77.103.230:17988#JP Tokyo AS16509 Amazon.com, Inc.
 35.77.103.230:18264#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4437,6 +4447,7 @@
 43.198.73.198:55555#HK Hong Kong AS16509 Amazon.com, Inc.
 43.198.74.93:55555#HK Hong Kong AS16509 Amazon.com, Inc.
 43.198.87.223:55555#HK Hong Kong AS16509 Amazon.com, Inc.
+43.199.253.104:22335#HK Hong Kong AS16509 Amazon.com, Inc.
 43.200.164.74:443#KR Incheon AS16509 Amazon.com, Inc.
 43.200.66.92:443#KR Incheon AS16509 Amazon.com, Inc.
 43.200.7.70:443#KR Incheon AS16509 Amazon.com, Inc.
@@ -4534,6 +4545,7 @@
 43.206.97.138:30303#JP Tokyo AS16509 Amazon.com, Inc.
 43.206.97.138:31337#JP Tokyo AS16509 Amazon.com, Inc.
 43.206.97.138:49167#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.1.216:16922#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.104.21:11300#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.104.21:17988#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.104.21:18790#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4541,6 +4553,7 @@
 43.207.104.21:34948#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.104.21:49165#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.104.21:49671#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.130.169:16922#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.143.139:13720#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.143.139:18001#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.143.139:21995#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4549,6 +4562,8 @@
 43.207.143.139:28080#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.143.139:42001#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.143.139:48229#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.148.138:16922#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.152.210:16922#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.158.48:12000#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.158.48:12300#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.158.48:28015#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4556,6 +4571,7 @@
 43.207.158.48:44158#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.158.48:44818#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.158.48:50898#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.178.87:16922#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.187.11:11371#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.187.11:12000#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.187.11:17574#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4572,6 +4588,7 @@
 43.207.212.21:33408#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.212.21:45554#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.212.21:49167#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.219.40:16922#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.38.150:11235#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.38.150:15000#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.38.150:18081#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4580,6 +4597,8 @@
 43.207.38.150:49158#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.38.150:49163#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.38.150:53413#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.47.139:16922#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.56.210:16922#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.92.214:12999#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.92.214:13720#JP Tokyo AS16509 Amazon.com, Inc.
 43.207.92.214:15000#JP Tokyo AS16509 Amazon.com, Inc.
@@ -5091,6 +5110,20 @@
 54.250.74.11:45554#JP Tokyo AS16509 Amazon.com, Inc.
 54.250.74.11:53413#JP Tokyo AS16509 Amazon.com, Inc.
 54.254.145.25:6768#SG Singapore AS16509 Amazon.com, Inc.
+54.254.173.98:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.173.98:47176#SG Singapore AS16509 Amazon.com, Inc.103.198.203.181:443#HK Hong Kong AS63139 Bedge Co Limited
+54.254.176.144:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.176.144:47176#SG Singapore AS16509 Amazon.com, Inc.
+54.254.177.140:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.177.140:47176#SG Singapore AS16509 Amazon.com, Inc.
+54.254.194.238:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.194.238:47176#SG Singapore AS16509 Amazon.com, Inc.
+54.254.224.189:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.224.189:47176#SG Singapore AS16509 Amazon.com, Inc.
+54.254.245.171:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.245.171:47176#SG Singapore AS16509 Amazon.com, Inc.
+54.254.93.60:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.93.60:47176#SG Singapore AS16509 Amazon.com, Inc.
 54.255.139.161:20856#SG Singapore AS16509 Amazon.com, Inc.
 54.255.139.161:49664#SG Singapore AS16509 Amazon.com, Inc.
 54.255.140.12:20856#SG Singapore AS16509 Amazon.com, Inc.
@@ -5190,12 +5223,16 @@
 57.128.183.82:443#GB Bexley AS16276 OVH Ltd
 57.128.183.90:443#GB Bexley AS16276 OVH Ltd
 57.129.130.57:52014#GB Bexley AS16276 OVH Ltd
+57.180.23.159:39250#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.240.213:12179#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.240.213:13458#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.240.213:20332#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.240.213:25565#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.240.213:40804#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.240.213:49161#JP Tokyo AS16509 Amazon.com, Inc.
+57.180.38.188:39250#JP Tokyo AS16509 Amazon.com, Inc.
+57.180.40.143:39250#JP Tokyo AS16509 Amazon.com, Inc.
+57.180.56.233:39250#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.61.152:15902#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.61.152:19530#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.61.152:28015#JP Tokyo AS16509 Amazon.com, Inc.
@@ -5207,6 +5244,7 @@
 57.180.64.160:21638#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.64.160:25105#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.64.160:31721#JP Tokyo AS16509 Amazon.com, Inc.
+57.180.64.160:39250#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.64.160:49165#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.64.160:50000#JP Tokyo AS16509 Amazon.com, Inc.
 57.180.64.160:50695#JP Tokyo AS16509 Amazon.com, Inc.
@@ -5290,16 +5328,28 @@
 57.183.16.106:49671#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.16.106:51106#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.16.106:52869#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.16.57:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.16.57:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.18.249:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.18.249:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.22.19:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.22.19:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.23.146:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.23.146:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.28.167:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.28.167:43734#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.29.67:11235#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.29.67:11251#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.29.67:12300#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.29.67:16923#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.29.67:19888#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.29.67:22335#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.29.67:23791#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.29.67:28015#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.29.67:31002#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.29.67:40801#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.29.67:41042#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.29.67:43734#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.29.67:49167#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.162:11235#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.162:12876#JP Tokyo AS16509 Amazon.com, Inc.
@@ -5309,9 +5359,11 @@
 57.183.36.162:18001#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.162:18086#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.162:19071#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.36.162:22335#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.162:23615#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.162:27016#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.162:28017#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.36.162:43734#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.162:49160#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.162:49669#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.162:49672#JP Tokyo AS16509 Amazon.com, Inc.
@@ -5325,6 +5377,14 @@
 57.183.36.250:23023#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.250:29015#JP Tokyo AS16509 Amazon.com, Inc.
 57.183.36.250:31337#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.38.198:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.38.198:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.4.129:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.4.129:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.6.162:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.6.162:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.8.200:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.8.200:43734#JP Tokyo AS16509 Amazon.com, Inc.
 58.152.13.239:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet
 60.249.21.29:443#TW Taichung AS3462 Chunghwa Telecom Data Communication Business Group
 60.249.21.30:443#TW Taichung AS3462 Chunghwa Telecom Data Communication Business Group
@@ -5703,8 +5763,7 @@
 82.110.234.58:443#JP Tokyo AS142433 DATAWAVE GLOBAL LLC
 82.110.234.59:443#JP Tokyo AS142433 DATAWAVE GLOBAL LLC
 82.115.30.30:443#DE Frankfurt am Main AS41378 Parsun Network Solutions PTY LTD
-82.115.30.30:443#DE Frankfurt am Main AS41378 Parsun Network Solutions PTY LTD
-103.73.220.142:20021#ID Jakarta AS138115 PT Deneva
+82.115.30.30:443#DE Frankfurt am Main AS41378 Parsun Network Solutions PTY LTD43.199.75.154:22335#HK Hong Kong AS16509 Amazon.com, Inc.
 82.115.4.182:443#NL Amsterdam AS42532 SIA VEESP
 82.115.6.130:443#NL Amsterdam AS42532 SIA VEESP
 82.115.6.162:443#NL Amsterdam AS42532 SIA VEESP
@@ -5789,9 +5848,8 @@
 85.149.218.63:40506#HK Hong Kong AS61112 Akile LTD
 85.149.218.63:40575#HK Hong Kong AS61112 Akile LTD
 85.149.218.65:30718#US Salt Lake City AS212336 ByteVirt LLC
-103.96.74.18:16000#HK Hong Kong AS55933 Room1405,14/F Lucky Centre 171 Wanchai road, Wanchai
-85.149.218.65:30718#US Salt Lake City AS212336 ByteVirt LLC
-13.212.102.140:16010#SG Singapore AS16509 Amazon.com, Inc.
+85.149.218.65:30718#US Salt Lake City AS212336 ByteVirt LLC103.96.74.18:16000#HK Hong Kong AS55933 Room1405,14/F Lucky Centre 171 Wanchai road, Wanchai
+85.149.218.65:30718#US Salt Lake City AS212336 ByteVirt LLC13.212.102.140:16010#SG Singapore AS16509 Amazon.com, Inc.
 85.149.218.65:30723#JP Tokyo AS134351 Leaseweb Japan K.K.
 85.149.218.67:30718#US Salt Lake City AS212336 ByteVirt LLC
 85.149.218.67:443#JP Tokyo AS134351 Leaseweb Japan K.K.
@@ -6136,8 +6194,7 @@
 95.85.233.82:443#DE Frankfurt am Main AS213887 WAIcore Ltd
 95.85.33.77:443#NL Amsterdam AS14061 DigitalOcean, LLC
 95.85.42.135:2053#NL Amsterdam AS14061 DigitalOcean, LLC
-95.85.42.135:2053#NL Amsterdam AS14061 DigitalOcean, LLC
-149.104.1.235:443#HK Harmony Garden AS6134 Hongkong Wen Jing Network Limited
+95.85.42.135:2053#NL Amsterdam AS14061 DigitalOcean, LLC149.104.1.235:443#HK Harmony Garden AS6134 Hongkong Wen Jing Network Limited
 96.126.130.117:443#JP Osaka AS149440 Evoxt.com
 96.126.130.209:443#JP Osaka AS149440 Evoxt.com
 96.126.130.243:443#JP Osaka AS149440 Evoxt.com
