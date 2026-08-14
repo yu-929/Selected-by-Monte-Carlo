@@ -4,12 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       scan_input:
-        label: '目标列表：'
-        description: 'ASN (如 AS206300) / CIDR (如 154.17.0.0/24) / IP 混合，支持空格、中英文逗号分隔，或文件路径 (如 check/targets.txt)'
+        label: '目标列表'
         required: true
       scan_ports:
-        label: '端口列表：'
-        description: '端口列表，支持空格、中英文逗号分隔'
+        label: '端口列表'
         required: false
         default: '443'
 
