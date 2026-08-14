@@ -2374,7 +2374,17 @@
 18.142.54.166:16000#SG Singapore AS16509 Amazon.com, Inc.
 18.142.56.120:11300#SG Singapore AS16509 Amazon.com, Inc.
 18.142.56.120:16000#SG Singapore AS16509 Amazon.com, Inc.
+18.162.114.249:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.123.40:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.143.8:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.150.152:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.191.37:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.209.1:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.210.102:14147#HK Hong Kong AS16509 Amazon.com, Inc.
 18.162.50.197:28017#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.59.112:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.60.227:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.97.17:14147#HK Hong Kong AS16509 Amazon.com, Inc.
 18.163.101.2:55555#HK Hong Kong AS16509 Amazon.com, Inc.
 18.163.111.103:55555#HK Hong Kong AS16509 Amazon.com, Inc.
 18.163.111.124:55555#HK Hong Kong AS16509 Amazon.com, Inc.

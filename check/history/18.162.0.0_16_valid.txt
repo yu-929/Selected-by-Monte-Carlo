@@ -1,0 +1,11 @@
+18.162.114.249:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.123.40:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.143.8:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.150.152:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.155.151:14147#timeout
+18.162.191.37:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.209.1:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.210.102:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.59.112:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.60.227:14147#HK Hong Kong AS16509 Amazon.com, Inc.
+18.162.97.17:14147#HK Hong Kong AS16509 Amazon.com, Inc.
