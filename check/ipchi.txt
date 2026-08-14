@@ -86,7 +86,8 @@
 103.26.8.119:50011#JP Tokyo AS61112 AkileCloud LLC
 103.26.8.15:53246#SG Singapore AS38001 Ready Server VPS Hosting
 103.26.8.186:443#SG Singapore AS36002 IPXO
-103.26.8.18:60021#PH Quezon City AS9658 Bugallon DSL-Network103.198.203.181:443#HK Hong Kong AS63139 Bedge Co Limited
+103.26.8.18:60021#PH Quezon City AS9658 Bugallon DSL-Network
+103.198.203.181:443#HK Hong Kong AS63139 Bedge Co Limited
 103.26.8.18:61233#SG Singapore AS214483 BROADBAND
 103.26.8.18:62357#SG Singapore AS36002 IPXO
 103.26.8.38:443#SG Singapore AS36002 IPXO
@@ -521,7 +522,8 @@
 13.193.73.233:55442#JP Tokyo AS16509 Amazon.com, Inc.
 13.193.73.233:58028#JP Tokyo AS16509 Amazon.com, Inc.
 13.212.102.140:16010#SG Singapore AS16509 Amazon.com, Inc.
-13.212.102.140:25000#SG Singapore AS16509 Amazon.com, Inc.103.96.74.18:16000#HK Hong Kong AS55933 Room1405,14/F Lucky Centre 171 Wanchai road, Wanchai
+13.212.102.140:25000#SG Singapore AS16509 Amazon.com, Inc.
+103.96.74.18:16000#HK Hong Kong AS55933 Room1405,14/F Lucky Centre 171 Wanchai road, Wanchai
 13.212.19.68:56138#SG Singapore AS16509 Amazon Data Services Singapore
 13.212.82.58:2000#SG Singapore AS16509 Amazon.com, Inc.
 13.214.134.184:20005#SG Singapore AS16509 Amazon.com, Inc.
@@ -1849,7 +1851,8 @@
 166.88.98.83:443#JP Osaka AS149440 Evoxt.com
 167.114.67.25:443#CA Montréal AS16276 OVH Hosting, Inc.
 167.148.203.107:443#HK Kwai Chung AS205548 ZOUTER HK
-167.148.203.140:443#HK Kwai Chung AS205548 ZOUTER HK103.96.74.18:16000#HK Hong Kong AS55933 Room1405,14/F Lucky Centre 171 Wanchai road, Wanchai
+167.148.203.140:443#HK Kwai Chung AS205548 ZOUTER HK
+103.96.74.18:16000#HK Hong Kong AS55933 Room1405,14/F Lucky Centre 171 Wanchai road, Wanchai
 167.148.203.153:42024#KR Seoul AS9318 SK Broadband Co Ltd
 167.148.203.171:20801#JP Tokyo AS134351 Leaseweb Japan K.K.
 167.148.203.227:443#HK Kwai Chung AS205548 ZOUTER HK
@@ -3228,7 +3231,8 @@
 211.49.57.179:443#KR Seoul AS9318 SK Broadband Co Ltd
 211.75.210.32:443#TW Taichung AS3462 Data Communication Business Group,
 211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,
-211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,3.0.100.227:37628#SG Singapore AS16509 Amazon.com, Inc.
+211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group
+3.0.100.227:37628#SG Singapore AS16509 Amazon.com, Inc.
 211.75.210.34:443#TW Taichung AS3462 Data Communication Business Group,
 212.113.112.223:443#DE Frankfurt am Main AS215590 LIMITED LIABILITY COMPANY RELCOM-SPB
 212.113.112.23:443#DE Frankfurt am Main AS215590 LIMITED LIABILITY COMPANY RELCOM-SPB
@@ -3694,8 +3698,10 @@
 3.114.209.125:49673#JP Tokyo AS16509 Amazon.com, Inc.
 3.114.209.125:50000#JP Tokyo AS16509 Amazon.com, Inc.
 3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.
-3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.13.231.112.245:18245#JP Tokyo AS16509 Amazon.com, Inc.
-3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.23.27.47.118:443#US Los Angeles AS149440 Evoxt.com
+3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.
+13.231.112.245:18245#JP Tokyo AS16509 Amazon.com, Inc.
+3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.
+23.27.47.118:443#US Los Angeles AS149440 Evoxt.com
 3.114.209.125:55553#JP Tokyo AS16509 Amazon.com, Inc.
 3.115.214.198:14534#JP Tokyo AS16509 Amazon.com, Inc.
 3.115.214.198:16993#JP Tokyo AS16509 Amazon.com, Inc.
@@ -5697,7 +5703,8 @@
 82.110.234.58:443#JP Tokyo AS142433 DATAWAVE GLOBAL LLC
 82.110.234.59:443#JP Tokyo AS142433 DATAWAVE GLOBAL LLC
 82.115.30.30:443#DE Frankfurt am Main AS41378 Parsun Network Solutions PTY LTD
-82.115.30.30:443#DE Frankfurt am Main AS41378 Parsun Network Solutions PTY LTD103.73.220.142:20021#ID Jakarta AS138115 PT Deneva
+82.115.30.30:443#DE Frankfurt am Main AS41378 Parsun Network Solutions PTY LTD
+103.73.220.142:20021#ID Jakarta AS138115 PT Deneva
 82.115.4.182:443#NL Amsterdam AS42532 SIA VEESP
 82.115.6.130:443#NL Amsterdam AS42532 SIA VEESP
 82.115.6.162:443#NL Amsterdam AS42532 SIA VEESP
@@ -5781,8 +5788,10 @@
 85.149.218.63:37828#TW Taipei AS61112 AKILE LTD
 85.149.218.63:40506#HK Hong Kong AS61112 Akile LTD
 85.149.218.63:40575#HK Hong Kong AS61112 Akile LTD
-85.149.218.65:30718#US Salt Lake City AS212336 ByteVirt LLC103.96.74.18:16000#HK Hong Kong AS55933 Room1405,14/F Lucky Centre 171 Wanchai road, Wanchai
-85.149.218.65:30718#US Salt Lake City AS212336 ByteVirt LLC13.212.102.140:16010#SG Singapore AS16509 Amazon.com, Inc.
+85.149.218.65:30718#US Salt Lake City AS212336 ByteVirt LLC
+103.96.74.18:16000#HK Hong Kong AS55933 Room1405,14/F Lucky Centre 171 Wanchai road, Wanchai
+85.149.218.65:30718#US Salt Lake City AS212336 ByteVirt LLC
+13.212.102.140:16010#SG Singapore AS16509 Amazon.com, Inc.
 85.149.218.65:30723#JP Tokyo AS134351 Leaseweb Japan K.K.
 85.149.218.67:30718#US Salt Lake City AS212336 ByteVirt LLC
 85.149.218.67:443#JP Tokyo AS134351 Leaseweb Japan K.K.
@@ -6127,7 +6136,8 @@
 95.85.233.82:443#DE Frankfurt am Main AS213887 WAIcore Ltd
 95.85.33.77:443#NL Amsterdam AS14061 DigitalOcean, LLC
 95.85.42.135:2053#NL Amsterdam AS14061 DigitalOcean, LLC
-95.85.42.135:2053#NL Amsterdam AS14061 DigitalOcean, LLC149.104.1.235:443#HK Harmony Garden AS6134 Hongkong Wen Jing Network Limited
+95.85.42.135:2053#NL Amsterdam AS14061 DigitalOcean, LLC
+149.104.1.235:443#HK Harmony Garden AS6134 Hongkong Wen Jing Network Limited
 96.126.130.117:443#JP Osaka AS149440 Evoxt.com
 96.126.130.209:443#JP Osaka AS149440 Evoxt.com
 96.126.130.243:443#JP Osaka AS149440 Evoxt.com
