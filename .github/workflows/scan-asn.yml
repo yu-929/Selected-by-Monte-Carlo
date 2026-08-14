@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       scan_input:
-        label: '目标列表'
+        description: '目标列表'
         required: true
       scan_ports:
-        label: '端口列表'
+        description: '端口列表'
         required: false
         default: '443'
 
