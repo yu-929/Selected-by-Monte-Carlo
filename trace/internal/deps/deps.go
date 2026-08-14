@@ -20,17 +20,17 @@ type Asset struct {
 var Assets = []Asset{
 	{
 		Name:    "GeoLite2-ASN.mmdb",
-		URL:     "https://raw.githubusercontent.com/yu-929/Selected-by-Monte-Carlo/main/GeoLite2-ASN.mmdb",
+		URL:     "https://raw.githubusercontent.com/yu-929/Selected-by-Monte-Carlo/main/trace/GeoLite2-ASN.mmdb",
 		MinSize: 1 << 20,
 	},
 	{
 		Name:    "asn_prefixes.json",
-		URL:     "https://raw.githubusercontent.com/yu-929/Selected-by-Monte-Carlo/main/asn_prefixes.json",
+		URL:     "https://raw.githubusercontent.com/yu-929/Selected-by-Monte-Carlo/main/trace/asn_prefixes.json",
 		MinSize: 1 << 10,
 	},
 	{
 		Name:    "locations.json",
-		URL:     "https://raw.githubusercontent.com/yu-929/Selected-by-Monte-Carlo/main/locations.json",
+		URL:     "https://raw.githubusercontent.com/yu-929/Selected-by-Monte-Carlo/main/trace/locations.json",
 		MinSize: 1 << 10,
 	},
 }
