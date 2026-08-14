@@ -614,6 +614,11 @@
 13.231.142.17:43741#JP Tokyo AS16509 Amazon.com, Inc.
 13.231.142.17:44818#JP Tokyo AS16509 Amazon.com, Inc.
 13.231.142.17:50075#JP Tokyo AS16509 Amazon.com, Inc.
+13.231.159.154:18245#JP Tokyo AS16509 Amazon.com, Inc.
+13.231.209.27:18245#JP Tokyo AS16509 Amazon.com, Inc.
+13.231.235.65:18245#JP Tokyo AS16509 Amazon.com, Inc.
+13.231.253.22:18245#JP Tokyo AS16509 Amazon.com, Inc.
+13.231.3.210:18245#JP Tokyo AS16509 Amazon.com, Inc.
 13.248.215.36:443#IE Dublin AS16509 Amazon Data Services Ireland Limited
 13.251.102.15:443#SG Singapore AS16509 Amazon.com, Inc.
 13.251.105.79:443#SG Singapore AS16509 Amazon.com, Inc.
@@ -3223,14 +3228,7 @@
 211.49.57.179:443#KR Seoul AS9318 SK Broadband Co Ltd
 211.75.210.32:443#TW Taichung AS3462 Data Communication Business Group,
 211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,
-211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,
-103.150.8.222:443#JP Tokyo AS3258 xTom
-211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,
-3.0.100.227:37628#SG Singapore AS16509 Amazon.com, Inc.
-211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,
-3.112.128.75:20547#JP Tokyo AS16509 Amazon.com, Inc.
-211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,
-35.74.0.60:22335#JP Tokyo AS16509 Amazon.com, Inc.
+211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,3.0.100.227:37628#SG Singapore AS16509 Amazon.com, Inc.
 211.75.210.34:443#TW Taichung AS3462 Data Communication Business Group,
 212.113.112.223:443#DE Frankfurt am Main AS215590 LIMITED LIABILITY COMPANY RELCOM-SPB
 212.113.112.23:443#DE Frankfurt am Main AS215590 LIMITED LIABILITY COMPANY RELCOM-SPB
@@ -3573,6 +3571,7 @@
 27.102.112.80:443#KR Incheon AS45996 KCInfra Inc.
 27.102.134.233:443#KR Seoul AS45996 KCInfra Inc.
 27.133.128.207:2083#JP Tokyo AS9370 SAKURA Internet Inc.
+3.0.100.227:37628#SG Singapore AS16509 Amazon.com, Inc.
 3.0.48.215:13427#SG Singapore AS16509 Amazon.com, Inc.
 3.0.48.215:15000#SG Singapore AS16509 Amazon.com, Inc.
 3.0.48.215:55553#SG Singapore AS16509 Amazon.com, Inc.
@@ -3695,6 +3694,7 @@
 3.114.209.125:49673#JP Tokyo AS16509 Amazon.com, Inc.
 3.114.209.125:50000#JP Tokyo AS16509 Amazon.com, Inc.
 3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.
+3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.13.231.112.245:18245#JP Tokyo AS16509 Amazon.com, Inc.
 3.114.209.125:50090#JP Tokyo AS16509 Amazon.com, Inc.23.27.47.118:443#US Los Angeles AS149440 Evoxt.com
 3.114.209.125:55553#JP Tokyo AS16509 Amazon.com, Inc.
 3.115.214.198:14534#JP Tokyo AS16509 Amazon.com, Inc.
@@ -4350,7 +4350,6 @@
 38.55.99.152:56888#SG Singapore AS4657 StarHub Cable Vision Ltd
 38.55.99.184:40001#US Los Angeles AS45102 Alibaba Cloud - US
 38.55.99.199:40001#US Los Angeles AS45102 Alibaba Cloud - US
-103.198.203.181:443#HK Hong Kong AS63139 Bedge Co Limited
 38.58.57.55:443#US Los Angeles AS979 NetLab
 38.58.58.114:443#US Los Angeles AS979 NetLab
 38.60.89.231:8443#US Los Angeles AS8796 KURUN CLOUD INC
@@ -6106,7 +6105,7 @@
 95.85.233.82:443#DE Frankfurt am Main AS213887 WAIcore Ltd
 95.85.33.77:443#NL Amsterdam AS14061 DigitalOcean, LLC
 95.85.42.135:2053#NL Amsterdam AS14061 DigitalOcean, LLC
-149.104.1.235:443#HK Harmony Garden AS6134 Hongkong Wen Jing Network Limited
+95.85.42.135:2053#NL Amsterdam AS14061 DigitalOcean, LLC149.104.1.235:443#HK Harmony Garden AS6134 Hongkong Wen Jing Network Limited
 96.126.130.117:443#JP Osaka AS149440 Evoxt.com
 96.126.130.209:443#JP Osaka AS149440 Evoxt.com
 96.126.130.243:443#JP Osaka AS149440 Evoxt.com
