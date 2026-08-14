@@ -1,98 +1,66 @@
-103.73.220.142:20021#ID Jakarta AS138115 PT Deneva
-191.101.132.44:52548#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
-103.73.220.142:20022#PH Quezon City AS19970 R&R Managed Telecom Services
-191.101.132.47:37924#VN Hanoi AS135905 Vietnam Posts and Telecommunications Group
-141.11.77.23:14168#HK Kwai Chung AS906 DMIT Cloud Service - Los Angeles
-191.101.132.163:34659#MY Johor Bahru AS137552 Terabix Technologies Sdn. Bhd.
-103.112.1.200:31015#TW Taipei AS131642 Pittqiao Network Information Co.,Ltd.
-191.101.132.203:21125#GB London AS14061 DigitalOcean, LLC
-191.101.132.130:31320#PT Lisbon AS35487 Misaka.io Edge Infrastucture in Lisbon, Portugal
-178.94.14.81:45872#SG Singapore AS38136 Akari Networks (Singapore)
-103.26.8.18:62357#SG Singapore AS36002 IPXO
-191.101.132.203:21108#TW Banqiao AS18429 Extra-Lan Technologies Co., LTD
-103.112.1.200:31018#MY Kuala Lumpur AS149440 Evoxt.com
-191.101.132.33:20294#SG Singapore AS38136 Akari Networks (Singapore)
-191.101.132.149:31010#SG Singapore AS38136 Akari Networks (Singapore)
-191.101.132.149:31030#UA Kyiv AS35487 Misaka Network, Inc. (Kyiv)
-103.112.1.96:443#JP Tokyo AS36002 SRMAK TECHNOLOGICAL SYSTEM PRIVATE LIMITED
-191.101.132.130:39974#JP Tokyo AS2497 BACK WAVES LIMITED
-191.101.132.33:37924#VN Hanoi AS135905 Vietnam Posts and Telecommunications Group
-191.101.132.34:37924#VN Hanoi AS135905 Vietnam Posts and Telecommunications Group
-191.101.132.130:31313#NL Amsterdam AS3214 xTom GmbH
-191.101.132.203:21122#AU Sydney AS14061 DigitalOcean, LLC
-191.101.132.47:44996#DE Frankfurt am Main AS174 Private Customer
-178.94.14.81:31219#UA Kyiv AS35487 Misaka Network, Inc. (Kyiv)
-191.101.132.33:20292#SG Singapore AS38136 Akari Networks (Singapore)
-103.26.8.18:61233#SG Singapore AS214483 BROADBAND
-103.73.220.207:16299#HK Hong Kong AS63150 BAGE CLOUD LLC
-191.101.132.96:32641#US New York City AS701 Verizon Business
-191.101.132.203:21109#SG Singapore AS21859 Zenlayer (Singapore) PTE. LTD
-191.101.132.149:31029#RU Moscow AS57578 St.Petersburg
-151.244.134.189:13443#JP Tokyo AS2516 KDDI CORPORATION
-191.101.132.203:21120#IN Bāshettihalli AS14061 DigitalOcean, LLC
-151.244.134.192:57035#JP Yokohama AS2527 So-net Service
-216.236.63.72:40191#SG Singapore AS61112 AKILE LTD
-191.101.132.130:31306#MY Kuala Lumpur AS149440 Evoxt.com
-191.101.132.130:46271#TW Taipei AS131642 Pittqiao Network Information Co.,Ltd.
-103.73.220.228:49472#TW Banqiao AS3462 HiNet Taiwan
-191.101.132.200:21461#MY Kuala Lumpur AS10030 Celcom Axiata Berhad
-191.101.132.130:31318#RU Moscow AS57578 St.Petersburg
-103.73.220.249:49472#TW Banqiao AS3462 HiNet Taiwan
-191.101.132.162:34868#DE Frankfurt am Main AS174 Private Customer
-191.101.132.162:37924#VN Hanoi AS135905 Vietnam Posts and Telecommunications Group
-191.101.132.47:53620#ES Madrid AS174 Private Customer
-191.101.132.130:31319#UA Kyiv AS35487 Misaka Network, Inc. (Kyiv)
-191.101.132.149:31015#TW Taipei AS131642 Pittqiao Network Information Co.,Ltd.
-191.101.132.149:31031#PT Lisbon AS35487 Misaka.io Edge Infrastucture in Lisbon, Portugal
-103.112.1.214:58840#JP Tokyo AS36002 SRMAK TECHNOLOGICAL SYSTEM PRIVATE LIMITED
-191.101.132.96:21461#MY Kuala Lumpur AS10030 Celcom Axiata Berhad
-103.112.1.200:31020#ID Jakarta AS149440 Evoxt.com
-151.244.134.189:47788#JP Tokyo AS2516 KDDI CORPORATION
-178.94.14.81:39874#JP Tokyo AS2497 BACK WAVES LIMITED
-151.244.134.217:30000#JP Tokyo AS36002 GoMami Networks. LLC
-191.101.132.162:20291#SG Singapore AS38136 Akari Networks (Singapore)
-178.94.14.81:31217#IT Milan AS35487 Misaka Network, Inc. (Milan)
-103.112.1.200:31010#SG Singapore AS38136 Akari Networks (Singapore)
-141.11.77.23:51742#HK Kwai Chung AS906 DMIT Cloud Service - Los Angeles
-103.73.220.142:20020#ID Jakarta AS138115 PT Deneva
-103.112.1.200:31009#SG Singapore AS38136 Akari Networks (Singapore)
-178.94.14.81:31213#NL Amsterdam AS3214 xTom GmbH
-191.101.132.130:31317#IT Milan AS35487 Misaka Network, Inc. (Milan)
-151.244.134.217:22000#JP Tokyo AS3258 xTom Japan Corporation
-178.94.14.81:31206#MY Kuala Lumpur AS149440 Evoxt.com
-103.26.8.15:53246#SG Singapore AS38001 Ready Server VPS Hosting
-191.101.132.203:21110#SG Singapore AS14061 DigitalOcean, LLC
-191.101.132.200:21595#TW Taichung AS131596 CCTV
-141.11.77.23:45484#HK Kwai Chung AS906 DMIT Cloud Service - Los Angeles
-191.101.132.33:20273#SG Singapore AS38136 Akari Networks (Singapore)
-178.94.14.81:46971#TW Taipei AS131642 Pittqiao Network Information Co.,Ltd.
-191.101.132.34:30744#ES Madrid AS174 Private Customer
-103.73.220.236:49472#TW Banqiao AS3462 HiNet Taiwan
-191.101.132.96:21595#TW Taichung AS131596 CCTV
-191.101.132.203:21112#JP Tokyo AS400618 Prime Security Corp.
-141.11.77.158:8443#HK Tung Chung AS9304 HGC Global Communications Limited
-191.101.132.149:31011#SG Singapore AS38136 Akari Networks (Singapore)
-191.101.132.149:31018#MY Kuala Lumpur AS149440 Evoxt.com
-178.94.14.81:31218#RU Moscow AS57578 St.Petersburg
-141.11.77.10:31401#JP Tokyo AS153371 BACK WAVES LIMITED - JP
-191.101.132.34:20274#SG Singapore AS38136 Akari Networks (Singapore)
-141.11.77.10:31502#TW Banqiao AS202400 Private Customer
-191.101.132.130:31321#ZA Johannesburg AS35487 Misaka.io Customer Infrastructure in Johannesburg, South Africa
-191.101.132.44:52547#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
-103.112.1.200:31030#UA Kyiv AS35487 Misaka Network, Inc. (Kyiv)
-191.101.132.162:30744#ES Madrid AS174 Private Customer
-103.112.1.200:31028#IT Milan AS35487 Misaka Network, Inc. (Milan)
-141.11.77.10:31501#TW Taipei AS142433 DATAWAVE GLOBAL LLC
-191.101.132.163:42736#MY Johor Bahru AS137552 Terabix Technologies Sdn. Bhd.
-191.101.132.130:45971#SG Singapore AS38136 Akari Networks (Singapore)
-191.101.132.200:17859#US La Puente AS5650 Verizon Business
-103.73.220.229:49472#TW Banqiao AS3462 HiNet Taiwan
-191.101.132.130:31307#ID Jakarta AS149440 Evoxt.com
-103.26.8.119:50011#JP Tokyo AS61112 AkileCloud LLC
-151.244.134.166:46444#JP Tokyo AS2516 KDDI CORPORATION
-103.112.1.200:31011#SG Singapore AS38136 Akari Networks (Singapore)
-191.101.132.149:31020#ID Jakarta AS149440 Evoxt.com
-191.101.132.96:17859#US La Puente AS5650 Verizon Business
-191.101.132.33:61633#VN Hanoi AS135905 Vietnam Posts and Telecommunications Group
-103.112.1.200:31031#PT Lisbon AS35487 Misaka.io Edge Infrastucture in Lisbon, Portugal
-103.26.8.18:60021#PH Quezon City AS9658 Bugallon DSL-Network
+43.199.75.154:22335#HK Hong Kong AS16509 Amazon.com, Inc.
+43.199.253.104:22335#HK Hong Kong AS16509 Amazon.com, Inc.
+43.207.56.210:16922#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.148.138:16922#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.219.40:16922#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.178.87:16922#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.47.139:16922#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.1.216:16922#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.130.169:16922#JP Tokyo AS16509 Amazon.com, Inc.
+43.207.152.210:16922#JP Tokyo AS16509 Amazon.com, Inc.
+35.76.107.89:23621#JP Tokyo AS16509 Amazon.com, Inc.
+35.76.31.122:23621#JP Tokyo AS16509 Amazon.com, Inc.
+35.76.29.98:23621#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.38.198:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.8.200:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.18.249:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.16.57:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.22.19:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.4.129:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.18.249:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.29.67:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.28.167:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.28.167:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.8.200:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.4.129:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.29.67:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.23.146:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.22.19:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.6.162:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.38.198:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.6.162:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.23.146:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.16.57:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.36.162:43734#JP Tokyo AS16509 Amazon.com, Inc.
+57.183.36.162:22335#JP Tokyo AS16509 Amazon.com, Inc.
+57.180.38.188:39250#JP Tokyo AS16509 Amazon.com, Inc.
+57.180.64.160:39250#JP Tokyo AS16509 Amazon.com, Inc.
+57.180.56.233:39250#JP Tokyo AS16509 Amazon.com, Inc.
+57.180.40.143:39250#JP Tokyo AS16509 Amazon.com, Inc.
+57.180.23.159:39250#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.190.127:47176#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.200.128:47176#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.167.213:11310#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.170.232:47176#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.170.232:11310#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.190.127:11310#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.183.66:47176#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.183.133:47176#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.200.128:11310#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.183.133:11310#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.167.213:47176#JP Tokyo AS16509 Amazon.com, Inc.
+13.196.183.66:11310#JP Tokyo AS16509 Amazon.com, Inc.
+54.254.177.140:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.176.144:47176#SG Singapore AS16509 Amazon.com, Inc.
+54.254.245.171:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.194.238:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.176.144:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.194.238:47176#SG Singapore AS16509 Amazon.com, Inc.
+54.254.177.140:47176#SG Singapore AS16509 Amazon.com, Inc.
+54.254.93.60:47176#SG Singapore AS16509 Amazon.com, Inc.
+54.254.224.189:47176#SG Singapore AS16509 Amazon.com, Inc.
+54.254.93.60:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.224.189:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.245.171:47176#SG Singapore AS16509 Amazon.com, Inc.
+54.254.173.98:11310#SG Singapore AS16509 Amazon.com, Inc.
+54.254.173.98:47176#SG Singapore AS16509 Amazon.com, Inc.
