@@ -6356,3 +6356,5 @@
 54.251.136.52:443#SG Singapore AS16509 Amazon.com, Inc.
 54.251.136.52:49159#SG Singapore AS16509 Amazon.com, Inc.
 57.181.34.87:443#JP Tokyo AS16509 Amazon.com, Inc.
+185.248.186.102:8443#SG Singapore AS38136 Akari Networks (Singapore)
+45.78.55.86:443#JP Osaka AS25820 IT7 Networks Inc
