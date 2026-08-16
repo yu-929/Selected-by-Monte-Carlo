@@ -9684,3 +9684,8 @@
 202.83.24.75:443#IN Chennai AS24309 Broad Band Internet Service Provider, India
 64.227.174.213:8443#IN Bāshettihalli AS14061 DigitalOcean, LLC
 64.227.174.213:2053#IN Bāshettihalli AS14061 DigitalOcean, LLC
+91.213.174.240:443#HK Tsuen Wan AS967 VMISS Inc.
+188.253.121.236:443#SG Singapore AS38136 Akari Networks (Singapore)
+188.253.121.195:443#SG Singapore AS38136 Akari Networks (Singapore)
+64.64.233.81:443#US Los Angeles AS25820 Cluster Logic Inc
+179.255.121.149:443#US Los Angeles AS906 DMIT Cloud Services
