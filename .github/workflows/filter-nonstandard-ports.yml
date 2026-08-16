@@ -3,8 +3,8 @@ name: Filter Non-Standard Port IPs
 on:
   workflow_dispatch:
     inputs:
-      file_url:
-        description: "目标文件的原始 URL（如 https://raw.githubusercontent.com/...）"
+      file_path:
+        description: "目标文件路径（如 ip-4.txt）"
         required: true
         type: string
 
@@ -12,9 +12,8 @@ jobs:
   filter:
     runs-on: ubuntu-latest
     steps:
-      - name: Download target file
-        run: |
-          curl -sL -o input.txt "${{ inputs.file_url }}"
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Filter non-standard ports
         run: |
@@ -26,11 +25,11 @@ jobs:
               exclude["2087"]=1; exclude["8443"]=1
             }
             !($2 in exclude) { print }
-          ' input.txt > nonstandard-ports.txt
+          ' "${{ inputs.file_path }}" > nonstandard-ports.txt
 
       - name: Show summary
         run: |
-          total=$(wc -l < input.txt)
+          total=$(wc -l < "${{ inputs.file_path }}")
           filtered=$(wc -l < nonstandard-ports.txt)
           echo "Total: $total, Non-standard: $filtered"
 
