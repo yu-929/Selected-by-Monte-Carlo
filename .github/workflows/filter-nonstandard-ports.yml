@@ -8,6 +8,9 @@ on:
         required: true
         type: string
 
+permissions:
+  contents: write
+
 jobs:
   filter:
     runs-on: ubuntu-latest
@@ -19,6 +22,7 @@ jobs:
         env:
           INPUT_FILE: "${{ inputs.file_path }}"
         run: |
+          mkdir -p 非标
           base="${INPUT_FILE%.*}"
           ext="${INPUT_FILE##*.}"
           if [ -n "$ext" ] && [ "$ext" != "$INPUT_FILE" ]; then
@@ -35,16 +39,21 @@ jobs:
               exclude["2087"]=1; exclude["8443"]=1
             }
             !($2 in exclude) { print }
-          ' "${{ inputs.file_path }}" > "$OUTPUT_FILE"
+          ' "${{ inputs.file_path }}" > "非标/$OUTPUT_FILE"
 
       - name: Show summary
         run: |
           total=$(wc -l < "${{ inputs.file_path }}")
-          filtered=$(wc -l < "$OUTPUT_FILE")
-          echo "Total: $total, Non-standard: $filtered, Output: $OUTPUT_FILE"
+          filtered=$(wc -l < "非标/$OUTPUT_FILE")
+          echo "Total: $total, Non-standard: $filtered, Output: 非标/$OUTPUT_FILE"
 
-      - name: Upload result
-        uses: actions/upload-artifact@v4
-        with:
-          name: nonstandard-ports
-          path: ${{ env.OUTPUT_FILE }}
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "非标/$OUTPUT_FILE"
+          git commit -m "chore: 筛选非标端口 ${INPUT_FILE} -> ${OUTPUT_FILE}"
+          git push
+        env:
+          INPUT_FILE: "${{ inputs.file_path }}"
+          OUTPUT_FILE: ${{ env.OUTPUT_FILE }}
