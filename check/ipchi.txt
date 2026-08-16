@@ -9689,3 +9689,9 @@
 188.253.121.195:443#SG Singapore AS38136 Akari Networks (Singapore)
 64.64.233.81:443#US Los Angeles AS25820 Cluster Logic Inc
 179.255.121.149:443#US Los Angeles AS906 DMIT Cloud Services
+5.180.82.38:4443#DE Frankfurt am Main AS215703 freakhosting.com
+207.154.244.184:20202#DE Frankfurt am Main AS14061 DigitalOcean, LLC
+178.104.203.78:18080#DE Nuremberg AS24940 Hetzner Online GmbH
+54.255.210.14:13722#SG Singapore AS16509 Amazon.com, Inc.
+107.173.130.116:4443#US Buffalo AS36352 RackNerd LLC
+47.129.51.9:12000#SG Singapore AS16509 Amazon.com, Inc.
