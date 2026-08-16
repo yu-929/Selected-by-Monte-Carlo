@@ -1,0 +1,46 @@
+name: Split IPCHI by Country
+
+on:
+  push:
+    paths:
+      - "check/ipchi.txt"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Split by country
+        run: |
+          mkdir -p Country
+          awk -F '#| ' '
+            !/^[[:space:]]*$/ && $2 != "" {
+              file = "Country/" $2 ".txt"
+              print >> file
+            }
+          ' check/ipchi.txt
+
+      - name: Show summary
+        run: |
+          echo "Country files created:"
+          ls -1 Country/
+          total=$(wc -l < check/ipchi.txt)
+          echo "Total lines: $total"
+
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Country/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: 按国家拆分 ipchi.txt"
+            git push
+          fi
