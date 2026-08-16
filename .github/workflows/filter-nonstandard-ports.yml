@@ -16,7 +16,17 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Filter non-standard ports
+        env:
+          INPUT_FILE: "${{ inputs.file_path }}"
         run: |
+          base="${INPUT_FILE%.*}"
+          ext="${INPUT_FILE##*.}"
+          if [ -n "$ext" ] && [ "$ext" != "$INPUT_FILE" ]; then
+            OUTPUT_FILE="${base}-非标.${ext}"
+          else
+            OUTPUT_FILE="${INPUT_FILE}-非标"
+          fi
+          echo "OUTPUT_FILE=$OUTPUT_FILE" >> "$GITHUB_ENV"
           awk -F '[:#]' '
             BEGIN {
               exclude["80"]=1; exclude["8080"]=1; exclude["8880"]=1
@@ -25,16 +35,16 @@ jobs:
               exclude["2087"]=1; exclude["8443"]=1
             }
             !($2 in exclude) { print }
-          ' "${{ inputs.file_path }}" > nonstandard-ports.txt
+          ' "${{ inputs.file_path }}" > "$OUTPUT_FILE"
 
       - name: Show summary
         run: |
           total=$(wc -l < "${{ inputs.file_path }}")
-          filtered=$(wc -l < nonstandard-ports.txt)
-          echo "Total: $total, Non-standard: $filtered"
+          filtered=$(wc -l < "$OUTPUT_FILE")
+          echo "Total: $total, Non-standard: $filtered, Output: $OUTPUT_FILE"
 
       - name: Upload result
         uses: actions/upload-artifact@v4
         with:
           name: nonstandard-ports
-          path: nonstandard-ports.txt
+          path: "$OUTPUT_FILE"
