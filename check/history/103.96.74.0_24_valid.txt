@@ -1,24 +1,7 @@
-123.111.169.70:443#KR Seoul AS9318 SK Broadband Co Ltd
-131.186.24.124:587#KR Gangseo-gu AS31898 Oracle Public Cloud
-132.145.84.148:39567#KR Gangseo-gu AS31898 Oracle Public Cloud
-132.226.21.116:6056#KR Gangseo-gu AS31898 Oracle Public Cloud
-132.226.23.92:22053#KR Gangseo-gu AS31898 Oracle Public Cloud
-140.238.5.75:13644#KR Gangseo-gu AS31898 Oracle Corporation
-144.24.73.232:443#KR Chuncheon AS31898 Oracle Corp UK Ltd
-144.24.87.69:50001#KR Chuncheon AS31898 Oracle Corporation
-146.56.140.79:22561#KR Seoul AS13335 Cloudflare London, LLC
-146.56.140.79:20309#KR Incheon AS13335 Cloudflare, Inc.
-146.56.140.79:44699#KR Seoul AS13335 Cloudflare London, LLC
-146.56.42.21:7777#KR Seoul AS13335 Cloudflare London, LLC
-146.56.99.22:20443#KR Chuncheon AS31898 Oracle Corporation , Global software solutions , California , USA
-152.67.209.237:22053#KR Chuncheon AS31898 Oracle Public Cloud
-152.67.211.114:58337#KR Chuncheon AS31898 Oracle Public Cloud
-152.69.229.175:22558#KR Chuncheon AS31898 Oracle Corporation
-152.70.89.135:587#KR Gangseo-gu AS31898 Oracle Corporation
-158.180.69.78:12198#KR Tongjin AS13335 Cloudflare, Inc.
-158.247.250.157:81#KR Gangseo-gu AS20473 The Constant Company, LLC
-217.142.138.61:37914#KR Gangseo-gu AS31898 Oracle Svenska AB
-59.6.239.208:12203#KR Goyang-si AS4766 KT
-61.85.1.77:12150#KR Jeju City AS4766 Korea Telecom
-64.110.70.205:23022#KR Gangseo-gu AS31898 Oracle Corporation
-64.110.75.145:443#KR Gangseo-gu AS31898 Oracle Corporation
+152.32.181.246:44070#AE Dubai AS135377 UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED
+176.97.66.175:443#AE Dubai AS9009 3nt solutions LLP
+20.174.15.226:443#AE Dubai AS8075 Microsoft Corporation
+3.29.240.49:443#AE Dubai AS16509 Amazon Data Services UAE
+45.86.228.104:443#AE Fujairah AS62005 BlueVPS OU
+84.235.245.65:2096#AE Dubai AS13335 Cloudflare, Inc.
+90.156.221.54:443#AE Dubai AS44578 ITGLOBAL COM DMCC
