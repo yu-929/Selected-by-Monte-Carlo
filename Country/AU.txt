@@ -1,0 +1,18 @@
+108.165.64.202:49055#AU Sydney AS149440 Evoxt (AU)
+191.101.132.203:21122#AU Sydney AS14061 DigitalOcean, LLC
+192.9.175.224:443#AU Toongabbie West AS31898 Oracle Corporation
+209.38.23.235:443#AU Sydney AS14061 Digital Ocean, Inc.
+216.23.123.211:30619#AU Melbourne AS20473 The Constant Company, LLC
+216.23.123.64:30619#AU Melbourne AS20473 The Constant Company, LLC
+216.23.82.4:30619#AU Melbourne AS20473 The Constant Company, LLC
+23.27.99.242:10002#AU Sydney AS149440 Evoxt (AU)
+85.149.220.154:30619#AU Melbourne AS20473 The Constant Company, LLC
+161.33.76.218:2053#AU Melbourne AS31898 Oracle Corporation
+161.33.76.218:8443#AU Melbourne AS31898 Oracle Corporation
+170.64.175.13:443#AU Sydney AS14061 DigitalOcean, LLC
+170.64.229.30:443#AU Sydney AS14061 Digital Ocean, Inc.
+176.97.68.17:443#AU Sydney AS9009 3nt solutions LLP
+45.32.191.198:443#AU Sydney AS20473 The Constant Company, LLC
+168.138.102.201:34237#AU Toongabbie West AS31898 Oracle Public Cloud
+168.138.25.219:39738#AU Melbourne AS31898 Oracle Public Cloud
+139.84.202.177:2096#AU Melbourne AS20473 The Constant Company, LLC
