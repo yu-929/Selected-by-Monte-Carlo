@@ -1,32 +1,21 @@
-129.150.36.188:53435#SG Kampong Loyang AS31898 Oracle Corporation
-213.35.100.31:47112#SG Kampong Loyang AS31898 Oracle Svenska AB
-146.235.18.248:45137#SG Kampong Loyang AS31898 Oracle Corporation
-168.138.171.70:23280#SG Kampong Loyang AS31898 Oracle Public Cloud
-138.2.95.33:17465#SG Kampong Loyang AS31898 Oracle Corporation
-213.35.108.135:12596#SG Kampong Loyang AS31898 Oracle Svenska AB
-149.28.158.103:10030#SG Singapore AS20473 Vultr Holdings, LLC
-47.74.254.191:8900#SG Singapore AS45102 Alibaba Cloud - SG
-47.130.35.116:8888#SG Singapore AS16509 Amazon Data Services Singapore
-167.71.198.82:8443#SG Singapore AS14061 DigitalOcean, LLC
-66.42.51.60:8443#SG Singapore AS20473 SGP_VULTR_CUST
-138.2.95.61:1111#SG Kampong Loyang AS31898 Oracle Corporation
-124.156.202.172:443#SG Singapore AS132203 16 COLLYER QUAY
-13.250.131.37:443#SG Singapore AS16509 Amazon Data Services Singapore
-138.2.64.229:443#SG Kampong Loyang AS31898 Oracle Corporation
-139.180.159.133:443#SG Singapore AS20473 SGP_VULTR_CUST
-143.42.66.91:443#SG Singapore AS4773 M1 Ltd
-150.109.11.223:443#SG Singapore AS132203 16 COLLYER QUAY
-158.178.229.178:443#SG Kampong Loyang AS31898 Oracle Svenska AB
-164.52.2.100:443#SG Singapore AS63199 UCUL-SG
-164.52.2.98:443#SG Singapore AS63199 UCUL-SG
-164.52.2.99:443#SG Singapore AS63199 UCUL-SG
-168.138.165.174:443#SG Kampong Loyang AS31898 Oracle Public Cloud
-168.138.189.91:443#SG Kampong Loyang AS31898 Oracle Public Cloud
-178.128.86.3:443#SG Singapore AS14061 DigitalOcean, LLC
-188.166.249.31:443#SG Singapore AS14061 DigitalOcean, LLC
-3.0.50.69:443#SG Singapore AS16509 Amazon Data Services Singapore
-43.156.116.194:443#SG Singapore AS132203 6 COLLYER QUAY
-43.156.181.203:443#SG Singapore AS132203 16 COLLYER QUAY
-68.183.227.180:443#SG Singapore AS14061 DigitalOcean, LLC
-68.183.227.216:443#SG Singapore AS14061 DigitalOcean, LLC
-5.34.176.119:81#SG Singapore AS204957 Green Floid LLC
+43.175.131.30:443#HK Hong Kong AS139341 6 COLLYER QUAY
+103.57.248.168:443#HK Kwai Chung AS9009 EDIS IPv6 Infrastructure in Hong Kong
+91.213.174.240:443#HK Tsuen Wan AS967 VMISS Inc.
+151.236.20.179:443#HK Kwai Chung AS9009 EDIS IPv6 Infrastructure in Hong Kong
+209.33.166.157:443#HK Hong Kong AS63150 BAGE CLOUD LLC
+43.159.4.80:443#SG Singapore AS132203 ACEVILLE PTE.LTD.
+188.253.121.236:443#SG Singapore AS38136 Akari Networks (Singapore)
+185.194.54.137:443#SG Singapore AS8888 xTom Pty Ltd
+188.253.121.195:443#SG Singapore AS38136 Akari Networks (Singapore)
+45.89.219.72:443#SG Singapore AS8888 365 Group LLC
+82.40.33.173:443#JP Tokyo AS400618 Private Customer
+191.223.220.25:443#JP Tokyo AS906 DMIT Cloud Service - Tokyo
+179.253.252.105:443#JP Tokyo AS906 DMIT Cloud Service - Tokyo
+166.117.184.30:443#US Ashburn AS14618 Amazon Data Services Northern Virginia
+64.64.233.81:443#US Los Angeles AS25820 Cluster Logic Inc
+64.186.230.181:443#US Los Angeles AS906 DMIT Cloud Services
+179.253.236.5:443#US Los Angeles AS906 Private Customer
+179.255.121.149:443#US Los Angeles AS906 DMIT Cloud Services
+64.118.159.219:443#DE Frankfurt am Main AS138997 Eons Data Communications Limited
+82.115.30.30:443#DE Frankfurt am Main AS41378 Parsun Network Solutions PTY LTD
+216.236.31.135:443#DE Frankfurt am Main AS138997 Eons Data Communications Limited
