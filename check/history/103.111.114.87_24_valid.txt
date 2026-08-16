@@ -1,21 +1,4 @@
-43.175.131.30:443#HK Hong Kong AS139341 6 COLLYER QUAY
-103.57.248.168:443#HK Kwai Chung AS9009 EDIS IPv6 Infrastructure in Hong Kong
-91.213.174.240:443#HK Tsuen Wan AS967 VMISS Inc.
-151.236.20.179:443#HK Kwai Chung AS9009 EDIS IPv6 Infrastructure in Hong Kong
-209.33.166.157:443#HK Hong Kong AS63150 BAGE CLOUD LLC
-43.159.4.80:443#SG Singapore AS132203 ACEVILLE PTE.LTD.
-188.253.121.236:443#SG Singapore AS38136 Akari Networks (Singapore)
-185.194.54.137:443#SG Singapore AS8888 xTom Pty Ltd
-188.253.121.195:443#SG Singapore AS38136 Akari Networks (Singapore)
-45.89.219.72:443#SG Singapore AS8888 365 Group LLC
-82.40.33.173:443#JP Tokyo AS400618 Private Customer
-191.223.220.25:443#JP Tokyo AS906 DMIT Cloud Service - Tokyo
-179.253.252.105:443#JP Tokyo AS906 DMIT Cloud Service - Tokyo
-166.117.184.30:443#US Ashburn AS14618 Amazon Data Services Northern Virginia
-64.64.233.81:443#US Los Angeles AS25820 Cluster Logic Inc
-64.186.230.181:443#US Los Angeles AS906 DMIT Cloud Services
-179.253.236.5:443#US Los Angeles AS906 Private Customer
-179.255.121.149:443#US Los Angeles AS906 DMIT Cloud Services
-64.118.159.219:443#DE Frankfurt am Main AS138997 Eons Data Communications Limited
-82.115.30.30:443#DE Frankfurt am Main AS41378 Parsun Network Solutions PTY LTD
-216.236.31.135:443#DE Frankfurt am Main AS138997 Eons Data Communications Limited
+109.206.243.100:2096#FI Helsinki AS215590 Xorek.Cloud Helsinki
+52.198.127.128:2096#JP Tokyo AS16509 Amazon.com, Inc.
+79.137.197.212:2096#NL Rotterdam AS210644 AEZA GROUP LLC
+166.1.89.213:2096#US New York City AS395839 InterLIR LLC
