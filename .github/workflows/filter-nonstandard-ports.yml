@@ -47,4 +47,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: nonstandard-ports
-          path: "$OUTPUT_FILE"
+          path: ${{ env.OUTPUT_FILE }}
