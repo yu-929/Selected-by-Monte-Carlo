@@ -1,15 +1,50 @@
-101.79.165.113:443#HK Hong Kong AS54994 CDNetworks
-141.11.91.67:8080#HK Hong Kong AS61112 Tusker Technologies Pty Ltd
-154.38.116.8:443#HK Hong Kong AS140227 STARCLOUD GLOBAL PTE. LTD.
-219.76.13.166:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet
-219.76.13.167:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet
-219.76.13.169:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet
-219.76.13.177:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet
-219.76.13.181:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet
-221.125.10.8:57537#HK Hong Kong AS9304 HGC Global Communications Limited
-43.154.124.136:26666#HK Hong Kong AS132203 6 COLLYER QUAY
-43.198.204.35:443#HK Hong Kong AS16509 Amazon.com, Inc.
-45.38.42.198:2053#HK Hong Kong AS56971 Subnet Digital LLC
-8.210.29.68:443#HK Hong Kong AS45102 Aliyun Computing Co.LTD
-8.210.96.197:12902#HK Hong Kong AS45102 Aliyun Computing Co.LTD
-8.218.36.133:9010#HK Hong Kong AS45102 Alibaba Cloud (Singapore) Private Limited
+103.106.228.126:2053#JP Tokyo AS136258 oneprovider.com - Tokyo Infrastructure
+103.75.118.144:2053#JP Tokyo AS136258 Oneprovider.com - Japan Infrastructure
+118.27.12.40:38443#JP Tokyo AS7506 GMO Internet, Inc.
+131.186.63.89:11655#JP Inzai AS31898 Oracle Public Cloud
+132.145.127.203:8443#JP Inzai AS31898 Oracle Public Cloud
+132.145.127.203:2053#JP Inzai AS31898 Oracle Public Cloud
+138.2.10.149:45638#JP Inzai AS31898 Oracle Corporation
+138.2.10.217:27446#JP Inzai AS31898 Oracle Corporation
+138.2.18.82:8880#JP Inzai AS31898 Oracle Corporation
+138.2.32.76:15821#JP Osaka AS31898 Oracle Corporation
+138.2.48.109:26412#JP Osaka AS31898 Oracle Corporation
+138.2.49.197:587#JP Osaka AS31898 Oracle Corporation
+138.2.5.136:443#JP Funabashi AS13335 Cloudflare London, LLC
+138.2.59.96:10129#JP Osaka AS31898 Oracle Corporation
+138.3.217.167:587#JP Inzai AS31898 Oracle Network Information Services
+138.3.222.124:46209#JP Inzai AS31898 Oracle Network Information Services
+139.162.102.152:7002#JP Tokyo AS63949 Akamai Connected Cloud / Linode
+140.238.37.103:14782#JP Inzai AS31898 Oracle Public Cloud
+140.238.38.81:587#JP Funabashi AS13335 Cloudflare, Inc.
+140.238.50.134:443#JP Inzai AS31898 Oracle Public Cloud
+140.83.57.20:13118#JP Osaka AS31898 imported inetnum object for OCPL-1
+141.147.152.229:23333#JP Osaka AS31898 Oracle Corporation
+141.147.183.49:29876#JP Inzai AS31898 Oracle Corporation
+141.147.185.63:443#JP Inzai AS31898 Oracle Corporation
+149.28.21.106:443#JP Ōi AS20473 Vultr Holdings, LLC
+150.230.204.21:10243#JP Inzai AS31898 Oracle Corporation
+150.230.214.172:16957#JP Inzai AS31898 Oracle Corporation
+150.230.5.34:45681#JP Osaka AS31898 Oracle Corporation
+152.69.192.40:57005#JP Osaka AS31898 Oracle Corporation
+153.121.45.101:443#JP Tokyo AS9370 SAKURA Internet Inc.
+155.248.181.189:443#JP Inzai AS31898 Oracle Public Cloud
+158.101.131.94:2083#JP Inzai AS31898 Oracle Public Cloud
+158.101.152.6:2919#JP Inzai AS31898 Oracle Public Cloud
+158.101.154.245:47001#JP Inzai AS31898 Oracle Public Cloud
+158.101.76.55:21953#JP Inzai AS31898 Oracle Public Cloud
+158.101.89.113:50443#JP Inzai AS31898 Oracle Public Cloud
+167.179.110.68:8443#JP Ōi AS20473 The Constant Company, LLC
+168.138.197.147:12345#JP Inzai AS31898 Oracle Public Cloud
+168.138.46.67:443#JP Osaka AS31898 Oracle Public Cloud
+210.138.37.53:443#JP Tokyo AS2497 CDNetworks co., Ltd
+217.142.230.253:587#JP Osaka AS31898 Oracle Corporation
+217.142.250.195:587#JP Osaka AS31898 Oracle Corporation
+45.11.1.118:44004#JP Tokyo AS212238 CEGRGO-DigitalVM LLC - Tokyo
+45.32.49.72:9443#JP Ōi AS20473 Vultr Holdings, LLC
+45.76.198.248:443#JP Ōi AS20473 Vultr Holdings, LLC
+45.77.25.6:48828#JP Ōi AS20473 Vultr Holdings, LLC
+45.77.25.6:27854#JP Ōi AS20473 Vultr Holdings, LLC
+47.74.8.30:2443#JP Tokyo AS45102 Alibaba Cloud - JP
+64.110.104.30:443#JP Osaka AS31898 Oracle Corporation
+64.176.36.17:443#JP Osaka AS20473 The Constant Company, LLC
