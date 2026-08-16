@@ -9611,3 +9611,8 @@
 61.85.1.77:12150#KR Jeju City AS4766 Korea Telecom
 64.110.70.205:23022#KR Gangseo-gu AS31898 Oracle Corporation
 64.110.75.145:443#KR Gangseo-gu AS31898 Oracle Corporation
+20.174.15.226:443#AE Dubai AS8075 Microsoft Corporation
+3.29.240.49:443#AE Dubai AS16509 Amazon Data Services UAE
+45.86.228.104:443#AE Fujairah AS62005 BlueVPS OU
+84.235.245.65:2096#AE Dubai AS13335 Cloudflare, Inc.
+90.156.221.54:443#AE Dubai AS44578 ITGLOBAL COM DMCC
