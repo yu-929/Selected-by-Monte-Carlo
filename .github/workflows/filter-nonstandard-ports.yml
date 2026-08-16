@@ -1,0 +1,41 @@
+name: Filter Non-Standard Port IPs
+
+on:
+  workflow_dispatch:
+    inputs:
+      file_url:
+        description: "目标文件的原始 URL（如 https://raw.githubusercontent.com/...）"
+        required: true
+        type: string
+
+jobs:
+  filter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download target file
+        run: |
+          curl -sL -o input.txt "${{ inputs.file_url }}"
+
+      - name: Filter non-standard ports
+        run: |
+          awk -F '[:#]' '
+            BEGIN {
+              exclude["80"]=1; exclude["8080"]=1; exclude["8880"]=1
+              exclude["2052"]=1; exclude["2082"]=1; exclude["2086"]=1
+              exclude["443"]=1; exclude["2053"]=1; exclude["2083"]=1
+              exclude["2087"]=1; exclude["8443"]=1
+            }
+            !($2 in exclude) { print }
+          ' input.txt > nonstandard-ports.txt
+
+      - name: Show summary
+        run: |
+          total=$(wc -l < input.txt)
+          filtered=$(wc -l < nonstandard-ports.txt)
+          echo "Total: $total, Non-standard: $filtered"
+
+      - name: Upload result
+        uses: actions/upload-artifact@v4
+        with:
+          name: nonstandard-ports
+          path: nonstandard-ports.txt
