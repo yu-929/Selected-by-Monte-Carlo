@@ -18,10 +18,10 @@ jobs:
 
       - name: Split by country
         run: |
-          mkdir -p Country
+          mkdir -p check/Country
           awk -F '#| ' '
             !/^[[:space:]]*$/ && $2 != "" {
-              file = "Country/" $2 ".txt"
+              file = "check/Country/" $2 ".txt"
               print >> file
             }
           ' check/ipchi.txt
@@ -29,7 +29,7 @@ jobs:
       - name: Show summary
         run: |
           echo "Country files created:"
-          ls -1 Country/
+          ls -1 check/Country/
           total=$(wc -l < check/ipchi.txt)
           echo "Total lines: $total"
 
@@ -37,10 +37,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add Country/
+          git add check/Country/
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: 按国家拆分 ipchi.txt"
+            git commit -m "chore: 按国家拆分 ipchi.txt 到 check/Country/"
             git push
           fi
