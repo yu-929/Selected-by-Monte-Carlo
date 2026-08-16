@@ -10031,3 +10031,4 @@
 95.215.8.28:443#NL Dronten AS41745 Baykov Ilya Sergeevich
 95.216.140.177:443#FI Helsinki AS24940 Hetzner Online GmbH
 95.217.186.94:9443#FI Helsinki AS24940 Hetzner Online GmbH
+23.27.26.228:13846#US Los Angeles AS149440 Evoxt
