@@ -1,4 +1,24 @@
-109.206.243.100:2096#FI Helsinki AS215590 Xorek.Cloud Helsinki
-52.198.127.128:2096#JP Tokyo AS16509 Amazon.com, Inc.
-79.137.197.212:2096#NL Rotterdam AS210644 AEZA GROUP LLC
-166.1.89.213:2096#US New York City AS395839 InterLIR LLC
+151.236.20.179:443#HK Kwai Chung AS9009 EDIS IPv6 Infrastructure in Hong Kong
+43.175.131.30:443#HK Hong Kong AS139341 6 COLLYER QUAY
+103.57.248.163:443#HK Kwai Chung AS9009 EDIS IPv6 Infrastructure in Hong Kong
+209.33.166.31:443#HK Hong Kong AS63150 BAGE CLOUD LLC
+94.103.6.51:443#HK Hong Kong AS25820 Cluster Logic Inc
+45.89.219.72:443#SG Singapore AS8888 365 Group LLC
+38.207.132.249:443#SG Singapore AS209699 Private Customer
+43.159.4.80:443#SG Singapore AS132203 ACEVILLE PTE.LTD.
+185.194.54.137:443#SG Singapore AS8888 xTom Pty Ltd
+172.104.171.151:443#SG Singapore AS63949 Akamai Connected Cloud / Linode
+216.23.122.8:443#JP Tokyo AS205548 ZOUTER LIMITED
+64.204.49.68:443#JP Tokyo AS206069 Private Customer
+104.105.128.153:443#JP Tokyo AS63949 Linode
+172.237.11.146:443#JP Tokyo AS63949 Linode
+47.75.104.254:443#US Los Angeles AS45102 Alibaba Cloud (Singapore) Private Limited
+199.168.136.224:443#US Los Angeles AS25820 Cluster Logic Inc
+64.186.228.225:443#US Los Angeles AS906 DMIT Cloud Services
+179.255.104.166:443#US Los Angeles AS906 DMIT Cloud Services
+209.209.58.159:443#US Los Angeles AS917 Misaka Network, Inc.
+31.25.88.11:443#DE Frankfurt am Main AS41378 Kirino LLC
+194.169.54.223:443#DE Frankfurt am Main AS3214 xTom
+45.147.48.93:443#DE Frankfurt am Main AS3214 xTom
+188.95.70.156:443#DE Frankfurt am Main AS3214 xTom GmbH
+45.147.48.147:443#DE Frankfurt am Main AS3214 xTom
