@@ -277,3 +277,282 @@
 59.6.239.208:30778#KR Goyang-si AS4766 KT
 59.6.239.208:32788#KR Goyang-si AS4766 KT
 61.80.187.206:37215#KR Daegu AS4766 Korea Telecom
+114.204.40.185:443#KR Ansan-si AS9318 SK Broadband Co Ltd
+114.204.41.241:30001#KR Ansan-si AS9318 SK Broadband Co Ltd
+114.204.41.241:30003#KR Ansan-si AS9318 SK Broadband Co Ltd
+119.205.235.58:443#KR Seoul AS4766 Korea Telecom
+119.28.162.39:8443#KR Seolcheon AS13335 Cloudflare London, LLC
+121.166.39.76:12433#KR Pyeongtaek AS4766 Korea Telecom
+123.111.169.70:2053#KR Seoul AS9318 SK Broadband Co Ltd
+123.111.169.70:2083#KR Seoul AS9318 SK Broadband Co Ltd
+123.111.169.70:2087#KR Seoul AS9318 SK Broadband Co Ltd
+123.111.169.70:2096#KR Seoul AS9318 SK Broadband Co Ltd
+123.111.169.70:443#KR Seoul AS9318 SK Broadband Co Ltd
+14.52.210.173:12312#KR Seoul AS4766 Korea Telecom
+144.24.73.232:443#KR Chuncheon AS31898 Oracle Corp UK Ltd
+146.56.140.79:44699#KR Seoul AS13335 Cloudflare London, LLC
+146.56.174.193:58567#KR Gangseo-gu AS31898 Oracle Corporation , Global software solutions , California , USA
+146.56.180.103:443#KR Gangseo-gu AS31898 Oracle Corporation , Global software solutions , California , USA
+146.56.187.1:9443#KR Gangseo-gu AS31898 Oracle Corporation
+146.56.188.74:443#KR Gangseo-gu AS31898 Oracle Corporation , Global software solutions , California , USA
+15.164.238.229:18264#KR Incheon AS16509 Amazon.com, Inc.
+152.70.239.74:443#KR Gangseo-gu AS31898 Oracle Corporation
+152.70.254.197:443#KR Gangseo-gu AS31898 Oracle Corporation
+156.59.181.105:443#KR Seoul AS21859 ZEN-KR
+158.247.198.196:443#KR Gangseo-gu AS20473 The Constant Company, LLC
+167.148.203.153:42024#KR Seoul AS9318 SK Broadband Co Ltd
+175.213.58.158:21240#KR Goyang-si AS4766 KT
+210.103.67.11:32312#KR Suwon AS4766 Korea Telecom
+211.220.53.131:12545#KR Busan AS4766 KT
+211.224.59.175:20332#KR Daegu AS4766 Korea Telecom
+211.49.57.134:443#KR Seoul AS9318 SK Broadband Co Ltd
+211.49.57.175:443#KR Seoul AS9318 SK Broadband Co Ltd
+211.49.57.178:443#KR Seoul AS9318 SK Broadband Co Ltd
+211.49.57.179:443#KR Seoul AS9318 SK Broadband Co Ltd
+218.155.85.44:28973#KR Suwon AS4766 Korea Telecom
+218.156.157.76:30005#KR Hwado AS4766 Korea Telecom
+222.113.18.213:12320#KR Gangneung AS4766 Korea Telecom
+222.121.232.215:23791#KR Pohang AS4766 Korea Telecom
+27.102.112.134:443#KR Incheon AS45996 KCInfra Inc.
+27.102.112.164:443#KR Incheon AS45996 KCInfra Inc.
+27.102.112.80:443#KR Incheon AS45996 KCInfra Inc.
+27.102.134.233:443#KR Seoul AS45996 KCInfra Inc.
+3.34.141.95:443#KR Incheon AS16509 Amazon.com, Inc.
+3.34.192.97:443#KR Incheon AS16509 Amazon.com, Inc.
+3.34.196.196:13866#KR Incheon AS16509 Amazon.com, Inc.
+3.34.196.196:443#KR Incheon AS16509 Amazon.com, Inc.
+3.34.196.196:49673#KR Incheon AS16509 Amazon.com, Inc.
+3.34.198.153:13866#KR Incheon AS16509 Amazon.com, Inc.
+3.34.198.153:443#KR Incheon AS16509 Amazon.com, Inc.
+3.34.198.153:49673#KR Incheon AS16509 Amazon.com, Inc.
+3.34.198.185:13866#KR Incheon AS16509 Amazon.com, Inc.
+3.34.198.185:443#KR Incheon AS16509 Amazon.com, Inc.
+3.34.198.185:49673#KR Incheon AS16509 Amazon.com, Inc.
+3.34.205.157:13866#KR Incheon AS16509 Amazon.com, Inc.
+3.34.205.157:443#KR Incheon AS16509 Amazon.com, Inc.
+3.34.205.157:49673#KR Incheon AS16509 Amazon.com, Inc.
+3.34.99.151:443#KR Incheon AS16509 Amazon.com, Inc.
+3.35.51.140:14443#KR Incheon AS16509 Amazon.com, Inc.
+3.36.109.49:443#KR Incheon AS16509 Amazon.com, Inc.
+3.36.122.226:41695#KR Incheon AS16509 Amazon.com, Inc.
+3.36.122.226:443#KR Incheon AS16509 Amazon.com, Inc.
+3.36.122.226:49674#KR Incheon AS16509 Amazon.com, Inc.
+3.36.127.156:443#KR Incheon AS16509 Amazon.com, Inc.
+3.36.127.156:49674#KR Incheon AS16509 Amazon.com, Inc.
+3.36.131.160:443#KR Incheon AS16509 Amazon.com, Inc.
+3.36.37.208:443#KR Incheon AS16509 Amazon.com, Inc.
+43.128.147.145:443#KR Seoul AS132203 6 COLLYER QUAY
+43.131.225.115:443#KR Seoul AS132203 ACEVILLE PTE.LTD.
+43.133.237.158:8443#KR Seoul AS132203 6 COLLYER QUAY
+43.133.76.171:443#KR Seoul AS132203 6 COLLYER QUAY
+43.155.187.201:443#KR Seoul AS132203 6 COLLYER QUAY
+43.155.221.27:8443#KR Seoul AS13335 Cloudflare London, LLC
+43.164.191.51:443#KR Seoul AS132203 ACEVILLE PTE.LTD.
+43.200.164.74:443#KR Incheon AS16509 Amazon.com, Inc.
+43.200.66.92:443#KR Incheon AS16509 Amazon.com, Inc.
+43.200.7.70:443#KR Incheon AS16509 Amazon.com, Inc.
+52.79.229.156:29876#KR Incheon AS16509 Amazon.com, Inc.
+61.34.98.103:12326#KR Seoul AS3786 LG DACOM Corporation
+85.155.176.11:8443#KR Seoul AS63473 Prinode AB
+132.145.91.181:8443#KR Gangseo-gu AS31898 Oracle Public Cloud
+14.52.210.173:12138#KR Seoul AS4766 Korea Telecom
+146.56.99.22:20443#KR Chuncheon AS31898 Oracle Corporation , Global software solutions , California , USA
+150.230.254.196:34237#KR Chuncheon AS31898 Oracle Corporation
+152.69.229.110:443#KR Chuncheon AS31898 Oracle Corporation
+152.70.239.134:34237#KR Gangseo-gu AS31898 Oracle Corporation
+168.107.40.4:8443#KR Chuncheon AS31898 Oracle Corporation
+168.110.110.132:2053#KR Chuncheon AS31898 Oracle Corporation
+168.110.112.196:8443#KR Chuncheon AS31898 Oracle Corporation
+168.110.121.126:8443#KR Chuncheon AS31898 Oracle Corporation
+168.110.99.199:2053#KR Chuncheon AS31898 Oracle Corporation
+222.113.18.214:18057#KR Gangneung AS4766 Korea Telecom
+43.128.130.43:443#KR Seoul AS132203 ACEVILLE PTE.LTD.
+43.131.242.223:443#KR Seoul AS132203 6 COLLYER QUAY
+43.201.29.42:443#KR Incheon AS16509 Amazon.com, Inc.
+45.141.139.209:443#KR Seoul AS138195 XNNET LIMITED
+45.154.14.208:443#KR Seoul AS138195 Hongkong Wen Jing Network Limited
+47.80.57.116:443#KR Seoul AS45102 Alibaba Cloud LLC
+52.79.123.68:443#KR Incheon AS16509 Amazon.com, Inc.
+54.180.141.246:443#KR Incheon AS16509 Amazon.com, Inc.
+54.180.9.130:443#KR Incheon AS16509 Amazon.com, Inc.
+54.180.94.34:443#KR Incheon AS16509 Amazon.com, Inc.
+54.180.95.74:443#KR Incheon AS16509 Amazon.com, Inc.
+59.12.232.18:24181#KR Seongnam-si AS4766 Korea Telecom
+59.19.111.228:10018#KR Busan AS4766 Korea Telecom
+59.6.239.208:10202#KR Goyang-si AS4766 KT
+59.6.239.208:12203#KR Goyang-si AS4766 KT
+59.6.239.208:16045#KR Goyang-si AS4766 KT
+61.78.173.61:11434#KR Chinju AS4766 Korea Telecom
+43.128.135.99:443#KR Seoul AS132203 6 COLLYER QUAY
+43.128.147.224:443#KR Seoul AS132203 6 COLLYER QUAY
+43.155.205.141:443#KR Seoul AS132203 6 COLLYER QUAY
+45.93.31.131:443#KR Seoul AS138195 XNNET LIMITED
+64.176.230.12:443#KR Seoul AS20473 The Constant Company, LLC
+130.94.29.155:443#KR Seoul AS154177 LIGHT NODE LIMITED
+131.186.16.166:443#KR Gangseo-gu AS31898 Oracle Public Cloud
+131.186.26.94:443#KR Gangseo-gu AS31898 Oracle Public Cloud
+134.185.99.52:443#KR Chuncheon AS31898 Oracle Corporation
+134.185.127.173:443#KR Chuncheon AS31898 Oracle Corporation
+140.245.65.122:443#KR Chuncheon AS31898 Oracle Corporation
+141.164.37.50:443#KR Seoul AS20473 KOR_VULTR_CUST
+146.56.119.205:443#KR Chuncheon AS31898 Oracle Corporation , Global software solutions , California , USA
+152.67.208.47:443#KR Chuncheon AS31898 Oracle Public Cloud
+152.67.210.234:443#KR Chuncheon AS31898 Oracle Public Cloud
+168.107.0.210:443#KR Chuncheon AS31898 Oracle Corporation
+168.107.14.233:443#KR Chuncheon AS31898 Oracle Corporation
+168.110.107.218:443#KR Chuncheon AS31898 Oracle Corporation
+193.122.119.241:443#KR Gangseo-gu AS31898 Oracle Public Cloud
+3.35.51.12:443#KR Incheon AS16509 AWS Asia Pacific (Seoul) Region
+20.39.194.208:443#KR Seoul AS8075 Microsoft Corporation
+20.41.123.20:443#KR Seoul AS8075 Microsoft Corporation
+15.164.221.7:443#KR Incheon AS16509 AWS Asia Pacific (Seoul) Region
+165.154.230.228:443#KR Seoul AS142002 Scloud Pte Ltd t/a Scloud Pte Ltd
+52.79.229.156:443#KR Incheon AS16509 Amazon.com, Inc.
+43.203.226.238:443#KR Incheon AS16509 Amazon.com, Inc.
+141.164.42.2:443#KR Gangseo-gu AS20473 The Constant Company, LLC
+64.110.70.64:443#KR Gangseo-gu AS31898 Oracle Corporation
+43.203.164.152:443#KR Incheon AS16509 Amazon.com, Inc.
+158.247.211.147:8443#KR Seoul AS20473 The Constant Company, LLC
+52.78.106.10:443#KR Incheon AS16509 AWS Asia Pacific (Seoul) Region
+13.125.40.229:443#KR Incheon AS16509 Amazon.com, Inc.
+52.79.207.93:443#KR Incheon AS16509 Amazon.com, Inc.
+64.176.233.219:443#KR Seoul AS20473 The Constant Company, LLC
+54.180.231.18:443#KR Incheon AS16509 Amazon.com, Inc.
+43.202.223.164:443#KR Incheon AS16509 Amazon.com, Inc.
+158.247.253.111:2087#KR Gangseo-gu AS20473 The Constant Company, LLC
+158.247.253.111:8443#KR Gangseo-gu AS20473 The Constant Company, LLC
+13.125.114.105:443#KR Incheon AS16509 Amazon.com, Inc.
+131.186.24.124:587#KR Gangseo-gu AS31898 Oracle Public Cloud
+132.145.84.148:39567#KR Gangseo-gu AS31898 Oracle Public Cloud
+132.226.21.116:6056#KR Gangseo-gu AS31898 Oracle Public Cloud
+132.226.23.92:22053#KR Gangseo-gu AS31898 Oracle Public Cloud
+140.238.5.75:13644#KR Gangseo-gu AS31898 Oracle Corporation
+144.24.87.69:50001#KR Chuncheon AS31898 Oracle Corporation
+146.56.140.79:22561#KR Seoul AS13335 Cloudflare London, LLC
+146.56.140.79:20309#KR Incheon AS13335 Cloudflare, Inc.
+146.56.42.21:7777#KR Seoul AS13335 Cloudflare London, LLC
+152.67.209.237:22053#KR Chuncheon AS31898 Oracle Public Cloud
+152.67.211.114:58337#KR Chuncheon AS31898 Oracle Public Cloud
+152.69.229.175:22558#KR Chuncheon AS31898 Oracle Corporation
+152.70.89.135:587#KR Gangseo-gu AS31898 Oracle Corporation
+158.180.69.78:12198#KR Tongjin AS13335 Cloudflare, Inc.
+158.247.250.157:81#KR Gangseo-gu AS20473 The Constant Company, LLC
+217.142.138.61:37914#KR Gangseo-gu AS31898 Oracle Svenska AB
+61.85.1.77:12150#KR Jeju City AS4766 Korea Telecom
+64.110.70.205:23022#KR Gangseo-gu AS31898 Oracle Corporation
+64.110.75.145:443#KR Gangseo-gu AS31898 Oracle Corporation
+45.93.31.34:443#KR Seoul AS138195 XNNET LIMITED
+15.164.238.229:443#KR Incheon AS16509 Amazon.com, Inc.
+15.165.10.82:443#KR Incheon AS16509 Amazon.com, Inc.
+15.165.9.110:443#KR Incheon AS16509 Amazon.com, Inc.
+220.84.186.17:12568#KR Changwon AS4766 Korea Telecom
+43.131.247.123:8443#KR Seoul AS132203 6 COLLYER QUAY
+52.78.114.26:443#KR Incheon AS16509 Amazon.com, Inc.
+54.180.147.65:443#KR Incheon AS16509 Amazon.com, Inc.
+54.180.236.101:443#KR Incheon AS16509 Amazon.com, Inc.
+112.163.229.82:10909#KR Changwon AS4766 KT
+118.47.115.196:37810#KR Kyosai AS4766 Korea Telecom
+119.195.242.65:10332#KR Ansan-si AS4766 Sudogwonseobubonbu
+121.128.161.235:10002#KR Seoul AS4766 Korea Telecom
+121.151.210.54:10000#KR Andong AS4766 Korea Telecom
+121.151.210.54:10333#KR Andong AS4766 Korea Telecom
+121.151.210.54:27017#KR Andong AS4766 Korea Telecom
+121.151.210.54:30005#KR Andong AS4766 Korea Telecom
+121.151.210.54:33848#KR Andong AS4766 Korea Telecom
+121.178.230.168:19071#KR Mokpo AS4766 Jeonnambonbujang
+121.182.16.235:11434#KR Daegu AS4766 Korea Telecom
+121.182.16.235:18246#KR Daegu AS4766 Korea Telecom
+123.142.67.164:32770#KR Seoul AS3786 LG DACOM Corporation
+124.216.61.15:10000#KR Ulsan AS45361 Joyful Communication Network
+124.216.61.15:33258#KR Ulsan AS45361 Joyful Communication Network
+124.57.36.207:37020#KR Daejeon AS17858 LG POWERCOMM
+125.134.6.129:27017#KR Busan AS4766 Korea Telecom
+125.137.186.50:18852#KR Daegu AS4766 Korea Telecom
+125.138.18.69:11300#KR Cheonan AS4766 Korea Telecom
+125.208.247.88:38241#KR Daegu AS9781 GREEN CABLE TELEVISION STATION
+129.154.50.159:5443#KR Chuncheon AS31898 Oracle Corporation
+130.162.131.60:9#KR Gangseo-gu AS31898 Oracle Corporation
+132.226.169.245:587#KR Gangseo-gu AS31898 Oracle Public Cloud
+140.238.6.226:44444#KR Gangseo-gu AS31898 Oracle Corporation
+140.238.8.194:15800#KR Gangseo-gu AS31898 Oracle Public Cloud
+140.238.9.171:50007#KR Gangseo-gu AS31898 Oracle Public Cloud
+140.245.71.120:34237#KR Tongjin AS13335 Cloudflare London, LLC
+14.39.208.40:17000#KR Seoul AS4766 KT
+144.24.92.92:34237#KR Chuncheon AS31898 Oracle Corp UK Ltd
+14.46.128.84:25010#KR Daegu AS4766 Korea Telecom
+14.56.183.228:22105#KR Goyang-si AS4766 Korea Telecom
+14.58.60.153:16992#KR Yangp'yŏng AS4766 KT
+14.58.60.153:30001#KR Yangp'yŏng AS4766 KT
+146.56.101.164:34237#KR Chuncheon AS31898 Oracle Corporation , Global software solutions , California , USA
+146.56.41.180:34237#KR Gangseo-gu AS31898 Oracle Corporation , Global software solutions , California , USA
+152.67.223.108:8105#KR Chuncheon AS31898 Oracle Corporation
+152.67.223.73:4433#KR Chuncheon AS31898 Oracle Public Cloud
+168.126.204.135:10035#KR Gangneung AS4766 Yeonsedaehakgyowonjupeoseu
+169.212.176.182:18790#KR Kimhae AS4766 Korea Telecom
+175.201.84.61:12309#KR Suncheon AS4766 Korea Telecom
+175.204.72.94:11001#KR Cheonan AS4766 Korea Telecom
+175.209.221.91:31337#KR Seoul AS4766 KT
+183.108.82.157:10002#KR Dongmyeon AS4766 Korea Telecom
+183.99.227.24:26257#KR Suwon AS4766 Korea Telecom
+183.99.227.24:35342#KR Suwon AS4766 Korea Telecom
+193.122.109.52:3306#KR Gangseo-gu AS31898 Oracle Public Cloud
+193.122.118.149:34237#KR Gangseo-gu AS31898 Oracle Public Cloud
+193.123.236.90:2094#KR Gangseo-gu AS31898 Oracle Corporation
+193.123.244.37:34237#KR Gangseo-gu AS31898 Oracle Corporation
+210.123.143.214:18789#KR Daegu AS4766 Korea Telecom
+211.104.26.48:10000#KR Seoul AS4766 Korea Telecom
+218.157.145.120:10912#KR Jeju City AS4766 Korea Telecom
+218.157.145.120:18853#KR Jeju City AS4766 Korea Telecom
+220.79.9.247:10001#KR Gimpo-si AS4766 Korea Telecom
+220.94.94.109:10250#KR Daegu AS4766 Korea Telecom
+221.147.173.70:25448#KR Osan AS4766 KT
+221.152.242.211:19530#KR Yangsan AS4766 Korea Telecom
+221.158.4.230:18853#KR Gongju AS4766 KT
+222.98.205.218:10909#KR Suwon AS4766 Korea Telecom
+36.38.117.86:11965#KR Incheon AS18313 HVBuk-incheon
+39.121.84.150:11965#KR Daegu AS9318 SK Broadband Co Ltd
+49.142.200.31:11434#KR Seoul AS9319 kt HCN Co.,Ltd.
+49.142.200.31:28017#KR Seoul AS9319 kt HCN Co.,Ltd.
+59.0.58.42:14000#KR Suncheon AS4766 Korea Telecom
+59.0.58.42:23023#KR Suncheon AS4766 Korea Telecom
+59.0.58.42:23424#KR Suncheon AS4766 Korea Telecom
+59.12.232.18:12345#KR Seongnam-si AS4766 Korea Telecom
+59.12.232.18:14534#KR Seongnam-si AS4766 Korea Telecom
+59.28.29.100:17000#KR Haenam AS4766 KT
+59.31.102.62:25565#KR Cheongju-si AS4766 Chungbukbonbujang
+59.31.102.62:28017#KR Cheongju-si AS4766 Chungbukbonbujang
+59.31.107.42:10333#KR Chungju AS4766 Chungbukbonbujang
+59.31.107.42:13720#KR Chungju AS4766 Chungbukbonbujang
+101.33.75.233:39738#KR Seoul AS132203 16 COLLYER QUAY
+1.220.158.26:11211#KR Seoul AS3786 LG Uplus
+1.220.158.26:17988#KR Seoul AS3786 LG Uplus
+1.220.158.26:25105#KR Seoul AS3786 LG Uplus
+1.252.158.129:10332#KR Kimhae AS9318 SK Broadband Co Ltd
+1.252.158.129:10909#KR Kimhae AS9318 SK Broadband Co Ltd
+112.216.86.211:37215#KR Cheonan AS3786 LG Uplus
+113.130.241.219:10911#KR Busan AS9845 HVJungbusan
+118.130.23.168:10035#KR Anseong AS3786 LG Uplus
+121.159.68.210:20002#KR Seosan AS4766 Korea Telecom
+125.180.221.195:10308#KR Bucheon-si AS17858 LG POWERCOMM
+130.162.156.131:14850#KR Gangseo-gu AS31898 Oracle Public Cloud
+131.186.22.255:1443#KR Gangseo-gu AS31898 Oracle Public Cloud
+132.226.173.210:61220#KR Gangseo-gu AS31898 Oracle Public Cloud
+140.238.14.113:37350#KR Gangseo-gu AS31898 Oracle Public Cloud
+146.56.146.21:27587#KR Gangseo-gu AS31898 Oracle Corporation , Global software solutions , California , USA
+146.56.43.189:34454#KR Gangseo-gu AS31898 Oracle Corporation , Global software solutions , California , USA
+158.180.80.172:3333#KR Chuncheon AS31898 Oracle Corporation
+182.226.140.74:16010#KR Hwaseong-si AS17858 LG POWERCOMM
+193.122.102.79:18161#KR Gangseo-gu AS31898 Oracle Public Cloud
+220.127.35.92:32328#KR Suwon AS4766 KT
+59.6.239.208:10227#KR Goyang-si AS4766 KT
+59.6.239.208:10459#KR Goyang-si AS4766 KT
+59.6.239.208:10515#KR Goyang-si AS4766 KT
+59.6.239.208:14897#KR Goyang-si AS4766 KT
+59.6.239.208:18383#KR Goyang-si AS4766 KT
+59.6.239.208:18413#KR Goyang-si AS4766 KT
+59.6.239.208:19223#KR Goyang-si AS4766 KT
+59.6.239.208:19741#KR Goyang-si AS4766 KT
+59.6.239.208:30191#KR Goyang-si AS4766 KT
+59.6.239.208:30778#KR Goyang-si AS4766 KT
+59.6.239.208:32788#KR Goyang-si AS4766 KT
+61.80.187.206:37215#KR Daegu AS4766 Korea Telecom

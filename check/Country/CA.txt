@@ -34,3 +34,42 @@
 140.238.144.211:443#CA Toronto AS31898 Oracle Corporation
 104.129.180.71:39738#CA Vancouver AS25820 Cluster Logic Inc
 72.11.148.176:88#CA Toronto AS36352 Graeme Tee
+138.197.160.106:443#CA Toronto AS14061 DigitalOcean, LLC
+144.217.103.2:443#CA Montréal AS16276 OVH Hosting, Inc.
+149.56.109.62:443#CA Montréal AS16276 OVH Hosting, Inc.
+155.138.128.135:443#CA Toronto AS20473 Vultr Holdings, LLC
+155.138.128.23:443#CA Toronto AS20473 The Constant Company, LLC
+159.203.2.180:443#CA Toronto AS14061 DigitalOcean, LLC
+167.114.67.25:443#CA Montréal AS16276 OVH Hosting, Inc.
+167.160.190.137:443#CA Toronto AS36352 HostPapa
+167.160.190.229:443#CA Toronto AS36352 HostPapa
+167.99.183.13:443#CA Toronto AS14061 DigitalOcean, LLC
+172.98.207.58:443#CA Toronto AS14453 CENTRILOGICCANADA
+198.199.106.194:443#CA Toronto AS14061 DigitalOcean, LLC
+216.23.82.36:30618#CA Toronto AS36352 HostPapa
+40.233.116.225:443#CA Toronto AS31898 Oracle Corporation
+68.233.122.42:443#CA Montréal AS31898 Oracle Corporation
+69.28.83.244:443#CA Toronto AS6364 Atlantic.Net - Toronto, LLC.
+72.11.145.117:443#CA Toronto AS36352 HostPapa
+72.11.146.199:443#CA Toronto AS36352 HostPapa
+150.230.27.23:16504#CA Toronto AS31898 Oracle Corporation
+158.69.201.4:8443#CA Montréal AS16276 OVH Hosting, Inc.
+166.1.228.218:443#CA Toronto AS26383 Baxet Group Inc.
+178.128.227.189:443#CA Toronto AS14061 DigitalOcean, LLC
+207.90.192.164:8443#CA Montréal AS26832 Rica Web Services
+72.11.150.104:443#CA Toronto AS36352 HostPapa
+137.184.168.37:443#CA Toronto AS14061 DigitalOcean, LLC
+167.160.188.156:443#CA Toronto AS36352 HostPapa
+45.133.16.41:443#CA Toronto AS208951 ITGLOBAL.COM NL B.V.
+40.233.77.216:443#CA Toronto AS31898 Oracle Corporation
+40.233.99.248:443#CA Toronto AS31898 Oracle Corporation
+40.233.103.212:443#CA Toronto AS31898 Oracle Corporation
+40.233.71.238:443#CA Toronto AS31898 Oracle Corporation
+40.233.110.251:443#CA Toronto AS31898 Oracle Corporation
+40.233.87.120:443#CA Toronto AS31898 Oracle Corporation
+140.238.144.211:443#CA Toronto AS31898 Oracle Corporation
+104.129.180.71:39738#CA Vancouver AS25820 Cluster Logic Inc
+72.11.148.176:88#CA Toronto AS36352 Graeme Tee
+149.56.14.62:443#CA Montréal AS16276 OVH Hosting, Inc.
+40.177.65.8:443#CA Calgary AS16509 Amazon Data Services Canada
+45.133.18.31:443#CA Toronto AS208951 ITGLOBAL.COM NL B.V.

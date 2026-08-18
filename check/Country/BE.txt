@@ -4,3 +4,10 @@
 188.190.26.243:443#BE Zaventem AS57169 EDIS IPv6 Infrastructure in Belgium
 194.71.227.213:443#BE Zaventem AS57169 EDIS IPv6 Infrastructure in Belgium
 38.180.18.43:8443#BE Brussels AS9009 3NT SOLUTIONS LLP
+148.177.146.71:443#BE Brussels AS198949 Johnson & Johnson
+35.210.99.51:443#BE Brussels AS15169 Google LLC
+104.155.124.198:443#BE Brussels AS396982 Google LLC
+188.190.26.243:443#BE Zaventem AS57169 EDIS IPv6 Infrastructure in Belgium
+194.71.227.213:443#BE Zaventem AS57169 EDIS IPv6 Infrastructure in Belgium
+38.180.18.43:8443#BE Brussels AS9009 3NT SOLUTIONS LLP
+35.241.172.224:443#BE Brussels AS396982 Google LLC

@@ -12,3 +12,17 @@
 103.224.84.70:443#TH Pak Kret AS56309 ReadyIDC Co.,Ltd.
 122.155.180.241:61389#TH Bangkok AS9335 National Telecom Public Company Limited
 171.103.14.207:10071#TH Bangkok AS7470 True Internet Co., Ltd.
+117.18.127.43:443#TH Bangkok AS56309 ReadyIDC CO.,LTD.
+141.98.16.131:443#TH Bangkok AS13335 Cloudflare London, LLC
+143.14.11.61:443#TH Bangkok AS153996 VP InfoTech Co., Ltd.
+157.85.105.126:443#TH Pak Kret AS56309 ReadyIDC Co.,Ltd.
+165.101.65.72:443#TH Bangkok AS153996 VP InfoTech Co., Ltd.
+199.21.172.20:443#TH Bangkok AS56309 ReadyIDC CO.,LTD.
+199.21.172.32:443#TH Bangkok AS56309 ReadyIDC CO.,LTD.
+199.21.172.89:443#TH Bangkok AS56309 ReadyIDC CO.,LTD.
+43.133.110.81:443#TH Bangkok AS132203 6 COLLYER QUAY
+45.150.128.159:443#TH Mueang Nonthaburi AS56309 ReadyIDC Co., Ltd.
+45.150.131.246:443#TH Mueang Nonthaburi AS9335 ReadyIDC Co., Ltd.
+103.224.84.70:443#TH Pak Kret AS56309 ReadyIDC Co.,Ltd.
+122.155.180.241:61389#TH Bangkok AS9335 National Telecom Public Company Limited
+171.103.14.207:10071#TH Bangkok AS7470 True Internet Co., Ltd.

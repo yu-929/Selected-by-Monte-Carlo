@@ -2,3 +2,7 @@
 191.101.132.130:31320#PT Lisbon AS35487 Misaka.io Edge Infrastucture in Lisbon, Portugal
 191.101.132.149:31031#PT Lisbon AS35487 Misaka.io Edge Infrastucture in Lisbon, Portugal
 159.69.162.184:42051#PT Lisbon AS203020 iregister.al & keminet.net
+103.112.1.200:31031#PT Lisbon AS35487 Misaka.io Edge Infrastucture in Lisbon, Portugal
+191.101.132.130:31320#PT Lisbon AS35487 Misaka.io Edge Infrastucture in Lisbon, Portugal
+191.101.132.149:31031#PT Lisbon AS35487 Misaka.io Edge Infrastucture in Lisbon, Portugal
+159.69.162.184:42051#PT Lisbon AS203020 iregister.al & keminet.net

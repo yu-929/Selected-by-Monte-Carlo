@@ -1,2 +1,4 @@
 185.179.82.201:443#BY Minsk AS35594 Reliable Software, Ltd.
 185.179.82.246:443#BY Minsk AS35594 Reliable Software, Ltd.
+185.179.82.201:443#BY Minsk AS35594 Reliable Software, Ltd.
+185.179.82.246:443#BY Minsk AS35594 Reliable Software, Ltd.
