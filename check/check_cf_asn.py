@@ -419,12 +419,6 @@ async def probe_tcp_async(ip, port, timeout_val):
 
 
 async def smart_tiering(all_ips, ports):
-    """Smart Subnet Tiering：按 /24 分组，每组采样探测目标端口，
-    任一采样 IP 连通即视为活跃子网并保留组内全部 IP，死段直接过滤。
-
-    组内 IP 数不超过采样数时不预筛直接保留，避免误杀稀疏段。
-    超时/并发复用主流程，触发阈值由调用方按并发决定，采样数自动自适应。
-    """
     groups = {}
     for ip in all_ips:
         try:
@@ -439,16 +433,29 @@ async def smart_tiering(all_ips, ports):
     total_groups = len(groups)
     sample_n = calc_smart_sample(len(all_ips), total_groups, ports)
     sem = asyncio.Semaphore(STAGE1_CONCURRENCY)
+    completed = 0
+    step = max(1, total_groups // 10)
+    last_printed = 0
+
+    async def inc_progress():
+        nonlocal completed, last_printed
+        completed += 1
+        if completed // step > last_printed:
+            last_printed = completed // step
+            print(f"[Smart Tiering] {completed}/{total_groups} 子网", flush=True)
 
     async def probe_group(ips):
         async with sem:
             if len(ips) <= sample_n:
+                await inc_progress()
                 return ips
             sample_ips = ips[:sample_n]
             for s_ip in sample_ips:
                 for port in ports:
                     if await probe_tcp_async(s_ip, port, STAGE1_TIMEOUT):
+                        await inc_progress()
                         return ips
+            await inc_progress()
             return None
 
     results = await asyncio.gather(*(probe_group(ips) for ips in groups.values()))
