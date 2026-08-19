@@ -10,6 +10,10 @@ on:
         description: '端口列表'
         required: false
         default: '443'
+      smart_tiering:
+        description: 'Smart Tiering 预筛（关闭则全量扫描）'
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -41,6 +45,7 @@ jobs:
       - name: Run scan
         env:
           CUSTOM_CF_DOMAIN: ${{ secrets.CUSTOM_CF_DOMAIN }}
+          SMART_TIERING: ${{ github.event.inputs.smart_tiering }}
         run: |
           python check/check_cf_asn.py "${{ github.event.inputs.scan_input }}" "${{ github.event.inputs.scan_ports }}" 2>&1 | tee /tmp/scan.log
           output_file=$(grep '结果:' /tmp/scan.log | tail -1 | grep -oP '结果: \K[^ ]+\.txt' || echo "")

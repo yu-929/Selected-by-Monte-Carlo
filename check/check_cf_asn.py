@@ -32,7 +32,7 @@ TRACE_CONCURRENCY = int(os.getenv("TRACE_CONCURRENCY", "500"))
 
 # Smart Subnet Tiering 配置：大段按 /24 分组，每组采样探测端口，仅保留活跃子网
 # 超时/并发复用 STAGE1_TIMEOUT / STAGE1_CONCURRENCY；触发阈值与采样数自动自适应
-SMART_TIERING = os.getenv("SMART_TIERING", "1") != "0"
+SMART_TIERING = os.getenv("SMART_TIERING", "1").lower() not in ("", "0", "false", "no")
 SMART_SUBNET_PREFIX = 24
 SMART_PROBE_BUDGET = 20000
 SMART_SAMPLE_MIN = 2
