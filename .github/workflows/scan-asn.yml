@@ -12,8 +12,12 @@ on:
         default: '443'
       smart_tiering:
         description: 'Smart Tiering 预筛（关闭则全量扫描）'
-        type: boolean
-        default: true
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
 
 permissions:
   contents: write
