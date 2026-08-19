@@ -155,7 +155,7 @@ def expand_cidrs(cidr_list):
 
 def get_ips_from_asn(asn_clean):
     """从网络 API 查询 ASN 对应的 IPv4 列表"""
-    print(f"[*] 正在自动查询并拉取 AS{asn_clean} 的网段信息...", flush=True)
+    print(f"[*] 查询 AS{asn_clean} 网段...", flush=True)
     cidrs = []
 
     try:
@@ -200,7 +200,7 @@ def parse_targets(input_str):
                 with open(item) as f:
                     content = f.read()
                 all_ips.extend(parse_targets(content))
-                print(f"[+] 从文件 [{item}] 加载目标", flush=True)
+                print(f"[+] 加载文件: {item}", flush=True)
             except Exception as e:
                 print(f"[-] 读取文件失败: {item}: {e}", flush=True)
             continue
@@ -216,7 +216,7 @@ def parse_targets(input_str):
             else:
                 for ip in net.hosts():
                     all_ips.append(str(ip))
-            print(f"[+] 识别为 IP/网段 [{item}]，展开出 {net.num_addresses} 个地址", flush=True)
+            print(f"[+] 网段 [{item}] 展开 {net.num_addresses} 个地址", flush=True)
             continue
         except ValueError:
             pass
@@ -224,13 +224,14 @@ def parse_targets(input_str):
         asn_clean = item.upper().replace("AS", "")
         if asn_clean.isdigit():
             ips = get_ips_from_asn(asn_clean)
-            print(f"[+] AS{asn_clean} 解析完成，提取出 {len(ips)} 个待测 IPv4 地址。", flush=True)
             all_ips.extend(ips)
         else:
             print(f"[-] 无法识别的目标格式: {item}", flush=True)
 
     unique_ips = list(dict.fromkeys(all_ips))
-    print(f"[+] 所有目标汇总去重后，共有 {len(unique_ips)} 个待测 IP 地址。", flush=True)
+    raw = len(all_ips)
+    if raw != len(unique_ips):
+        print(f"[+] 解析完成: {raw} raw → {len(unique_ips)} unique", flush=True)
     return unique_ips
 
 
@@ -367,7 +368,7 @@ async def run_stage1(targets, sem):
     step = max(1, total // 10)
     last_printed_step = 0
 
-    print(f"\n[1/3 第一阶段 TLS 探测] 开始测试，共 {total} 个目标 (IP:端口组合)，分批调度每批 {BATCH_SIZE}...", flush=True)
+    print(f"\n[1/3 TLS] 开始测试 {total} 个目标...", flush=True)
 
     async def worker(item):
         nonlocal completed, last_printed_step
@@ -379,10 +380,10 @@ async def run_stage1(targets, sem):
             passed_items.append((ip, port))
 
         current_step = completed // step
-        if current_step > last_printed_step or completed == total:
+        if current_step > last_printed_step:
             last_printed_step = current_step
             percent = (completed / total) * 100
-            print(f"[1/3 进度] {completed}/{total} ({percent:.1f}%) | 当前通过: {len(passed_items)} 个", flush=True)
+            print(f"[1/3] {completed}/{total} ({percent:.1f}%) 通过 {len(passed_items)}", flush=True)
 
     for i in range(0, total, BATCH_SIZE):
         batch = targets[i:i + BATCH_SIZE]
@@ -463,7 +464,7 @@ async def main():
     ports_input = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_PORTS
 
     target_ports = parse_ports(ports_input)
-    print(f"[*] 目标输入: {target_input} | 端口列表: {target_ports}", flush=True)
+    print(f"[*] 目标: {target_input} | 端口: {target_ports}", flush=True)
     all_ips = parse_targets(target_input)
 
     if not all_ips:
@@ -471,13 +472,13 @@ async def main():
         return
 
     if len(all_ips) > 50000:
-        print(f"[!] 待测 IP 超过 50000 个 ({len(all_ips)})，继续可能超时。建议使用更小的网段。", flush=True)
+        print(f"[!] IP 数 {len(all_ips)} 超过 50000，可能超时", flush=True)
 
     smart_min_ips = STAGE1_CONCURRENCY * 2
     if SMART_TIERING and len(all_ips) >= smart_min_ips:
         print(
-            f"[*] Smart Subnet Tiering 启用：按 /24 分组采样探测端口 {target_ports} "
-            f"（超时 {STAGE1_TIMEOUT}s，并发 {STAGE1_CONCURRENCY}，触发阈值 {smart_min_ips} IP），过滤死段",
+            f"[*] Smart Tiering 启用: 按 /24 采样，探测 {target_ports} "
+            f"(超时 {STAGE1_TIMEOUT}s, 并发 {STAGE1_CONCURRENCY})",
             flush=True
         )
         all_ips = await smart_tiering(all_ips, target_ports)
@@ -485,27 +486,27 @@ async def main():
             print("[-] Smart Tiering 后无存活子网，程序退出。", flush=True)
             return
     else:
-        print(f"[*] Smart Subnet Tiering 跳过 (启用={SMART_TIERING}, IP数={len(all_ips)} < 阈值 {smart_min_ips})", flush=True)
+        print(f"[*] Smart Tiering 跳过 (IP数={len(all_ips)} < 阈值 {smart_min_ips})", flush=True)
 
     targets = [(ip, port) for ip in all_ips for port in target_ports]
-    print(f"[*] 解析完成：{len(all_ips)} 个 IP × {len(target_ports)} 个端口 {target_ports} = 共有 {len(targets)} 个连接目标。", flush=True)
+    print(f"[*] 连接目标: {len(targets)} 个 ({len(all_ips)} IP × {len(target_ports)} 端口)", flush=True)
 
     sem = asyncio.Semaphore(STAGE1_CONCURRENCY)
 
     pass_1 = await run_stage1(targets, sem)
-    print(f"[+] 第一阶段完成！匹配 CF 证书保留目标: {len(pass_1)} 个\n", flush=True)
+    print(f"[+] 第一阶段完成！CF 证书匹配: {len(pass_1)} 个\n", flush=True)
 
     if not pass_1:
         print("[-] 无有效 IP:端口 通过第一阶段。", flush=True)
         return
 
-    print(f"[2/3 第二阶段 HTTP 校验] 正在快速校验 {len(pass_1)} 个候选目标...", flush=True)
+    print(f"[2/3 HTTP] 校验 {len(pass_1)} 个候选...", flush=True)
     res2 = await run_batched(
         pass_1,
         lambda item: check_http_async(item[0], item[1], CF_HOST_TEST, STAGE2_TIMEOUT, sem)
     )
     pass_2 = [pass_1[i] for i, ok in enumerate(res2) if ok]
-    print(f"[+] 第二阶段完成！可用 301 重定向目标: {len(pass_2)} 个\n", flush=True)
+    print(f"[+] 第二阶段完成！301 重定向: {len(pass_2)} 个\n", flush=True)
 
     if not pass_2:
         print("[-] 无有效 IP:端口 通过第二阶段。", flush=True)
@@ -514,29 +515,29 @@ async def main():
     final_items = pass_2
     if CUSTOM_CF_DOMAIN and CUSTOM_CF_DOMAIN.strip():
         domain = CUSTOM_CF_DOMAIN.strip()
-        print(f"[3/3 第三阶段自定义域名校验] 正在校验域名 {domain}...", flush=True)
+        print(f"[3/3 自定义域名] 校验 {domain}...", flush=True)
         res3 = await run_batched(
             pass_2,
             lambda item: check_tls_sni_async(item[0], item[1], domain, STAGE3_TIMEOUT, sem)
         )
         final_items = [pass_2[i] for i, ok in enumerate(res3) if ok]
-        print(f"[+] 第三阶段完成！支持自定义托管域名的优选反代 IP: {len(final_items)} 个", flush=True)
+        print(f"[+] 第三阶段完成！自定义域名匹配: {len(final_items)} 个", flush=True)
     else:
-        print("[3/3] 未检测到 CUSTOM_CF_DOMAIN，自动跳过第三阶段。", flush=True)
+        print("[3/3] 未设置自定义域名，跳过", flush=True)
 
     # ----- CF Trace 验证（替代外部 API 依赖） -----
     if not final_items:
         print("[-] 无目标进入 Trace 验证阶段，程序退出。", flush=True)
         return
 
-    print(f"\n[Trace 验证] 正在通过 CF /cdn-cgi/trace 确认 {len(final_items)} 个候选的代理转发能力并获取 colo...", flush=True)
+    print(f"\n[Trace] CF /cdn-cgi/trace 验证 {len(final_items)} 个...", flush=True)
     trace_sem = asyncio.Semaphore(TRACE_CONCURRENCY)
     trace_results = await run_batched(
         final_items,
         lambda item: check_cf_trace_async(item[0], item[1], TRACE_TIMEOUT, trace_sem)
     )
     valid = [r for r in trace_results if r is not None]
-    print(f"[+] Trace 验证完成：{len(valid)}/{len(final_items)} 个确认可转发", flush=True)
+    print(f"[+] Trace 完成: {len(valid)}/{len(final_items)} 可转发", flush=True)
 
     if not valid:
         print("[-] 无有效转发代理 IP，程序退出。", flush=True)
@@ -548,8 +549,8 @@ async def main():
         key=lambda x: (ipaddress.ip_address(x[0]), x[1])
     )
 
-    print("\n==================== 扫描结束 ====================", flush=True)
-    print(f"最终有效目标总数: {len(filtered)}", flush=True)
+    print(f"\n========== 扫描结束 ==========", flush=True)
+    print(f"最终有效: {len(filtered)} 条", flush=True)
 
     clean_name = re.sub(r'[^\w\.-]', '_', target_input.split(',')[0].strip())
     if clean_name.lower().endswith(".txt"):
@@ -561,7 +562,7 @@ async def main():
         for ip, port, colo in filtered:
             f.write(f"{ip}:{port}#{colo}\n")
 
-    print(f"\n[+] 最终结果已保存至：{output_path} (格式为 IP:PORT#COLO, {len(filtered)} 条)", flush=True)
+    print(f"[+] 结果: {output_path} ({len(filtered)} 条, IP:PORT#COLO)", flush=True)
 
     await asyncio.sleep(0.5)
 
