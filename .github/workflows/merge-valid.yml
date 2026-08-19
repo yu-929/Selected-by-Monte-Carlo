@@ -17,7 +17,13 @@ jobs:
 
       - name: Merge and deduplicate by IP:port
         run: |
-          awk 'NF {split($1,a,"#"); key=a[1]; if(!seen[key]++) print}' check/ipchi.txt check/history/*.txt 2>/dev/null > check/ipchi.tmp && mv check/ipchi.tmp check/ipchi.txt
+          shopt -s nullglob
+          files=(check/history/*.txt)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No history files to merge, skipping"
+            exit 0
+          fi
+          awk 'NF {split($1,a,"#"); key=a[1]; if(!seen[key]++) print}' check/ipchi.txt "${files[@]}" > check/ipchi.tmp && mv check/ipchi.tmp check/ipchi.txt
 
       - name: Commit and push if changed
         run: |
