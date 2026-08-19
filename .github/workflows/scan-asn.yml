@@ -16,7 +16,7 @@ permissions:
 
 concurrency:
   group: scan-asn
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   scan:
