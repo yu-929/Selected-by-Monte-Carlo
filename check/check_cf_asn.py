@@ -24,6 +24,13 @@ STAGE2_TIMEOUT = 2.0
 
 STAGE3_TIMEOUT = 2.0
 
+# CF Trace 验证配置：替代外部 API 依赖，本地确认代理转发能力并获取 colo 机房与地区
+CF_TRACE_HOST = "cloudflare.com"
+CF_TRACE_PATH = "/cdn-cgi/trace"
+TRACE_TIMEOUT = float(os.getenv("TRACE_TIMEOUT", "3.0"))
+TRACE_CONCURRENCY = int(os.getenv("TRACE_CONCURRENCY", "500"))
+ALLOWED_COUNTRIES = os.getenv("ALLOWED_COUNTRIES", "CN,SG,JP,US,DE").split(",")
+
 # Smart Subnet Tiering 配置：大段按 /24 分组，每组采样探测端口，仅保留活跃子网
 # 超时/并发复用 STAGE1_TIMEOUT / STAGE1_CONCURRENCY；触发阈值与采样数自动自适应
 SMART_TIERING = os.getenv("SMART_TIERING", "1") != "0"
@@ -308,6 +315,50 @@ async def check_http_async(ip, port, host, timeout_val, sem):
                     pass
 
 
+async def check_cf_trace_async(ip, port, timeout_val, sem):
+    """CF Trace 验证：通过代理 IP 请求 cloudflare.com/cdn-cgi/trace，
+    解析 colo 机房代码与 loc 国家代码，成功即确认代理转发能力。"""
+    async with sem:
+        writer = None
+        try:
+            reader, writer = await open_tls_connection(ip, port, CF_TRACE_HOST, timeout_val)
+            req = (
+                f"GET {CF_TRACE_PATH} HTTP/1.1\r\n"
+                f"Host: {CF_TRACE_HOST}\r\n"
+                f"User-Agent: curl/8.0\r\n"
+                f"Connection: close\r\n\r\n"
+            )
+            writer.write(req.encode('latin1'))
+            await writer.drain()
+            data = await asyncio.wait_for(reader.read(2048), timeout=timeout_val)
+            if not data:
+                return None
+            body = data.decode('latin1', errors='ignore')
+            body_start = body.find('\r\n\r\n')
+            if body_start >= 0:
+                body = body[body_start + 4:]
+            colo = ""
+            loc = ""
+            for line in body.split('\n'):
+                line = line.strip()
+                if line.startswith('colo='):
+                    colo = line.split('=', 1)[1].strip()
+                elif line.startswith('loc='):
+                    loc = line.split('=', 1)[1].strip()
+            if colo:
+                return (ip, port, colo, loc)
+            return None
+        except Exception:
+            return None
+        finally:
+            if writer:
+                writer.close()
+                try:
+                    await asyncio.wait_for(writer.wait_closed(), timeout=0.5)
+                except Exception:
+                    pass
+
+
 async def run_stage1(targets, sem):
     total = len(targets)
     completed = 0
@@ -474,10 +525,37 @@ async def main():
     else:
         print("[3/3] 未检测到 CUSTOM_CF_DOMAIN，自动跳过第三阶段。", flush=True)
 
-    final_items = sorted(final_items, key=lambda x: (ipaddress.ip_address(x[0]), x[1]))
+    # ----- CF Trace 验证（替代外部 API 依赖） -----
+    if not final_items:
+        print("[-] 无目标进入 Trace 验证阶段，程序退出。", flush=True)
+        return
+
+    print(f"\n[Trace 验证] 正在通过 CF /cdn-cgi/trace 确认 {len(final_items)} 个候选的代理转发能力并获取 colo...", flush=True)
+    trace_sem = asyncio.Semaphore(TRACE_CONCURRENCY)
+    trace_results = await run_batched(
+        final_items,
+        lambda item: check_cf_trace_async(item[0], item[1], TRACE_TIMEOUT, trace_sem)
+    )
+    valid = [r for r in trace_results if r is not None]
+    print(f"[+] Trace 验证完成：{len(valid)}/{len(final_items)} 个确认可转发", flush=True)
+
+    if not valid:
+        print("[-] 无有效转发代理 IP，程序退出。", flush=True)
+        return
+
+    # ----- 国家过滤 -----
+    filtered = [(ip, port, colo) for ip, port, colo, loc in valid if loc in ALLOWED_COUNTRIES]
+    print(f"[*] 国家过滤 ({','.join(ALLOWED_COUNTRIES)})：保留 {len(filtered)}/{len(valid)} 个", flush=True)
+
+    if not filtered:
+        print("[-] 过滤后无符合国家要求的 IP，程序退出。", flush=True)
+        return
+
+    # ----- 排序输出 -----
+    filtered.sort(key=lambda x: (ipaddress.ip_address(x[0]), x[1]))
 
     print("\n==================== 扫描结束 ====================", flush=True)
-    print(f"最终有效目标总数: {len(final_items)}", flush=True)
+    print(f"最终有效目标总数: {len(filtered)}", flush=True)
 
     clean_name = re.sub(r'[^\w\.-]', '_', target_input.split(',')[0].strip())
     if clean_name.lower().endswith(".txt"):
@@ -486,10 +564,10 @@ async def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     output_path = os.path.join(OUTPUT_DIR, output_filename)
     with open(output_path, "w", encoding="utf-8") as f:
-        for ip, port in final_items:
-            f.write(f"{ip}:{port}\n")
+        for ip, port, colo in filtered:
+            f.write(f"{ip}:{port}#{colo}\n")
 
-    print(f"\n[+] 最终结果已排序保存至：{output_path} (格式为 IP:PORT)", flush=True)
+    print(f"\n[+] 最终结果已保存至：{output_path} (格式为 IP:PORT#COLO, {len(filtered)} 条)", flush=True)
 
     await asyncio.sleep(0.5)
 
