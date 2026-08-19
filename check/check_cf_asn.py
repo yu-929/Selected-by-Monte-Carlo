@@ -3,7 +3,6 @@ import ssl
 import sys
 import os
 import re
-import random
 import resource
 import json
 import ipaddress
@@ -445,7 +444,7 @@ async def smart_tiering(all_ips, ports):
         async with sem:
             if len(ips) <= sample_n:
                 return ips
-            sample_ips = random.sample(ips, min(sample_n, len(ips)))
+            sample_ips = ips[:sample_n]
             for s_ip in sample_ips:
                 for port in ports:
                     if await probe_tcp_async(s_ip, port, STAGE1_TIMEOUT):
