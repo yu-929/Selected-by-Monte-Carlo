@@ -1,10 +1,11 @@
 name: Merge scan results to ipchi.txt
 
 on:
-  push:
-    paths:
-      - 'check/history/*.txt'
   workflow_dispatch:
+
+concurrency:
+  group: merge-valid
+  cancel-in-progress: true
 
 permissions:
   contents: write
