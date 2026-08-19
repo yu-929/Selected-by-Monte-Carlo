@@ -9,6 +9,7 @@ import json
 import ipaddress
 import urllib.request
 import socket
+from datetime import datetime
 
 DEFAULT_TARGETS = os.getenv("TARGET_LIST", os.getenv("ASN_LIST", "AS206300"))
 DEFAULT_PORTS = "443"
@@ -552,10 +553,7 @@ async def main():
     print(f"\n========== 扫描结束 ==========", flush=True)
     print(f"最终有效: {len(filtered)} 条", flush=True)
 
-    clean_name = re.sub(r'[^\w\.-]', '_', target_input.split(',')[0].strip())
-    if clean_name.lower().endswith(".txt"):
-        clean_name = os.path.basename(clean_name)[:-4]
-    output_filename = f"{clean_name}.txt"
+    output_filename = f'{datetime.now().strftime("%Y%m%d_%H%M")}.txt'
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     output_path = os.path.join(OUTPUT_DIR, output_filename)
     with open(output_path, "w", encoding="utf-8") as f:
