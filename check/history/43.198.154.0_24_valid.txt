@@ -1,2 +1,0 @@
-43.198.154.224:443#HK Hong Kong AS16509 Amazon.com, Inc.
-43.198.154.224:49664#HK Hong Kong AS16509 Amazon.com, Inc.

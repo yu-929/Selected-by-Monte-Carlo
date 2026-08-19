@@ -1,5 +1,0 @@
-18.142.227.119:16000#SG Singapore AS16509 Amazon.com, Inc.
-18.142.243.81:16000#SG Singapore AS16509 Amazon.com, Inc.
-18.142.46.7:16000#SG Singapore AS16509 Amazon.com, Inc.
-18.142.54.166:16000#SG Singapore AS16509 Amazon.com, Inc.
-18.142.56.120:16000#SG Singapore AS16509 Amazon.com, Inc.

@@ -1,5 +1,0 @@
-52.195.15.1:49672#JP Tokyo AS16509 Amazon.com, Inc.
-52.195.157.223:49672#JP Tokyo AS16509 Amazon.com, Inc.
-52.195.16.47:49672#JP Tokyo AS16509 Amazon.com, Inc.
-52.195.179.169:49672#JP Tokyo AS16509 Amazon.com, Inc.
-52.195.180.70:49672#JP Tokyo AS16509 Amazon.com, Inc.

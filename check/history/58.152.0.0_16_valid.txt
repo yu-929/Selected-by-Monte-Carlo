@@ -1,2 +1,0 @@
-58.152.13.239:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet
-58.152.208.214:443#timeout

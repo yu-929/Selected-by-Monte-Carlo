@@ -1,9 +1,0 @@
-8.210.29.68:443#HK Hong Kong AS45102 Aliyun Computing Co.LTD
-213.176.92.37:443#GB London AS210644 AEZA GROUP LLC
-141.11.91.67:8080#HK Hong Kong AS61112 Tusker Technologies Pty Ltd
-8.210.96.197:12902#HK Hong Kong AS45102 Aliyun Computing Co.LTD
-103.251.89.149:29876#HK Tung Chung AS139659 HengTian HK DataCenter
-219.76.13.167:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet
-43.198.204.35:443#HK Hong Kong AS16509 Amazon.com, Inc.
-43.154.124.136:26666#HK Hong Kong AS132203 6 COLLYER QUAY
-219.76.13.177:443#HK Hong Kong AS4760 Hong Kong Telecommunications (HKT) Limited Mass Internet

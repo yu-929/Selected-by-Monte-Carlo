@@ -1,8 +1,0 @@
-35.74.0.60:22335#JP Tokyo AS16509 Amazon.com, Inc.
-35.74.240.36:22335#JP Tokyo AS16509 Amazon.com, Inc.
-35.74.243.248:22335#JP Tokyo AS16509 Amazon.com, Inc.
-35.74.246.102:22335#JP Tokyo AS16509 Amazon.com, Inc.
-35.74.25.146:22335#JP Tokyo AS16509 Amazon.com, Inc.
-35.74.26.179:22335#JP Tokyo AS16509 Amazon.com, Inc.
-35.74.36.141:22335#JP Tokyo AS16509 Amazon.com, Inc.
-35.74.64.154:22335#JP Tokyo AS16509 Amazon.com, Inc.

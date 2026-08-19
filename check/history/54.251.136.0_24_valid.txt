@@ -1,2 +1,0 @@
-54.251.136.52:443#SG Singapore AS16509 Amazon.com, Inc.
-54.251.136.52:49159#SG Singapore AS16509 Amazon.com, Inc.
