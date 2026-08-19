@@ -43,14 +43,22 @@ jobs:
           CUSTOM_CF_DOMAIN: ${{ secrets.CUSTOM_CF_DOMAIN }}
         run: |
           python check/check_cf_asn.py "${{ github.event.inputs.scan_input }}" "${{ github.event.inputs.scan_ports }}" 2>&1 | tee /tmp/scan.log
-          output_file=$(grep '保存至' /tmp/scan.log | tail -1 | grep -oP '保存至：\K[^ )]+\.txt' || echo "")
+          output_file=$(grep '结果:' /tmp/scan.log | tail -1 | grep -oP '结果: \K[^ ]+\.txt' || echo "")
           echo "SCAN_OUTPUT=$output_file" >> $GITHUB_ENV
+
+      - name: Merge into ipchi.txt
+        run: |
+          src="${SCAN_OUTPUT}"
+          [ -f "$src" ] || src="check/history/${SCAN_OUTPUT}"
+          [ -f "$src" ] || { echo "Output file not found, skipping merge"; exit 0; }
+          awk 'NF {split($1,a,"#"); key=a[1]; if(!seen[key]++) print}' check/ipchi.txt "$src" > check/ipchi.tmp && mv check/ipchi.tmp check/ipchi.txt
+          echo "Merged $(wc -l < "$src") lines into ipchi.txt"
 
       - name: Commit results
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add check/history/
+          git add check/history/ check/ipchi.txt
           git diff --cached --quiet || git commit -m "chore: 扫描结果"
           for i in 1 2 3 4 5; do
             git pull --rebase origin main && git push && break
