@@ -32,3 +32,25 @@
 54.77.206.41:443#IE Dublin AS16509 Amazon Technologies Inc.
 63.32.194.15:8443#IE Dublin AS16509 Amazon Data Services Ireland Limited
 63.32.194.15:2053#IE Dublin AS16509 Amazon Data Services Ireland Limited
+107.172.145.153:443#IE Dublin AS36352 RackNerd LLC
+13.248.215.36:443#IE Dublin AS16509 Amazon Data Services Ireland Limited
+76.223.77.48:443#IE Dublin AS16509 Amazon Data Services Ireland Limited
+85.159.229.122:443#IE Dublin AS215540 GLOBAL INTERNET SOLUTIONS LLC
+159.69.162.184:43330#IE Dublin AS41564 SA
+159.69.162.184:43331#IE Dublin AS41564 SA
+159.69.162.184:43332#IE Dublin AS41564 SA
+159.69.162.184:43333#IE Dublin AS41564 SA
+159.69.162.184:43334#IE Dublin AS41564 SA
+159.69.162.184:43335#IE Dublin AS41564 SA
+159.69.162.184:43336#IE Dublin AS41564 SA
+167.160.177.68:2096#IE Dublin AS36352 HostPapa
+198.55.103.168:443#IE Dublin AS36352 VPS ACE
+52.19.138.237:2053#IE Dublin AS16509 Amazon Data Services Ireland Limited
+52.19.138.237:8443#IE Dublin AS16509 Amazon Data Services Ireland Limited
+54.216.143.197:443#IE Dublin AS16509 Amazon.com, Inc.
+54.229.164.147:2053#IE Dublin AS16509 Amazon.com, Inc.
+54.229.164.147:8443#IE Dublin AS16509 Amazon.com, Inc.
+54.247.36.82:443#IE Dublin AS16509 Amazon Data Services Ireland Limited
+54.77.206.41:443#IE Dublin AS16509 Amazon Technologies Inc.
+63.32.194.15:8443#IE Dublin AS16509 Amazon Data Services Ireland Limited
+63.32.194.15:2053#IE Dublin AS16509 Amazon Data Services Ireland Limited

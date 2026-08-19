@@ -4,3 +4,7 @@
 195.54.170.66:8443#NO Oslo AS9009 IROKO Networks Corporation
 194.5.98.105:8443#NO Sandefjord AS149020 WebHorizon Norway
 194.5.98.105:2053#NO Sandefjord AS149020 WebHorizon Norway
+194.68.32.99:443#NO Oslo AS9009 EDIS IPv6 Infrastructure in Norway
+195.54.170.66:8443#NO Oslo AS9009 IROKO Networks Corporation
+194.5.98.105:8443#NO Sandefjord AS149020 WebHorizon Norway
+194.5.98.105:2053#NO Sandefjord AS149020 WebHorizon Norway

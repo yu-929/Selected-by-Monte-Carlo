@@ -33,3 +33,24 @@
 46.102.156.144:8443#AT Langenzersdorf AS40994 Alwyzon, a trading name of Hohl IT e.U.
 77.110.110.254:443#AT Vienna AS210644 AEZA GROUP LLC
 94.177.8.78:2053#AT Langenzersdorf AS40994 Alwyzon, a trading name of Hohl IT e.U.
+132.243.203.239:8443#AT Vienna AS40994 InterLIR-Marketplace
+132.243.254.170:8088#AT Vienna AS26383 Baxet Group Inc.
+152.53.45.7:443#AT Vienna AS197540 netcup GmbH
+152.53.67.141:443#AT Vienna AS197540 netcup GmbH
+152.53.67.190:443#AT Vienna AS197540 netcup GmbH
+152.53.67.83:443#AT Vienna AS197540 netcup GmbH
+178.22.31.25:443#AT Gaishorn AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
+94.177.8.116:443#AT Langenzersdorf AS40994 Alwyzon, a trading name of Hohl IT e.U.
+94.177.8.123:443#AT Langenzersdorf AS40994 Alwyzon, a trading name of Hohl IT e.U.
+94.177.8.237:443#AT Langenzersdorf AS40994 Alwyzon, a trading name of Hohl IT e.U.
+151.236.8.190:443#AT Vienna AS57169 EDIS IPv6 Infrastructure in Austria
+152.53.65.148:443#AT Vienna AS197540 netcup GmbH
+152.53.3.249:2096#AT Vienna AS197540 netcup GmbH
+159.69.162.184:42822#AT Vienna AS48950 SA
+185.119.117.146:8443#AT Vienna AS44133 IPAX VIRTUAL line server
+193.233.233.188:2053#AT Vienna AS210644 AEZA GROUP LLC
+193.233.233.188:8443#AT Vienna AS210644 AEZA GROUP LLC
+46.102.156.144:2053#AT Langenzersdorf AS40994 Alwyzon, a trading name of Hohl IT e.U.
+46.102.156.144:8443#AT Langenzersdorf AS40994 Alwyzon, a trading name of Hohl IT e.U.
+77.110.110.254:443#AT Vienna AS210644 AEZA GROUP LLC
+94.177.8.78:2053#AT Langenzersdorf AS40994 Alwyzon, a trading name of Hohl IT e.U.

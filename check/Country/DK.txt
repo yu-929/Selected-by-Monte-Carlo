@@ -8,3 +8,9 @@
 93.92.112.216:443#DK Copenhagen AS44803 Webdock.io ApS
 193.180.208.234:443#DK Copenhagen AS44803 Webdock AS44803
 193.181.210.149:443#DK Copenhagen AS44803 Webdock.io ApS
+193.180.213.29:8443#DK Copenhagen AS44803 Webdock.io ApS
+45.148.31.227:443#DK Copenhagen AS44803 Webdock.io ApS
+89.28.236.192:8443#DK Copenhagen AS44803 Webdock.io ApS
+93.92.112.216:443#DK Copenhagen AS44803 Webdock.io ApS
+193.180.208.234:443#DK Copenhagen AS44803 Webdock AS44803
+193.181.210.149:443#DK Copenhagen AS44803 Webdock.io ApS

@@ -2,3 +2,6 @@
 191.101.132.130:31321#ZA Johannesburg AS35487 Misaka.io Customer Infrastructure in Johannesburg, South Africa
 102.130.120.40:443#ZA Emalahleni AS329346 Light Bridge Internet (Pty) Ltd
 102.210.243.7:443#ZA Emalahleni AS329346 Light Bridge Internet (Pty) Ltd
+191.101.132.130:31321#ZA Johannesburg AS35487 Misaka.io Customer Infrastructure in Johannesburg, South Africa
+102.130.120.40:443#ZA Emalahleni AS329346 Light Bridge Internet (Pty) Ltd
+102.210.243.7:443#ZA Emalahleni AS329346 Light Bridge Internet (Pty) Ltd

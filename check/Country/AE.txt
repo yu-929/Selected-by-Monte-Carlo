@@ -42,3 +42,25 @@
 90.156.221.54:443#AE Dubai AS44578 ITGLOBAL COM DMCC
 85.234.73.241:2087#AE Dubai AS199524 G-Core Labs S.A.
 139.185.36.127:39738#AE Dubai AS13335 Cloudflare London, LLC
+130.94.47.203:443#AE Dubai AS154177 LIGHT NODE LIMITED
+147.78.0.139:443#AE Fujairah AS136258 Oneprovider.com - Dubai Infrastructure
+147.78.0.161:443#AE Fujairah AS136258 Oneprovider.com - Dubai Infrastructure
+147.78.0.205:443#AE Fujairah AS136258 Oneprovider.com - Dubai Infrastructure
+147.78.0.251:443#AE Fujairah AS136258 Oneprovider.com - Dubai Infrastructure
+147.78.0.36:443#AE Fujairah AS136258 Oneprovider.com - Dubai Infrastructure
+147.78.0.72:443#AE Fujairah AS136258 Oneprovider.com - Dubai Infrastructure
+147.78.0.84:443#AE Fujairah AS136258 Oneprovider.com - Dubai Infrastructure
+176.97.66.175:443#AE Dubai AS9009 3nt solutions LLP
+176.97.66.87:443#AE Dubai AS9009 3nt solutions LLP
+3.28.218.23:443#AE Dubai AS16509 Amazon Data Services UAE
+37.202.222.55:443#AE Dubai AS21859 Private Customer
+40.172.89.195:8443#AE Dubai AS16509 Amazon Data Services UAE
+152.32.181.246:44070#AE Dubai AS135377 UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED
+188.208.110.35:2096#AE Fujairah AS59878 BFB ONE FZ-LLC
+20.174.15.226:443#AE Dubai AS8075 Microsoft Corporation
+3.29.240.49:443#AE Dubai AS16509 Amazon Data Services UAE
+45.86.228.104:443#AE Fujairah AS62005 BlueVPS OU
+84.235.245.65:2096#AE Dubai AS13335 Cloudflare, Inc.
+90.156.221.54:443#AE Dubai AS44578 ITGLOBAL COM DMCC
+85.234.73.241:2087#AE Dubai AS199524 G-Core Labs S.A.
+139.185.36.127:39738#AE Dubai AS13335 Cloudflare London, LLC

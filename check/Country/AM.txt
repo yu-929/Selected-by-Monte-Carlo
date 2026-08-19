@@ -2,3 +2,7 @@
 139.45.214.126:443#AM Yerevan AS51327 RETN AM Limited Liability Company
 2.56.204.183:443#AM Yerevan AS216058 Proitlab LLC
 2.56.204.246:443#AM Yerevan AS216058 Proitlab LLC
+139.45.214.122:443#AM Yerevan AS51327 RETN AM Limited Liability Company
+139.45.214.126:443#AM Yerevan AS51327 RETN AM Limited Liability Company
+2.56.204.183:443#AM Yerevan AS216058 Proitlab LLC
+2.56.204.246:443#AM Yerevan AS216058 Proitlab LLC

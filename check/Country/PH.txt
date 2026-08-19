@@ -21,3 +21,15 @@
 85.149.220.154:30610#PH Manila AS13335 Cloudflare London, LLC
 85.149.220.203:30610#PH Manila AS13335 Cloudflare London, LLC
 122.2.198.74:443#PH Quezon City AS9299 IPG
+103.26.8.18:60021#PH Quezon City AS9658 Bugallon DSL-Network103.198.203.181:443#HK Hong Kong AS63139 Bedge Co Limited
+103.73.220.142:20022#PH Quezon City AS19970 R&R Managed Telecom Services
+103.97.200.67:30610#PH Manila AS13335 Cloudflare London, LLC
+149.104.109.197:443#PH Manila AS138915 Kaopu Cloud HK Limited
+151.243.229.15:30610#PH Manila AS13335 Cloudflare London, LLC
+216.23.122.71:30610#PH Manila AS13335 Cloudflare London, LLC
+216.23.82.36:30610#PH Manila AS13335 Cloudflare London, LLC
+216.23.82.40:30610#PH Manila AS13335 Cloudflare London, LLC
+61.245.11.45:443#PH Quezon City AS19970 R&R Managed Telecom Services
+85.149.220.154:30610#PH Manila AS13335 Cloudflare London, LLC
+85.149.220.203:30610#PH Manila AS13335 Cloudflare London, LLC
+122.2.198.74:443#PH Quezon City AS9299 IPG

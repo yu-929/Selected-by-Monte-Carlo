@@ -174,3 +174,92 @@
 83.147.13.156:12580#TW Taipei AS61112 Private Customer
 83.147.13.156:21580#TW Taipei AS61112 Private Customer
 202.153.4.51:1443#TW Taipei AS134823 Imcloud Technology Co., Ltd.
+103.112.1.200:31015#TW Taipei AS131642 Pittqiao Network Information Co.,Ltd.
+103.240.196.61:21107#TW Taipei AS151338 NetLab Global
+103.240.196.61:21108#TW Banqiao AS18429 Extra-Lan Technologies Co., LTD
+103.73.220.228:49472#TW Banqiao AS3462 HiNet Taiwan
+103.73.220.229:49472#TW Banqiao AS3462 HiNet Taiwan
+103.73.220.236:49472#TW Banqiao AS3462 HiNet Taiwan
+103.73.220.249:49472#TW Banqiao AS3462 HiNet Taiwan
+125.228.236.138:443#TW Taipei AS3462 HiNet Taiwan
+140.235.39.161:8443#TW Taipei AS212336 ByteVirt LLC
+140.235.39.206:443#TW Taipei AS212336 Sunaoki Network Customer
+141.11.77.10:31501#TW Taipei AS142433 DATAWAVE GLOBAL LLC
+141.11.77.10:31502#TW Banqiao AS202400 Private Customer
+141.11.86.182:11803#TW Taipei AS61112 AKILE LTD
+141.11.86.35:443#TW Taipei AS61112 AKILE LTD
+141.11.86.8:443#TW Taipei AS38136 Akari Networks (Taipei)
+141.11.87.48:443#TW Taipei AS38136 Akari Networks (Taipei)
+151.242.189.33:443#TW Taipei AS212336 ByteVirt LLC
+151.242.189.35:443#TW Taipei AS212336 ByteVirt LLC
+151.243.229.15:30706#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
+154.40.60.126:443#TW Taipei AS151338 STARVERSE POLOCLOUD 2
+178.94.14.81:46971#TW Taipei AS131642 Pittqiao Network Information Co.,Ltd.
+191.101.132.130:46271#TW Taipei AS131642 Pittqiao Network Information Co.,Ltd.
+191.101.132.149:31015#TW Taipei AS131642 Pittqiao Network Information Co.,Ltd.
+191.101.132.200:21595#TW Taichung AS131596 CCTV
+191.101.132.203:21108#TW Banqiao AS18429 Extra-Lan Technologies Co., LTD
+191.101.132.44:52547#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
+191.101.132.44:52548#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
+191.101.132.96:21595#TW Taichung AS131596 CCTV
+191.222.209.104:443#TW Taipei AS38136 Akari Networks (Taipei)
+203.69.248.40:33699#TW Kaohsiung AS3462 Data Communication Business Group,
+211.75.210.32:443#TW Taichung AS3462 Data Communication Business Group,
+211.75.210.33:443#TW Taichung AS3462 Data Communication Business Group,
+211.75.210.34:443#TW Taichung AS3462 Data Communication Business Group,
+213.210.4.238:443#TW Taipei AS212336 ByteVirt LLC
+213.210.4.59:443#TW Taipei AS212336 ByteVirt LLC
+213.210.5.231:443#TW Taipei AS38136 Akari Networks (Taipei)
+216.23.120.198:30706#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
+216.23.122.71:30706#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
+216.23.82.48:30706#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
+216.23.82.63:30706#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
+60.249.21.29:443#TW Taichung AS3462 Chunghwa Telecom Data Communication Business Group
+60.249.21.30:443#TW Taichung AS3462 Chunghwa Telecom Data Communication Business Group
+82.152.90.213:8080#TW Taipei AS61112 AKILE LTD
+82.152.90.98:443#TW Taipei AS38136 Akari Networks (Taipei)
+85.149.218.201:30706#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
+85.149.218.224:35758#TW Taipei AS61112 AKILE LTD
+85.149.218.224:37828#TW Taipei AS61112 AKILE LTD
+85.149.218.63:32568#TW Taipei AS61112 AKILE LTD
+85.149.218.63:35758#TW Taipei AS61112 AKILE LTD
+85.149.218.63:37828#TW Taipei AS61112 AKILE LTD
+85.149.218.90:32568#TW Taipei AS61112 AKILE LTD
+85.149.218.90:33578#TW Taipei AS61112 AKILE LTD
+85.149.220.125:30706#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
+114.32.9.249:443#TW Taipei AS3462 Chunghwa Telecom Data Communication Business Group
+142.249.60.51:443#TW Taipei AS38136 Akari Networks (Taipei)
+202.148.221.171:443#TW Taipei AS134823 Imcloud Technology Co., Ltd.
+203.69.11.79:443#TW Taichung AS3462 Data Communication Business Group,
+203.69.11.80:443#TW Taichung AS3462 Data Communication Business Group,
+203.69.11.81:443#TW Taichung AS3462 Data Communication Business Group,
+211.72.147.91:443#TW Taichung AS3462 Data Communication Business Group,
+220.132.74.165:443#TW Chang-hua AS3462 HiNet Taiwan
+34.80.145.45:443#TW Taipei AS396982 Google LLC
+45.192.203.120:8443#TW Taipei AS32167 ACCK LLC
+118.163.138.20:18333#TW Taoyuan AS3462 Chunghwa Telecom Data Communication Business Group
+61.222.202.153:2053#TW Taichung AS3462 Data Communication Business Group,
+36.235.147.172:2087#TW Taichung AS3462 Chunghwa Telecom Data Communication Business Group
+35.194.182.77:443#TW Taipei AS396982 Google LLC
+34.81.179.112:443#TW Taipei AS396982 Google LLC
+34.81.179.112:8443#TW Taipei AS396982 Google LLC
+188.253.6.249:443#TW Taipei AS38136 Akari Networks (Taipei)
+151.242.189.184:443#TW Taipei AS212336 ByteVirt LLC
+78.105.183.11:8443#TW Taipei AS142433 Private Customer
+83.147.13.49:443#TW Taipei AS38136 Akari Networks (Taipei)
+83.147.15.253:443#TW Taipei AS38136 Akari Networks (Taipei)
+85.237.207.126:443#TW Taipei AS38136 Akari Networks (Taipei)
+141.11.86.182:11804#TW Taipei AS61112 AKILE LTD
+141.11.86.65:17009#TW Taipei AS61112 AKILE LTD
+141.11.87.35:38232#TW Taipei AS61112 AKILE LTD
+154.16.248.234:20443#TW Taipei AS61112 AkileCloud Network
+166.0.199.161:11801#TW Taipei AS61112 AKILE LTD
+166.0.199.197:26515#TW Taipei AS38136 Akari Networks (Taipei)
+166.0.199.197:27467#TW Taipei AS61112 AKILE LTD
+45.192.240.24:64000#TW Taichung AS3462 Chunghwa Telecom Data Communication Business Group
+45.207.159.119:17009#TW Taipei AS61112 Akile LTD
+82.152.91.112:49921#TW Taipei AS61112 AKILE LTD
+83.147.13.156:12580#TW Taipei AS61112 Private Customer
+83.147.13.156:21580#TW Taipei AS61112 Private Customer
+202.153.4.51:1443#TW Taipei AS134823 Imcloud Technology Co., Ltd.
+220.134.133.216:4443#TW Toufen AS3462 HiNet Taiwan
