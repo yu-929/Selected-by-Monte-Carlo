@@ -3,6 +3,7 @@ import ssl
 import sys
 import os
 import re
+import random
 import resource
 import json
 import ipaddress
@@ -22,6 +23,21 @@ CF_HOST_TEST = "crypto.cloudflare.com"
 STAGE2_TIMEOUT = 2.0
 
 STAGE3_TIMEOUT = 2.0
+
+# Smart Subnet Tiering 配置：大段按 /24 分组，每组采样探测端口，仅保留活跃子网
+# 超时/并发复用 STAGE1_TIMEOUT / STAGE1_CONCURRENCY；触发阈值与采样数自动自适应
+SMART_TIERING = os.getenv("SMART_TIERING", "1") != "0"
+SMART_SUBNET_PREFIX = 24
+SMART_PROBE_BUDGET = 20000
+SMART_SAMPLE_MIN = 2
+SMART_SAMPLE_MAX = 6
+
+
+def calc_smart_sample(total_ips, total_groups, ports):
+    """采样数自适应：探测预算摊到每个子网后 clamp 到 [SMART_SAMPLE_MIN, SMART_SAMPLE_MAX]"""
+    per_subnet = max(1, SMART_PROBE_BUDGET // max(1, total_groups))
+    sample = per_subnet // max(1, len(ports))
+    return max(SMART_SAMPLE_MIN, min(SMART_SAMPLE_MAX, sample))
 
 try:
     soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
@@ -333,6 +349,65 @@ async def run_batched(items, coro_factory, batch_size=10000):
     return results
 
 
+async def probe_tcp_async(ip, port, timeout_val):
+    """快速 TCP 连通性探测：仅建连，不做 TLS 握手"""
+    loop = asyncio.get_running_loop()
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.setblocking(False)
+    try:
+        await asyncio.wait_for(loop.sock_connect(sock, (ip, port)), timeout=timeout_val)
+        return True
+    except Exception:
+        return False
+    finally:
+        sock.close()
+
+
+async def smart_tiering(all_ips, ports):
+    """Smart Subnet Tiering：按 /24 分组，每组采样探测目标端口，
+    任一采样 IP 连通即视为活跃子网并保留组内全部 IP，死段直接过滤。
+
+    组内 IP 数不超过采样数时不预筛直接保留，避免误杀稀疏段。
+    超时/并发复用主流程，触发阈值由调用方按并发决定，采样数自动自适应。
+    """
+    groups = {}
+    for ip in all_ips:
+        try:
+            net = ipaddress.ip_network(f"{ip}/{SMART_SUBNET_PREFIX}", strict=False)
+        except ValueError:
+            continue
+        groups.setdefault(str(net.network_address), []).append(ip)
+
+    if not groups:
+        return []
+
+    total_groups = len(groups)
+    sample_n = calc_smart_sample(len(all_ips), total_groups, ports)
+    sem = asyncio.Semaphore(STAGE1_CONCURRENCY)
+
+    async def probe_group(ips):
+        async with sem:
+            if len(ips) <= sample_n:
+                return ips
+            sample_ips = random.sample(ips, min(sample_n, len(ips)))
+            for s_ip in sample_ips:
+                for port in ports:
+                    if await probe_tcp_async(s_ip, port, STAGE1_TIMEOUT):
+                        return ips
+            return None
+
+    results = await asyncio.gather(*(probe_group(ips) for ips in groups.values()))
+    kept_groups = [ips for ips in results if ips]
+    kept_flat = [ip for ips in kept_groups for ip in ips]
+    print(
+        f"[*] Smart Tiering: {total_groups} 个子网，自适应采样 {sample_n} 个/组 → "
+        f"活跃 {len(kept_groups)}，过滤死段 {total_groups - len(kept_groups)} | "
+        f"保留 {len(kept_flat)}/{len(all_ips)} 个 IP",
+        flush=True
+    )
+    return kept_flat
+
+
 async def main():
     target_input = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_TARGETS
     ports_input = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_PORTS
@@ -347,6 +422,20 @@ async def main():
 
     if len(all_ips) > 50000:
         print(f"[!] 待测 IP 超过 50000 个 ({len(all_ips)})，继续可能超时。建议使用更小的网段。", flush=True)
+
+    smart_min_ips = STAGE1_CONCURRENCY * 2
+    if SMART_TIERING and len(all_ips) >= smart_min_ips:
+        print(
+            f"[*] Smart Subnet Tiering 启用：按 /24 分组采样探测端口 {target_ports} "
+            f"（超时 {STAGE1_TIMEOUT}s，并发 {STAGE1_CONCURRENCY}，触发阈值 {smart_min_ips} IP），过滤死段",
+            flush=True
+        )
+        all_ips = await smart_tiering(all_ips, target_ports)
+        if not all_ips:
+            print("[-] Smart Tiering 后无存活子网，程序退出。", flush=True)
+            return
+    else:
+        print(f"[*] Smart Subnet Tiering 跳过 (启用={SMART_TIERING}, IP数={len(all_ips)} < 阈值 {smart_min_ips})", flush=True)
 
     targets = [(ip, port) for ip in all_ips for port in target_ports]
     print(f"[*] 解析完成：{len(all_ips)} 个 IP × {len(target_ports)} 个端口 {target_ports} = 共有 {len(targets)} 个连接目标。", flush=True)
