@@ -29,7 +29,6 @@ CF_TRACE_HOST = "cloudflare.com"
 CF_TRACE_PATH = "/cdn-cgi/trace"
 TRACE_TIMEOUT = float(os.getenv("TRACE_TIMEOUT", "3.0"))
 TRACE_CONCURRENCY = int(os.getenv("TRACE_CONCURRENCY", "500"))
-ALLOWED_COUNTRIES = os.getenv("ALLOWED_COUNTRIES", "CN,SG,JP,US,DE").split(",")
 
 # Smart Subnet Tiering 配置：大段按 /24 分组，每组采样探测端口，仅保留活跃子网
 # 超时/并发复用 STAGE1_TIMEOUT / STAGE1_CONCURRENCY；触发阈值与采样数自动自适应
@@ -543,16 +542,11 @@ async def main():
         print("[-] 无有效转发代理 IP，程序退出。", flush=True)
         return
 
-    # ----- 国家过滤 -----
-    filtered = [(ip, port, colo) for ip, port, colo, loc in valid if loc in ALLOWED_COUNTRIES]
-    print(f"[*] 国家过滤 ({','.join(ALLOWED_COUNTRIES)})：保留 {len(filtered)}/{len(valid)} 个", flush=True)
-
-    if not filtered:
-        print("[-] 过滤后无符合国家要求的 IP，程序退出。", flush=True)
-        return
-
     # ----- 排序输出 -----
-    filtered.sort(key=lambda x: (ipaddress.ip_address(x[0]), x[1]))
+    filtered = sorted(
+        [(ip, port, colo) for ip, port, colo, loc in valid],
+        key=lambda x: (ipaddress.ip_address(x[0]), x[1])
+    )
 
     print("\n==================== 扫描结束 ====================", flush=True)
     print(f"最终有效目标总数: {len(filtered)}", flush=True)

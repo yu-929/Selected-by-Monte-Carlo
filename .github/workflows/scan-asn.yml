@@ -41,7 +41,6 @@ jobs:
       - name: Run scan
         env:
           CUSTOM_CF_DOMAIN: ${{ secrets.CUSTOM_CF_DOMAIN }}
-          ALLOWED_COUNTRIES: ${{ secrets.ALLOWED_COUNTRIES }}
         run: |
           python check/check_cf_asn.py "${{ github.event.inputs.scan_input }}" "${{ github.event.inputs.scan_ports }}" 2>&1 | tee /tmp/scan.log
           output_file=$(grep '保存至' /tmp/scan.log | tail -1 | grep -oP '保存至：\K[^ )]+\.txt' || echo "")
