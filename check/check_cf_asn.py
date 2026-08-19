@@ -121,13 +121,17 @@ async def open_tls_connection(ip, port, sni, timeout_val):
 
 
 def parse_ports(port_str):
-    """动态解析输入的端口列表"""
+    """动态解析输入的端口列表，支持端口区间如 80-1000,443"""
     if not port_str:
         return [443]
     raw_ports = re.split(r'[\s,，]+', str(port_str).strip())
     ports = []
     for p in raw_ports:
-        if p.isdigit() and 1 <= int(p) <= 65535:
+        m = re.match(r'^(\d+)-(\d+)$', p)
+        if m:
+            start, end = int(m.group(1)), int(m.group(2))
+            ports.extend(range(max(1, start), min(65535, end) + 1))
+        elif p.isdigit() and 1 <= int(p) <= 65535:
             ports.append(int(p))
     return list(dict.fromkeys(ports)) if ports else [443]
 
