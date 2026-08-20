@@ -31,5 +31,10 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add check/ipchi.txt
-          git diff --cached --quiet || git commit -m "chore: merge scan results to ipchi.txt"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: merge scan results to ipchi.txt"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              sleep 5
+            done
+          fi
